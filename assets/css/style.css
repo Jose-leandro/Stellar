@@ -1,0 +1,439 @@
+.contener-logo-campo-login {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+body {
+    background-color: #000000;
+    color: #857f7a;
+}
+
+.informacaodobnner {
+    font-size: 20px;
+}
+
+.campodepesquisa {
+    border-color: transparent;
+    background: transparent;
+}
+
+.login {
+    font-family: 'Arima', cursive;
+    font-size: 18px;
+    padding: 5px 15px;
+    border-radius: 10px;
+    border-color: transparent;
+    background: linear-gradient(70deg,#3f1d55, #0a66ce);
+}
+
+.ancora-login {
+    color: #c0bbb8;
+    text-decoration: none;
+}
+
+#tres-pontinhos {
+    cursor: pointer;
+    font-size: 30px;
+}
+
+#tres-pontinhos:hover {
+    font-size: 30px;
+    color: #353434;
+    border-radius: 20px;
+    background: #c0bbb8;
+    border: solid #c0bbb8;
+    opacity: 50%;
+}
+
+.contener-trespotinhos-adicionar {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.contener-adicionar {
+    margin: 1em 1em 0 0;
+    text-align: center;
+    visibility: hidden;
+    border: solid 3px;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(40deg,#000000 60%, #300e2a);
+    border-radius: 10px;
+}
+
+h2 {
+    margin-top: 1em;
+}
+
+.adicionar-produtos-ao-site {
+    text-decoration: none;
+    color: #c0bbb8;
+}
+
+.bannerpromocional {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.contenerimg {
+    width: 100%;
+}
+
+.btnprodutos {
+    position: absolute;
+    top: 26em;
+    left: 39em;
+    width: 5em;
+    height: 3em;
+    font-size: 15px;
+    border: transparent;
+    border-radius: 8px;
+    background-color: #3e87da;
+    color: #ffff;
+    cursor: pointer;
+}
+
+.imagemdobanner{
+    border-radius: 10px;
+    width: 100%;
+    height: 25em;
+}
+
+.contener-produtos {
+    margin-top: 4em;
+    font-size: 30px;
+    height: 6em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.conteinerprodutos {
+    margin-bottom: 3em;
+}
+
+.nomebinoculo {
+    font-size: 30px;
+    margin-left: 3em;
+    margin-bottom: 2em;
+}
+
+.contemner-imagens-binoculo {
+    margin-top: 2em;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.imagembinoculo {
+    border-radius: 20px;
+    width: 24em;
+    height: 14em;
+}
+
+.contenertelescopio {
+    display: flex;
+    flex-direction: column;
+}
+
+.categoriatelescopio {
+    width: 4em;
+    height: 4em;
+    border-radius: 60px;
+    margin-left: 2em;
+}
+
+.categoriabinoculos {
+    width: 4em;
+    height: 4em;
+    border-radius: 60px;
+    margin-right: 3em;
+}
+
+.categoriacamera {
+    width: 4em;
+    height: 4em;
+    border-radius: 60px;
+    margin-right: 3em;
+}
+
+.categorialivro {
+    width: 4em;
+    height: 4em;
+    border-radius: 60px;
+    margin-right: 2em;
+}
+
+.categoriafotos {
+    width: 4em;
+    height: 4em;
+    border-radius: 60px;
+    margin-right: 2em; 
+}
+
+.contener-nome-produtos {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 90px 0;
+}
+
+.telescopios {
+   text-decoration: none;
+   color: #c0bbb8;
+    width: 20%;
+    margin-left: 5em;
+}
+
+.telescopios:hover {
+    font-size: 20px;
+}
+
+#seta {
+    cursor: pointer;
+    font-size: 35px;
+}
+
+#seta:hover {
+    font-size: 37px;
+}
+
+.binoculos {
+   text-decoration: none;
+   color: #c0bbb8;
+   width: 20%;
+   margin-right: 7em;
+}
+
+.binoculos:hover {
+    font-size: 20px;
+} 
+
+.cameras {
+   text-decoration: none;
+   color: #c0bbb8;
+   width: 20%;
+    margin-right: 8em;
+}
+
+.cameras:hover {
+    font-size: 20px;
+}
+
+.livros {
+    text-decoration: none;
+    color: #c0bbb8;
+    width: 20%;
+    margin-right: 4em;
+}
+
+.livros:hover {
+    font-size: 20px;
+}
+
+.fotos {
+    text-decoration: none;
+    color: #c0bbb8;
+    width: 20%;
+    margin-right: 3em;
+}
+
+.fotos:hover {
+    font-size: 20px;
+}
+
+.conteiner-nome-categoria-tudo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-produto {
+    color: #3f1d55;
+}
+
+.nometelescopio {
+    font-size: 30px;
+    margin-left: 3em;
+}
+
+.contener-imagens-telescopios {
+    margin-top: 2em;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.imagemtelescopio {
+    border-radius: 20px;
+    width: 24em;
+    height: 14em;
+}
+
+.contener-btn-seta {
+    display: flex;
+    margin-right: 3em;
+}
+
+.btnprodutotelescopio {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.produto-refrator {
+    margin-top: 1em;
+    margin-left: 2em;
+    font-size: 20px;
+}
+
+.ancora-btn-ver {
+    text-decoration: none;
+    color: #000;
+}
+
+.btn-ver-produto {
+    border-radius: 4px;
+    background-color: #0a66ce;
+    margin-left: 40%;
+    margin-top: 2em;
+}
+
+.ancora-refrator-marrom {
+    color: #857f7a;
+    text-decoration: none;
+}
+
+.ancora-telescopio-preto {
+    color: #857f7a;
+    text-decoration: none;
+}
+
+.preco {
+    margin-top: 2em;
+    color: #ffff;
+    margin-left: 2em;
+}
+
+.nomecamera {
+    font-size: 30px;
+    margin-left: 3em;
+}
+
+.contener-imagens-camera {
+    margin-top: 2em;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.imagemcamera {
+    border-radius: 20px;
+    width: 24em;
+    height: 14em;
+}
+
+.produto-camera {
+    margin-top: 1em;
+    margin-left: 2em;
+    font-size: 20px; 
+}
+
+.nomefotosastronomicas {
+    font-size: 30px;
+    margin-left: 3em; 
+}
+
+.contener-imagens-fotos-astronomicas {
+    margin-top: 2em;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.imagemfotosastronomicas {
+    border-radius: 20px;
+    width: 24em;
+    height: 14em;
+}
+
+#ajutando-precos {
+   margin-top: 3em;
+}
+
+.produto-fotos-astronomicas {
+    margin-top: 1em;
+    margin-left: 2em;
+    font-size: 20px; 
+}
+
+.rodape {
+    height: 20em;
+}
+
+.contener-logo-rodape {
+    width: 210px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.contener-informacoes-adicionai {
+    height: 100%;
+    width: 150px;
+}
+
+li {
+    margin-top: 2em;
+}
+
+.contener-all {
+    background: linear-gradient(90deg,#000000 50%, #16295e);
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contener-foormulario {
+    width: 400px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+h1 {
+    text-align: center;
+}
+
+.input-nome {
+    height: 25px;
+    border-radius: 10px;
+    border: transparent;
+    opacity: 40%;
+}
+
+.input-mensagem {
+    height: 60px;
+    border-radius: 10px;
+    border: transparent;
+    opacity: 40%;
+}
+
+.btn-enviar {
+    color: #857f7a;
+    width: 60%;
+    margin-left: 4em;
+    border-radius: 5px;
+    border: transparent;
+    background: linear-gradient(40deg,#120d16, #193a5f);
+}
+
+.btn-enviar:hover {
+    width: 62%;
+}
+
+.contner-desenvolvedor {
+    text-align: center;
+    background: linear-gradient(90deg,#000000 50%, #16295e);
+}

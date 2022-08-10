@@ -1,0 +1,97 @@
+body {
+    background-color: rgb(7, 7, 7);
+    color: #857f7a;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contener-campo-pesquisa {
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.campodepesquisa {
+    border-color: transparent;
+    background: transparent;
+} 
+
+.contener-adicionar {
+    text-align: center;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(-50deg,#000000 30%,#181941 , #081412);
+}
+
+.contener-upload {
+    border: 7px dotted;
+    border-width: 2px;
+    padding: 15px;
+    width: 160px;
+    margin-left: 2em;
+}
+
+.input-escolher {
+    background-color: #181941;
+    opacity: 60%;
+    border: transparent;
+    border-radius: 5px;
+}
+
+.contener-escolher-adicionar {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.contener-btn-inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 300px;
+    width: 40%;
+}
+
+.campo-nome-produto {
+    opacity: 60%;
+    border: transparent;
+    border-radius: 5px;
+    height: 40px;
+}
+
+.campo-preco-produto {
+    opacity: 60%;
+    border: transparent;
+    border-radius: 5px;
+    height: 40px;
+}
+
+.campo-descricao-produto {
+    opacity: 60%;
+    border: transparent;
+    border-radius: 5px;
+    height: 70px;
+}
+
+.btn-adicionar-produto {
+    color: #857f7a;
+    text-decoration: none;
+    font-family: 'Arima', cursive;
+    width: 80%;
+    font-size: 18px;
+    padding: 5px 15px;
+    margin-left: 3em;
+    border-radius: 10px;
+    border-color: transparent;
+    background: linear-gradient(70deg,#3f1d55, #0a66ce);
+}

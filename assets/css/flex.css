@@ -1,0 +1,11 @@
+.bannerpromocional {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.contenertelescopio {
+    display: flex;
+    justify-content: space-between;
+}
