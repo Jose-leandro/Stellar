@@ -108,7 +108,7 @@ h2 {
     font-size: 30px;
     height: 6em;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .conteinerprodutos {
@@ -143,40 +143,29 @@ h2 {
     width: 4em;
     height: 4em;
     border-radius: 60px;
-    margin-left: 2em;
 }
 
 .categoriabinoculos {
     width: 4em;
     height: 4em;
     border-radius: 60px;
-    margin-right: 3em;
 }
 
 .categoriacamera {
     width: 4em;
     height: 4em;
     border-radius: 60px;
-    margin-right: 3em;
-}
-
-.categorialivro {
-    width: 4em;
-    height: 4em;
-    border-radius: 60px;
-    margin-right: 2em;
 }
 
 .categoriafotos {
     width: 4em;
     height: 4em;
-    border-radius: 60px;
-    margin-right: 2em; 
+    border-radius: 60px; 
 }
 
 .contener-nome-produtos {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 0 0 90px 0;
 }
 
@@ -184,7 +173,7 @@ h2 {
    text-decoration: none;
    color: #c0bbb8;
     width: 20%;
-    margin-left: 5em;
+    padding-left: 3em;
 }
 
 .telescopios:hover {
@@ -204,32 +193,28 @@ h2 {
    text-decoration: none;
    color: #c0bbb8;
    width: 20%;
-   margin-right: 7em;
+   padding-left: 6em;
 }
 
 .binoculos:hover {
     font-size: 20px;
 } 
 
+.contener-imagens-binoculo {
+    margin-top: 2em;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
 .cameras {
    text-decoration: none;
    color: #c0bbb8;
    width: 20%;
-    margin-right: 8em;
+   padding-left: 6em;
 }
 
 .cameras:hover {
-    font-size: 20px;
-}
-
-.livros {
-    text-decoration: none;
-    color: #c0bbb8;
-    width: 20%;
-    margin-right: 4em;
-}
-
-.livros:hover {
     font-size: 20px;
 }
 
@@ -237,7 +222,7 @@ h2 {
     text-decoration: none;
     color: #c0bbb8;
     width: 20%;
-    margin-right: 3em;
+    padding-left: 6em;
 }
 
 .fotos:hover {
