@@ -57,6 +57,12 @@ h2 {
     color: #c0bbb8;
 }
 
+.fechar-menu-produtos {
+    cursor: pointer;
+    text-decoration: none;
+    color: #c0bbb8;   
+}
+
 .contener-produto-informacao {
     display: flex;
     height: 100%;
@@ -81,7 +87,6 @@ h2 {
 
 .nome-produto {
     font-size: 50px;
-   
 }
 
 .preco-produto {

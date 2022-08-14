@@ -73,6 +73,12 @@ h2 {
     color: #c0bbb8;
 }
 
+.fechar-menu-produtos {
+    cursor: pointer;
+    text-decoration: none;
+    color: #c0bbb8;   
+}
+
 .bannerpromocional {
     display: flex;
     align-items: center;

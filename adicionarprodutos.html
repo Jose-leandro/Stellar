@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
         <title>E-commecer AluraGeek</title>
+        <link rel="icon" href="assets/imagens/icone-da-pagina3.svg" type="image/x-icon">
         <link  rel="stylesheet" type="text/css" href="assets/css/normalize.css">
         <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
         <link rel="stylesheet" type="text/css" href="assets/css/adicionarproduto.css">
@@ -10,16 +11,29 @@
     </head>
     <body class="contener-body">
 		<header>
-            <img src="assets/imagens/Logo.png">
-            <div class="contener-campo-pesquisa">
-                <input class="campodepesquisa" placeholder="O que você ira procurar hoje">
-                <span class="material-symbols-outlined">
-                    search
-                </span>
+            <div class="contener-logo-campo">
+                <a href="index.html"><img src="assets/imagens/Logo.png"></a>
+                <div class="contener-campo-pesquisa">
+                    <input class="campodepesquisa" placeholder="O que você ira procurar hoje">
+                    <span class="material-symbols-outlined">
+                        search
+                    </span>
+                    <span class="material-symbols-outlined" id="tres-pontinhos">
+                        more_vert
+                    </span>
+                </div>
             </div>
+            <div class="contener-trespotinhos-adicionar">
+				<div class="contener-adicionar">
+					<ul class="menu">
+						<li class="adicionar-produtos"><a href="adicionarprodutos.html" class="adicionar-produtos-ao-site">Adicionar Produtos</a></li>
+						<li class="fechar-menu-produtos">fechar menu</li>
+					</ul>
+				</div>
+			</div>
         </header>
         <main class="contener-main">
-            <div class="contener-adicionar">
+            <div class="contener-adicionar-produto">
                 <h1>iniciar sessão</h1>
                 <div class="contener-escolher-adicionar">
                     <div class="contener-upload">

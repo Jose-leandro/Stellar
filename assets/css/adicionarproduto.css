@@ -4,7 +4,7 @@ body {
     height: 100vh;
 }
 
-header {
+.contener-logo-campo {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -21,7 +21,55 @@ header {
     background: transparent;
 } 
 
+#tres-pontinhos {
+    cursor: pointer;
+    font-size: 30px;
+    margin-left: 4em;
+}
+
+#tres-pontinhos:hover {
+    font-size: 30px;
+    color: #353434;
+    border-radius: 20px;
+    background: #c0bbb8;
+    border: solid #c0bbb8;
+    opacity: 50%;
+}
+
+.contener-trespotinhos-adicionar {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
 .contener-adicionar {
+    margin: 1em 1em 0 0;
+    text-align: center;
+    visibility: hidden;
+    border: solid 3px;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(40deg,#000000 60%, #300e2a);
+    border-radius: 10px;
+}
+
+li {
+    margin-top: 1em;
+}
+
+.adicionar-produtos-ao-site {
+    text-decoration: none;
+    color: #c0bbb8;
+}
+
+.fechar-menu-produtos {
+    cursor: pointer;
+    text-decoration: none;
+    color: #c0bbb8;   
+}
+
+.contener-adicionar-produto {
     text-align: center;
     height: 90vh;
     width: 100%;

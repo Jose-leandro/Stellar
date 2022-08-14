@@ -48,13 +48,19 @@
     border-radius: 10px;
 }
 
-h1 {
+li {
     margin-top: 1em;
 }
 
 .adicionar-produtos-ao-site {
     text-decoration: none;
     color: #c0bbb8;
+}
+
+.fechar-menu-produtos {
+    cursor: pointer;
+    text-decoration: none;
+    color: #c0bbb8;   
 }
 
 .contener-todos-produtos {
