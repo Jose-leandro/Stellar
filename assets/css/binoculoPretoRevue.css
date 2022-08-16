@@ -1,0 +1,140 @@
+.contener-body {
+    background-color: rgb(7, 7, 7);
+    color: #857f7a;
+    height: 100vh;
+}
+
+.contener-logo-campo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.campodepesquisa {
+    border-color: transparent;
+    background: transparent;
+} 
+
+#tres-pontinhos {
+    cursor: pointer;
+    font-size: 30px;
+    margin-left: 4em;
+}
+
+#tres-pontinhos:hover {
+    font-size: 30px;
+    color: #353434;
+    border-radius: 20px;
+    background: #c0bbb8;
+    border: solid #c0bbb8;
+    opacity: 50%;
+}
+
+.contener-trespotinhos-adicionar {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.contener-adicionar {
+    margin: 1em 1em 0 0;
+    text-align: center;
+    visibility: hidden;
+    border: solid 3px;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(40deg,#000000 60%, #300e2a);
+    border-radius: 10px;
+}
+
+h2 {
+    margin-top: 1em;
+}
+
+.adicionar-produtos-ao-site {
+    text-decoration: none;
+    color: #c0bbb8;
+}
+
+.contener-produto-informacao {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: space-around;
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+    width: 100%;
+}
+
+.imagem-binoculo-revue {
+    border-radius: 20px;
+    width: 640px;
+    height: 359px;
+}
+
+.imagemBinoculo {
+    border-radius: 20px;
+    width: 24em;
+    height: 14em;
+}
+
+.contener-informacoes-adicionais  {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 4em;
+}
+
+.nome-produto {
+    font-size: 50px;
+}
+
+.preco-produto {
+    font-size: 30px;
+   margin-bottom: 3em;
+}
+
+.btn-compar {
+    cursor: pointer;
+    color: #454553;
+    font-size: 22px;
+    margin-bottom: 4em;
+    border-radius: 5px;
+    border: transparent;
+    background: linear-gradient(40deg,#120d16, #193a5f);
+}
+
+.btn-compar:hover {
+    font-size: 23px;
+}
+
+.informacoes-produto {
+    margin-bottom: 5em;
+    font-size: 18px;
+}
+
+.btn-saiba-mais {
+    cursor: pointer;
+    color: #86898d;
+    font-size: 17px;
+    margin-top: 2em;
+    border-radius: 5px;
+    border: transparent;
+    background: linear-gradient(40deg,#120d16, #193a5f);
+}
+
+.contener-nome-produtos-similares {
+    font-size: 35px;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contener-produtos-similares {
+    display: flex;
+    justify-content: space-around;
+}
