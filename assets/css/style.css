@@ -99,8 +99,12 @@ h2 {
     border: transparent;
     border-radius: 8px;
     background-color: #3e87da;
-    color: #ffff;
     cursor: pointer;
+}
+
+.ancora-btn-ver-produto {
+    text-decoration: none;
+    color: #ffff;
 }
 
 .imagemdobanner{
