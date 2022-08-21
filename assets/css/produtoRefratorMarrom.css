@@ -13,7 +13,7 @@
 .campodepesquisa {
     border-color: transparent;
     background: transparent;
-} 
+}
 
 #tres-pontinhos {
     cursor: pointer;
@@ -44,10 +44,11 @@
     position: absolute;
     width: 200px;
     height: 200px;
-    background: linear-gradient(40deg,#000000 60%, #300e2a);
+    background: linear-gradient(40deg, #000000 60%, #300e2a);
     border-radius: 10px;
 }
-li1 {
+
+li {
     margin-top: 1em;
 }
 
@@ -59,8 +60,9 @@ li1 {
 .fechar-menu-produtos {
     cursor: pointer;
     text-decoration: none;
-    color: #c0bbb8;   
+    color: #c0bbb8;
 }
+
 .contener-produto-informacao {
     display: flex;
     height: 100%;
@@ -89,7 +91,7 @@ li1 {
 
 .preco-produto {
     font-size: 30px;
-   margin-bottom: 3em;
+    margin-bottom: 3em;
 }
 
 .btn-compar {
@@ -98,7 +100,7 @@ li1 {
     margin-bottom: 4em;
     border-radius: 5px;
     border: transparent;
-    background: linear-gradient(40deg,#120d16, #193a5f);
+    background: linear-gradient(40deg, #120d16, #193a5f);
 }
 
 .btn-compar:hover {
@@ -122,4 +124,3 @@ li1 {
     display: flex;
     justify-content: space-around;
 }
- 

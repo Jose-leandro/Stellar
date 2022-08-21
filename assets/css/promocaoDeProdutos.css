@@ -13,7 +13,7 @@
 .campodepesquisa {
     border-color: transparent;
     background: transparent;
-} 
+}
 
 #tres-pontinhos {
     cursor: pointer;
@@ -44,11 +44,11 @@
     position: absolute;
     width: 200px;
     height: 200px;
-    background: linear-gradient(40deg,#000000 60%, #300e2a);
+    background: linear-gradient(40deg, #000000 60%, #300e2a);
     border-radius: 10px;
 }
 
-h2 {
+li {
     margin-top: 1em;
 }
 
@@ -57,84 +57,76 @@ h2 {
     color: #c0bbb8;
 }
 
-.contener-produto-informacao {
-    display: flex;
-    flex-wrap: wrap;
-    height: 100%;
-    justify-content: space-around;
-    margin-top: 4rem;
-    margin-bottom: 5rem;
-    width: 100%;
-}
-
-.imagem-camera-preta {
-    border-radius: 20px;
-    width: 640px;
-    height: 359px;
-}
-
-.imagemCamera {
-    border-radius: 20px;
-    width: 24em;
-    height: 14em;
-}
-
-.contener-informacoes-adicionais  {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 4em;
-}
-
-.nome-produto {
-    font-size: 50px;
-}
-
-.preco-produto {
-    font-size: 30px;
-   margin-bottom: 3em;
-}
-
-.btn-compar {
+.fechar-menu-produtos {
     cursor: pointer;
-    color: #454553;
-    font-size: 22px;
-    margin-bottom: 4em;
-    border-radius: 5px;
-    border: transparent;
-    background: linear-gradient(40deg,#120d16, #193a5f);
+    text-decoration: none;
+    color: #c0bbb8;
 }
 
-.btn-compar:hover {
-    font-size: 23px;
+.contener-todos-produtos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-.informacoes-produto {
-    margin-bottom: 5em;
-    font-size: 18px;
+.produtoImagem {
+    border-radius: 20px;
+    width: 320px;
+    height: 179px;
+    margin: 30px 30px 0 0;
 }
 
-.btn-saiba-mais {
-    cursor: pointer;
-    color: #86898d;
-    font-size: 17px;
+.produto-promocional-astronomico {
+    margin-top: 1em;
+    margin-left: 4em;
+    font-size: 20px;
+}
+
+
+.produto-promocional-binoculos {
+    margin-top: 1em;
+    margin-left: 4em;
+    font-size: 20px;
+}
+
+.produto-promocional-camera {
+    margin-top: 1em;
+    margin-left: 4em;
+    font-size: 20px;
+}
+
+.produto-promocional-refrator {
+    margin-top: 1em;
+    margin-left: 4em;
+    font-size: 20px;
+}
+
+.quantidade-desconto {
     margin-top: 2em;
-    border-radius: 5px;
-    border: transparent;
-    background: linear-gradient(40deg,#120d16, #193a5f);
+    margin-left: 2em;
 }
 
-.contener-nome-produtos-similares {
-    font-size: 35px;
-    height: 200px;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
+.preco-original {
+    margin-top: 2em;
+    text-decoration-line: line-through;
 }
 
-.contener-produtos-similares {
-    display: flex;
-    justify-content: space-around;
+.preco-promocional {
+    color: #ffff;
+    margin-left: 2em;
+    margin-top: 1em;
+}
+
+.ancora-btn-ver {
+    text-decoration: none;
+    color: #000;
+}
+
+.btn-ver-produto {
+    border-radius: 4px;
+    background-color: #0a66ce;
+    margin-left: 40%;
+    margin-top: 2em;
+    margin-bottom: 4em;
 }

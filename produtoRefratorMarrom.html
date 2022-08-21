@@ -1,93 +1,106 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-	<head>
-		<meta charset="UTF-8">
-        <title>E-commecer AluraGeek</title>
-        <link rel="icon" href="assets/imagens/icone-da-pagina3.svg" type="image/x-icon">
-        <link  rel="stylesheet" type="text/css" href="assets/css/normalize.css">
-        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-        <link rel="stylesheet" type="text/css" href="assets/css/produtoRefratorMarrom.css">
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    </head>
-    <body class="contener-body">
-		<header>
-            <div class="contener-logo-campo">
-                <a href="index.html"><img src="assets/imagens/Logo.png"></a>
-                <div class="contener-campo-pesquisa">
-                    <input class="campodepesquisa" placeholder="O que você ira procurar hoje">
-                    <span class="material-symbols-outlined">
-                        search
-                    </span>
-                    <span class="material-symbols-outlined" id="tres-pontinhos">
-                        more_vert
-                    </span>
+
+<head>
+    <meta charset="UTF-8">
+    <title>E-commecer AluraGeek</title>
+    <link rel="icon" href="assets/imagens/icone-da-pagina3.svg" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/produtoRefratorMarrom.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+
+<body class="contener-body">
+    <header>
+        <div class="contener-logo-campo">
+            <a href="index.html"><img src="assets/imagens/Logo.png"></a>
+            <div class="contener-campo-pesquisa">
+                <input class="campodepesquisa" placeholder="O que você ira procurar hoje">
+                <span class="material-symbols-outlined">
+                    search
+                </span>
+                <span class="material-symbols-outlined" id="tres-pontinhos">
+                    more_vert
+                </span>
+            </div>
+        </div>
+        <div class="contener-trespotinhos-adicionar">
+            <div class="contener-adicionar">
+                <ul class="menu">
+                    <li class="adicionar-produtos"><a href="adicionarprodutos.html"
+                            class="adicionar-produtos-ao-site">Adicionar Produtos</a></li>
+                    <li class="fechar-menu-produtos">fechar menu</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main class="contener-main">
+        <section>
+            <div class="contener-produto-informacao">
+                <div class="contener-img-produto">
+                    <img class="imagem-refrator-marrom" src="assets/imagens/telescopio-categoria-second.jpg"
+                        alt="imagem de um refrator dourado">
+                </div>
+                <div class="contener-informacoes-adicionais">
+                    <h1 class="nome-produto">Refrator marrom</h1>
+                    <h2 class="preco-produto">R$ 1000</h2>
+                    <button class="btn-compar">adiquira agora</button>
+                    <p class="informacoes-produto">Um otimo refrator , com uma capacidade de observacao e conteplação
+                        dos ceus noturnos.</p>
                 </div>
             </div>
-            <div class="contener-trespotinhos-adicionar">
-				<div class="contener-adicionar">
-					<ul class="menu">
-						<li class="adicionar-produtos"><a href="adicionarprodutos.html" class="adicionar-produtos-ao-site">Adicionar Produtos</a></li>
-						<li class="fechar-menu-produtos">fechar menu</li>
-					</ul>
-				</div>
-			</div>
-        </header>
-        <main class="contener-main">
-            <section>
-                <div class="contener-produto-informacao">
-                    <div class="contener-img-produto">
-                        <img class="imagem-refrator-marrom" src="assets/imagens/telescopio-categoria-second.jpg" alt="imagem de um refrator dourado">
+            <div class="contener-produto-similares">
+                <div class="contener-nome-produtos-similares">
+                    <h2 class="nome-similares">Produtos similares</h2>
+                </div>
+                <div class="contener-produtos-similares">
+                    <div class="contener-informacoes-first">
+                        <a href="produtoRefratorDourao.html"><img src="assets/imagens/telescopio-categoria-first.jpg"
+                                class="imagemtelescopio" alt="imagem de um refrator dourado"></a>
+                        <p class="produto-refrator">
+                            Refrator dourado<br>
+                        </p>
+                        <h1 class="preco">
+                            R$ 1000
+                        </h1>
+                        <button class="btn-ver-produto"><a href="produtoRefratorDourao.html" class="ancora-btn-ver">Ver
+                                produto</a></button>
                     </div>
-                    <div class="contener-informacoes-adicionais">
-                        <h1 class="nome-produto">Refrator marrom</h1>
-                        <h2 class="preco-produto">R$ 1000</h2>
-                        <button class="btn-compar">adiquira agora</button>
-                        <p class="informacoes-produto">Um otimo refrator , com uma capacidade de observacao e conteplação dos ceus noturnos.</p>
+                    <div class="contener-informacao-second">
+                        <a href="produtoRefratorAzul.html"><img src="assets/imagens/telescope-categoria-quinta.jpg"
+                                class="imagemtelescopio" alt="imagem de um refrator "></a>
+                        <p class="produto-refrator">
+                            Refrator marrom<br>
+                        </p>
+                        <h1 class="preco">
+                            R$ 1000
+                        </h1>
+                        <button class="btn-ver-produto"><a href="produtoRefratorAzul.html" class="ancora-btn-ver">Ver
+                                produto</a></button>
+                    </div>
+                    <div class="contener-informacao-terceiro">
+                        <a href="produtoTelescopioPreto.html"><img
+                                src="assets/imagens/telescopio-categoria-terceiro.png" class="imagemtelescopio"></a>
+                        <p class="produto-refrator">
+                            Telescopio preto<br>
+                        </p>
+                        <h1 class="preco">
+                            R$ 1550
+                        </h1>
+                        <button class="btn-ver-produto"><a href="produtoTelescopioPreto.html" class="ancora-btn-ver">Ver
+                                produto</a></button>
                     </div>
                 </div>
-                    <div class="contener-produto-similares">
-                        <div class="contener-nome-produtos-similares">
-                            <h2 class="nome-similares">Produtos similares</h2>
-                        </div>
-                        <div class="contener-produtos-similares">
-                            <div class="contener-informacoes-first">
-                                <a href="produtoRefratorDourao.html"><img src="assets/imagens/telescopio-categoria-first.jpg" class="imagemtelescopio" alt="imagem de um refrator dourado"></a>
-                                <p class="produto-refrator">
-                                    Refrator dourado<br>
-                                </p>
-                                <h1 class="preco">
-                                    R$	1000
-                                </h1>
-                                <button class="btn-ver-produto"><a href="produtoRefratorDourao.html" class="ancora-btn-ver">Ver produto</a></button>
-                            </div>
-                            <div class="contener-informacao-second">
-                                <a href="produtoRefratorAzul.html"><img src="assets/imagens/telescope-categoria-quinta.jpg" class="imagemtelescopio" alt="imagem de um refrator "></a>
-                                <p class="produto-refrator">
-                                    Refrator marrom<br>
-                                </p>
-                                <h1 class="preco">
-                                    R$	1000
-                                </h1>
-                                <button class="btn-ver-produto"><a href="produtoRefratorAzul.html" class="ancora-btn-ver">Ver produto</a></button>
-                            </div>
-                            <div class="contener-informacao-terceiro">
-                                <a href="produtoTelescopioPreto.html"><img src="assets/imagens/telescopio-categoria-terceiro.png" class="imagemtelescopio"></a>
-                                <p class="produto-refrator">
-                                    Telescopio preto<br>
-                                </p>
-                                <h1 class="preco">
-                                    R$	1550
-                                </h1>
-                                <button class="btn-ver-produto"><a href="produtoTelescopioPreto.html" class="ancora-btn-ver">Ver produto</a></button>
-                            </div>
-                        </div>
-                    </div>
-            </section>
-        </main>
-        <footer>
+            </div>
+        </section>
+    </main>
+    <footer>
 
-        </footer>
-    </body>
+    </footer>
+</body>
+
 </html>
 <script src="assets/javascript/java.js"></script>

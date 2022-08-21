@@ -13,7 +13,7 @@
 .campodepesquisa {
     border-color: transparent;
     background: transparent;
-} 
+}
 
 #tres-pontinhos {
     cursor: pointer;
@@ -44,7 +44,7 @@
     position: absolute;
     width: 200px;
     height: 200px;
-    background: linear-gradient(40deg,#000000 60%, #300e2a);
+    background: linear-gradient(40deg, #000000 60%, #300e2a);
     border-radius: 10px;
 }
 
@@ -60,7 +60,7 @@ li {
 .fechar-menu-produtos {
     cursor: pointer;
     text-decoration: none;
-    color: #c0bbb8;   
+    color: #c0bbb8;
 }
 
 .contener-produto-informacao {
@@ -79,7 +79,7 @@ li {
     height: 359px;
 }
 
-.contener-informacoes-adicionais  {
+.contener-informacoes-adicionais {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -94,7 +94,7 @@ li {
 
 .preco-produto {
     font-size: 30px;
-   margin-bottom: 3em;
+    margin-bottom: 3em;
 }
 
 .btn-compar {
@@ -104,7 +104,7 @@ li {
     margin-bottom: 4em;
     border-radius: 5px;
     border: transparent;
-    background: linear-gradient(40deg,#120d16, #193a5f);
+    background: linear-gradient(40deg, #120d16, #193a5f);
 }
 
 .btn-compar:hover {
@@ -123,7 +123,7 @@ li {
     margin-top: 2em;
     border-radius: 5px;
     border: transparent;
-    background: linear-gradient(40deg,#120d16, #193a5f);
+    background: linear-gradient(40deg, #120d16, #193a5f);
 }
 
 .contener-nome-produtos-similares {
