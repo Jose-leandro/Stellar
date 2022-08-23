@@ -11,7 +11,7 @@
     </head>
     <body class="contener-body">
 		<header>
-            <img src="assets/imagens/Logo.png">
+            <a href="index.html"><img src="assets/imagens/Logo.png"></a>
             <div class="contener-campo-pesquisa">
                 <input class="campodepesquisa" placeholder="O que você ira procurar hoje">
                 <span class="material-symbols-outlined">
@@ -24,7 +24,15 @@
                 <h1>iniciar sessão</h1>
                 <input class="campo-email" type="email" required placeholder="Digite seu email">
                 <input  class="campo-senha" type="password" required placeholder="Digite sua senha">
-                <button class="btn-entrar"><a href="loginConcluido.html">Entar</a></button>
+                <button class="btn-entrar" onclick="mostarPopup()"><a class="ancora-entar">Entar</a></button>
+            </div>
+            <div class="contener-popup">
+                <div class="popup">
+                    <h1 class="popup-close">X</h1>
+                    <h1 class="descricao-popup">Login efetuado com sucesso<br>Muito obrigado por ser juntar a nós</h1>
+                    <button class="btn-voltar-inicio"><a href="index.html" class="ancora-voltar-inicio">Voltar para a
+                        página inicial</a></button>
+                </div>
             </div>
         </main>
         <footer>
@@ -32,4 +40,4 @@
         </footer>
     </body>
 </html>
-<script src="assets/javascript/java.js"></script>
+<script src="assets/javascript/popupDeConcluidos.js"></script>

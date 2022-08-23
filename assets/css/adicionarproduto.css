@@ -69,15 +69,24 @@ li {
     color: #c0bbb8;
 }
 
+.contener-main {
+    height: 120vh;
+}
+
 .contener-adicionar-produto {
     text-align: center;
-    height: 90vh;
+    height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background: linear-gradient(-50deg, #000000 30%, #181941, #081412);
+}
+
+.iniciar-secao {
+    font-size: 25px;
+    font-family: 'Arima', cursive;
 }
 
 .contener-upload {
