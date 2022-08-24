@@ -1,0 +1,29 @@
+.contener-body {
+    background-color: rgb(7, 7, 7);
+    color: #857f7a;
+    height: 150vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contener-campo-pesquisa {
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.campodepesquisa {
+    border-color: transparent;
+    background: transparent;
+}
+
+.contener-main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}

@@ -1,0 +1,97 @@
+.contener-body {
+    background-color: rgb(7, 7, 7);
+    color: #857f7a;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contener-campo-pesquisa {
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.campodepesquisa {
+    border-color: transparent;
+    background: transparent;
+}
+
+.contener-main {
+    height: 100%;
+    background: linear-gradient(-50deg, #000000 30%, #181941, #081412);
+}
+
+.contener-informacao {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.inf-cadastro {
+    font-size: 40px;
+    margin: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.inf-beneficios {
+    font-size: 20px;
+}
+
+.contener-btns {
+    height: 60%;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.btn-cadastro {
+    font-family: 'Arima', cursive;
+    font-size: 18px;
+    padding: 5px 15px;
+    border-radius: 10px;
+    border-color: transparent;
+    background: linear-gradient(70deg, #3f1d55, #0a66ce);
+}
+
+.btn-cadastro:hover {
+    width: 140px;
+    height: 39px;
+}
+
+.btn-cadastro:active {
+    font-size: 17px;
+}
+
+.btn-entrar {
+    font-family: 'Arima', cursive;
+    font-size: 18px;
+    padding: 5px 15px;
+    border-radius: 10px;
+    border-color: transparent;
+    background: linear-gradient(70deg, #3f1d55, #0a66ce);
+}
+
+
+.btn-entrar:hover {
+    width: 86px;
+    height: 39px;
+}
+
+.btn-entrar:active {
+    font-size: 17px;
+}
+
+.ancora-entar {
+    color: #857f7a;
+    text-decoration: none;
+}
