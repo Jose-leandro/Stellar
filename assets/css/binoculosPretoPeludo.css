@@ -4,15 +4,28 @@
     height: 100vh;
 }
 
+header {
+    height: 4em;
+}
+
 .contener-logo-campo {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin-top: 1em;
 }
 
 .campodepesquisa {
+    height: 30px;
+    width: 35%;
     border-color: transparent;
     background: transparent;
+    border-radius: 10px;
+}
+
+.icone-pesquisar {
+    position: absolute;
+    left: 66%;
 }
 
 #tres-pontinhos {

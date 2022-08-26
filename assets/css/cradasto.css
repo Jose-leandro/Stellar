@@ -5,20 +5,10 @@
 }
 
 header {
+    height: 4em;
     display: flex;
     align-items: center;
     justify-content: space-around;
-}
-
-.contener-campo-pesquisa {
-    width: 250px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.campodepesquisa {
-    border-color: transparent;
-    background: transparent;
 }
 
 .contener-all-formulario {
