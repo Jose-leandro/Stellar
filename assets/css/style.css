@@ -40,6 +40,16 @@ header {
     background: linear-gradient(70deg, #3f1d55, #0a66ce);
 }
 
+.login:hover {
+    width: 79px;
+    height: 37px;
+}
+
+.login:active {
+    width: 75px;
+    height: 33px;
+}
+
 .ancora-login {
     color: #c0bbb8;
     text-decoration: none;
