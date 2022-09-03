@@ -8,11 +8,15 @@ header {
     height: 4em;
 }
 
+.imagem-logo {
+    width: 250px;
+    height: 65px;
+}
+
 .contener-logo-campo {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-top: 1em;
 }
 
 .campodepesquisa {
@@ -28,20 +32,26 @@ header {
     left: 66%;
 }
 
-
-#tres-pontinhos {
-    cursor: pointer;
-    font-size: 30px;
-    margin-left: 4em;
+.contener-tres-potinhos {
+    width: 30px;
+    height: 30px;
 }
 
-#tres-pontinhos:hover {
-    font-size: 30px;
+.tres-pontinhos {
+    cursor: pointer;
+}
+
+.tres-pontinhos:hover {
     color: #353434;
     border-radius: 20px;
     background: #c0bbb8;
     border: solid #c0bbb8;
     opacity: 50%;
+}
+
+.tres-pontinhos:active {
+    width: 26px;
+    height: 26px;
 }
 
 .contener-trespotinhos-adicionar {

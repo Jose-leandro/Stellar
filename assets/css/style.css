@@ -1,8 +1,7 @@
-.contener-logo-campo-login {
+.contener__cabecalho {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-top: 1em;
 }
 
 body {
@@ -14,24 +13,30 @@ header {
     height: 4em;
 }
 
+.cabecalho__logo {
+    width: 250px;
+    height: 65px;
+}
+
 .informacaodobnner {
     font-size: 20px;
 }
 
-.campodepesquisa {
+.cabecalho__input {
     height: 30px;
     width: 35%;
     border-color: transparent;
     background: transparent;
     border-radius: 10px;
+
 }
 
-.icone-pesquisar {
+.cabecalho__icone {
     position: absolute;
-    left: 63%;
+    left: 65%;
 }
 
-.login {
+.cabecalho__btn {
     font-family: 'Arima', cursive;
     font-size: 18px;
     padding: 5px 15px;
@@ -40,28 +45,31 @@ header {
     background: linear-gradient(70deg, #3f1d55, #0a66ce);
 }
 
-.login:hover {
+.cabecalho__btn:hover {
     width: 79px;
     height: 37px;
 }
 
-.login:active {
+.cabecalho__btn:active {
     width: 75px;
     height: 33px;
 }
 
-.ancora-login {
+.cabecalho__ancora {
     color: #c0bbb8;
     text-decoration: none;
 }
 
-#tres-pontinhos {
-    cursor: pointer;
-    font-size: 30px;
+.contener__potinhos {
+    width: 30px;
+    height: 30px;
 }
 
-#tres-pontinhos:hover {
-    font-size: 30px;
+.pontinhos__icone {
+    cursor: pointer;
+}
+
+.pontinhos__icone:hover {
     color: #353434;
     border-radius: 20px;
     background: #c0bbb8;
@@ -69,13 +77,18 @@ header {
     opacity: 50%;
 }
 
-.contener-trespotinhos-adicionar {
+.pontinhos__icone:active {
+    width: 26px;
+    height: 26px;
+}
+
+.contener__menu {
     width: 100%;
     display: flex;
     justify-content: end;
 }
 
-.contener-adicionar {
+.menu__adicionar {
     margin: 1em 1em 0 0;
     text-align: center;
     visibility: hidden;
@@ -87,32 +100,24 @@ header {
     border-radius: 10px;
 }
 
-h2 {
-    margin-top: 1em;
-}
-
-.adicionar-produtos-ao-site {
+.menu__ancora {
     text-decoration: none;
     color: #c0bbb8;
 }
 
-.fechar-menu-produtos {
-    cursor: pointer;
-    text-decoration: none;
-    color: #c0bbb8;
-}
-
-.bannerpromocional {
+.contener__menu {
     display: flex;
     align-items: center;
     width: 100%;
 }
 
-.contenerimg {
+.banner__imagem {
+    border-radius: 10px;
     width: 100%;
+    height: 25em;
 }
 
-.btnprodutos {
+.banner__btn {
     position: absolute;
     top: 26em;
     left: 39em;
@@ -125,212 +130,197 @@ h2 {
     cursor: pointer;
 }
 
-.ancora-btn-ver-produto {
-    text-decoration: none;
+.banner__btn:hover {
+    width: 77px;
+    height: 47px;
+}
+
+.banner__btn:active {
+    width: 72px;
+    height: 42px;
+}
+
+.banner__ancora {
     color: #ffff;
+    text-decoration: none;
 }
 
-.imagemdobanner {
-    border-radius: 10px;
-    width: 100%;
-    height: 25em;
+.banner__btn:hover {
+    width: 77px;
+    height: 47px;
 }
 
-.contener-produtos {
-    margin-top: 4em;
-    font-size: 30px;
-    height: 6em;
+.banner__ancora:active {
+    width: 72px;
+    height: 42px;
+}
+
+.contener__categoria {
+    height: 350px;
     display: flex;
-    justify-content: space-around;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-.conteinerprodutos {
-    margin-bottom: 3em;
+.categoria__item {
+    height: 80%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
-.nomebinoculo {
-    font-size: 30px;
-    margin-left: 3em;
+.item__imagem {
+    width: 7em;
+    height: 7em;
+    border-radius: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 35%;
+}
+
+.item__imagem:hover {
+    width: 114px;
+    height: 114px;
+}
+
+.item__imagem:active {
+    width: 112px;
+    height: 112px;
+}
+
+.item__nome {
+    height: 8%;
+    width: 100%;
+    text-decoration: none;
+    color: #c0bbb8;
+    text-align: center;
+}
+
+.item__nome:hover {
+    font-size: 17px;
+}
+
+.item__nome:active {
+    font-size: 15px;
+    text-decoration: none;
+}
+
+
+.contener__telescopio {
+    width: 100%;
+    height: 450px;
     margin-bottom: 2em;
 }
 
-.contemner-imagens-binoculo {
-    margin-top: 2em;
+.telescopio__titulo {
+    height: 60px;
     width: 100%;
-    display: flex;
-    justify-content: space-around;
-}
-
-.imagembinoculo {
-    border-radius: 20px;
-    width: 24em;
-    height: 14em;
-}
-
-.contenertelescopio {
-    display: flex;
-    flex-direction: column;
-}
-
-.categoriatelescopio {
-    width: 4em;
-    height: 4em;
-    border-radius: 60px;
-}
-
-.categoriabinoculos {
-    width: 4em;
-    height: 4em;
-    border-radius: 60px;
-}
-
-.categoriacamera {
-    width: 4em;
-    height: 4em;
-    border-radius: 60px;
-}
-
-.categoriafotos {
-    width: 4em;
-    height: 4em;
-    border-radius: 60px;
-}
-
-.contener-nome-produtos {
-    display: flex;
-    justify-content: space-around;
-    margin: 0 0 90px 0;
-}
-
-.telescopios {
-    text-decoration: none;
-    color: #c0bbb8;
-    width: 20%;
-    padding-left: 3em;
-}
-
-.telescopios:hover {
-    font-size: 20px;
-}
-
-#seta {
-    cursor: pointer;
-    font-size: 35px;
-}
-
-#seta:hover {
-    font-size: 37px;
-}
-
-.binoculos {
-    text-decoration: none;
-    color: #c0bbb8;
-    width: 20%;
-    padding-left: 6em;
-}
-
-.binoculos:hover {
-    font-size: 20px;
-}
-
-.contener-imagens-binoculo {
-    margin-top: 2em;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-}
-
-.cameras {
-    text-decoration: none;
-    color: #c0bbb8;
-    width: 20%;
-    padding-left: 6em;
-}
-
-.cameras:hover {
-    font-size: 20px;
-}
-
-.fotos {
-    text-decoration: none;
-    color: #c0bbb8;
-    width: 20%;
-    padding-left: 6em;
-}
-
-.fotos:hover {
-    font-size: 20px;
-}
-
-.conteiner-nome-categoria-tudo {
     display: flex;
     justify-content: space-between;
 }
 
-.btn-produto {
-    color: #3f1d55;
-}
-
-.nometelescopio {
+.titulo__nome {
+    cursor: default;
     font-size: 30px;
-    margin-left: 3em;
+    margin-left: 4em;
 }
 
-.contener-imagens-telescopios {
-    margin-top: 2em;
+.titulo__nome:hover {
+    font-size: 31px;
+}
+
+.titulo__btn {
+    width: 90px;
+    height: 40px;
+    font-size: 16px;
+    margin-right: 8em;
+    border-radius: 10px;
+    background: linear-gradient(40deg, #222121, #303164);
+}
+
+.titulo__btn:hover {
+    width: 92px;
+    height: 42px;
+}
+
+.titulo__btn:active {
+    width: 89px;
+    height: 39px;
+}
+
+.titulo__ancora {
+    text-decoration: none;
+    color: #c0bbb8;
+}
+
+#titulo__seta {
+    cursor: default;
+    font-size: 35px;
+    position: absolute;
+    right: 70px;
+}
+
+#titulo__seta:hover {
+    font-size: 37px;
+}
+
+.telescopios__contener {
     width: 100%;
+    height: 100%;
     display: flex;
     justify-content: space-around;
 }
 
-.imagemtelescopio {
+.contener__refrator {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.refrator__imagem {
     border-radius: 20px;
     width: 24em;
     height: 14em;
 }
 
-.contener-btn-seta {
-    display: flex;
-    margin-right: 3em;
-}
-
-.btnprodutotelescopio {
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.produto-refrator {
+.refrator__descricao {
     margin-top: 1em;
     margin-left: 2em;
     font-size: 20px;
 }
 
-.ancora-btn-ver {
-    text-decoration: none;
-    color: #000;
-}
-
-.btn-ver-produto {
-    border-radius: 4px;
-    background-color: #0a66ce;
-    margin-left: 40%;
-    margin-top: 2em;
-}
-
-.ancora-refrator-marrom {
-    color: #857f7a;
-    text-decoration: none;
-}
-
-.ancora-telescopio-preto {
-    color: #857f7a;
-    text-decoration: none;
-}
-
-.preco {
+.refrator__preco {
     margin-top: 2em;
     color: #ffff;
     margin-left: 2em;
+}
+
+.refrator__btn {
+    border-radius: 8px;
+    background-color: #0a66ce;
+    margin-top: 2em;
+    width: 30%;
+    height: 40px;
+    padding: 8px;
+    margin-left: 30%;
+    text-align: center;
+}
+
+.refrator__btn:hover {
+    width: 119px;
+}
+
+.refrator__btn:active {
+    width: 116px;
+}
+
+.refrator__ancora {
+    color: #000;
+    text-decoration: none;
 }
 
 .nomecamera {

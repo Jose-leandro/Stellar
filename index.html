@@ -25,307 +25,274 @@
 
 <body>
 	<header>
-		<div class="contener-logo-campo-login">
-			<img src="assets/imagens/Logo.png">
-			<input class="campodepesquisa" placeholder="O que você ira procurar hoje">
-			<span class="material-symbols-outlined icone-pesquisar">
+		<div class="contener__cabecalho">
+			<img src="assets/imagens/logo_do_site.png" class="cabecalho__logo">
+			<input class="cabecalho__input" placeholder="O que você ira procurar hoje">
+			<span class="material-symbols-outlined cabecalho__icone">
 				search
 			</span>
-			<button class="login"><a href="escolherEntarOuCadrasto.html" class="ancora-login">Entar</a></button>
-			<span class="material-symbols-outlined" id="tres-pontinhos">
-				more_vert
-			</span>
+			<button class="cabecalho__btn"><a href="escolherEntarOuCadrasto.html"
+					class="cabecalho__ancora">Entar</a></button>
+			<div class="contener__potinhos">
+				<span class="material-symbols-outlined pontinhos__icone">
+					more_vert
+				</span>
+			</div>
 		</div>
-		<div class="contener-trespotinhos-adicionar">
-			<div class="contener-adicionar adicionar">
-				<ul class="menu">
-					<li class="adicionar-produtos"><a href="adicionarprodutos.html"
-							class="adicionar-produtos-ao-site">Adicionar Produtos</a></li>
+		<div class="contener__menu">
+			<div class="menu__adicionar adicionar">
+				<ul class="menu__lista">
+					<li class="menu__item"><a href="adicionarprodutos.html" class="menu__ancora">Adicionar Produtos</a>
+					</li>
 				</ul>
 			</div>
 		</div>
 	</header>
 	<main>
 		<section>
-			<div class="bannerpromocional">
-				<div class="contenerimg">
-					<img class="imagemdobanner" src="assets/imagens/banner.png" alt="imagem do banner promocional">
-					<button class="btnprodutos"><a href="promocaoDeProdutos.html" class="ancora-btn-ver-produto">Ver
-							produtos</a></button>
+			<div class="contener__banner">
+				<img class="banner__imagem" src="assets/imagens/banner.png" alt="imagem do banner promocional">
+				<button class="banner__btn"><a href="promocaoDeProdutos.html" class="banner__ancora">Ver
+						produtos</a></button>
+			</div>
+		</section>
+		<section>
+			<div class="contener__categoria">
+				<div class="categoria__item">
+					<a href="telescopio.html"><img class="item__imagem" src="assets/imagens/telescopio-categoria.jpg"
+							alt="imagem de um produto da categoria telescopio"></a>
+					<a href="telescopio.html" class="item__nome">Telescópios</a>
+				</div>
+				<div class="categoria__item">
+					<a href="binoculo.html"><img class="item__imagem" src="assets/imagens/binoculos-categoria.jpg"
+							alt="imagem de um produto da categoria binoculos"></a>
+					<a href="binoculo.html" class="item__nome">Binóculos</a>
+				</div>
+				<div class="categoria__item">
+					<a href="camera.html"><img src="assets/imagens/camera.jpg" class="item__imagem"
+							alt="imagem de um produto da categoria câmera"></a>
+					<a href="camera.html" class="item__nome">Câmeras</a>
+				</div>
+				<div class="categoria__item">
+					<a href="fotoastronomicas.html"><img src="assets\imagens\imagem-astronomica.jpg"
+							class="item__imagem" alt="imagem de um produto da categoria "></a>
+					<a href="fotoastronomicas.html" class="item__nome">Fotos astronomicas</a>
+				</div>
+			</div>
+		</section>
+		<section class="contener__telescopio">
+			<div class="telescopio__titulo">
+				<p class="titulo__nome">Telescopios</p>
+				<button class="titulo__btn"><a href="telescopio.html" class="titulo__ancora">Ver Tudo</a></button>
+				<span class="material-symbols-outlined" id="titulo__seta">
+					arrow_right_alt
+				</span>
+			</div>
+			<div class="telescopios__contener">
+				<div class="contener__refrator">
+					<a href="produtoRefratorDourao.html"><img src="assets/imagens/telescopio-categoria-first.jpg"
+							class="refrator__imagem" alt="imagem de um refrator dourado"></a>
+					<p class="refrator__descricao">
+						Refrator dourado<br>
+					</p>
+					<h1 class="refrator__preco">
+						R$ 1000
+					</h1>
+					<button class="refrator__btn"><a href="produtoRefratorDourao.html" class="refrator__ancora">Ver
+							produto</a></button>
+				</div>
+				<div class="contener__refrator">
+					<a href="produtoRefratorMarrom.html"><img src="assets/imagens/telescopio-categoria-second.jpg"
+							class="refrator__imagem"></a>
+					<p class="refrator__descricao">
+						Refrator marrom<br>
+					</p>
+					<h1 class="refrator__preco">
+						R$ 1000
+					</h1>
+					<button class="refrator__btn"><a href="produtoRefratorMarrom.html" class="refrator__ancora">Ver
+							produto</a></button>
+				</div>
+				<div class="contener__refrator">
+					<a href="produtoTelescopioPreto.html"><img src="assets/imagens/telescopio-categoria-terceiro.png"
+							class="refrator__imagem"></a>
+					<p class="produto-refrator">
+						Telescopio preto<br>
+					</p>
+					<h1 class="refrator__preco">
+						R$ 1550
+					</h1>
+					<button class="refrator__btn"><a href="produtoTelescopioPreto.html" class="refrator__ancora">Ver
+							produto</a></button>
 				</div>
 			</div>
 		</section>
 		<section>
-			<div class="contenercategorias">
-				<div class="contener-produtos">
-					<div class="contenertelescopio">
-						<div class="contenerprodutotelescopio">
-							<a href="telescopio.html"><img class="categoriatelescopio"
-									src="assets/imagens/telescopio-categoria.jpg"
-									alt="imagem de um produto da categoria telescopio"></a>
+			<div class="conteinerprodutos">
+				<div class="conteiner-nome-categoria-tudo">
+					<p class="nomebinoculo">binoculos</p>
+					<div class="contener-btn-seta">
+						<div class="conteinerbotao">
+							<a href="binoculo.html" class="btn-produto">Ver Tudo</a>
 						</div>
-					</div>
-					<div class="contenerbinoculos">
-						<div class="contenerprodutobinoculos">
-							<a href="binoculo.html"><img class="categoriabinoculos"
-									src="assets/imagens/binoculos-categoria.jpg"
-									alt="imagem de um produto da categoria binoculos"></a>
-						</div>
-					</div>
-					<div class="contenercamera">
-						<div class="contenerprodutocameras">
-							<a href="camera.html"><img src="assets/imagens/camera.jpg" class="categoriacamera"
-									alt="imagem de um produto da categoria câmera"></a>
-						</div>
-					</div>
-					<div class="contenerl-fotos-astronomicas">
-						<div class="contener-produto-foto">
-							<a href="fotoastronomicas.html"><img src="assets\imagens\imagem-astronomica.jpg"
-									class="categoriafotos" alt="imagem de um produto da categoria "></a>
+						<div class="simboloavancar">
+							<span class="material-symbols-outlined" id="seta">
+								arrow_right_alt
+							</span>
 						</div>
 					</div>
 				</div>
-				<div class="contener-nome-produtos">
-					<div class="contener-telescopio">
-						<a href="telescopio.html" class="telescopios">Telescópios</a>
+				<div class="contener-imagens-binoculo">
+					<div class="contener-informacoes-first">
+						<a href="binoculosPretoPeludo.html"><img src="assets/imagens/binoculos-produto-1.jpg"
+								class="imagembinoculo" alt="imagemde um produto da seção binoculo"></a>
+						<p class="produto-binoculo">
+							<br>
+						</p>
+						<h1 class="preco">
+							R$ 1000
+						</h1>
+						<button class="btn-ver-produto"><a href="binoculosPretoPeludo.html" class="ancora-btn-ver">Ver
+								produto</a></button>
 					</div>
-					<div class="contener-binolucos">
-						<a href="binoculo.html" class="binoculos">Binóculos</a>
+					<div class="contener-informacoes-second">
+						<a href="binoculoPretoRevue.html"><img src="assets/imagens/binoculo-produto-2.jpg"
+								class="imagembinoculo" alt="imagemde um produto da seção binoculo"></a>
+						<p class="produto-binoculo">
+							<br>
+						</p>
+						<h1 class="preco">
+							R$ 1000
+						</h1>
+						<button class="btn-ver-produto"><a href="binoculoPretoRevue.html" class="ancora-btn-ver">Ver
+								produto</a></button>
 					</div>
-					<div class="contener-cameras">
-						<a href="camera.html" class="cameras">Câmeras</a>
-					</div>
-					<div class="contener-fotos-astronomicas">
-						<a href="fotoastronomicas.html" class="fotos">Fotos astronomicas</a>
+					<div class="contener-informacoes-terceiro">
+						<a href="binoculoPretoFpehel.html"><img src="assets/imagens/binoculo-produto-3.jpg"
+								class="imagembinoculo" alt="imagemde um produto da seção binoculo"></a>
+						<p class="produto-binoculo">
+							<br>
+						</p>
+						<h1 class="preco">
+							R$ 1000
+						</h1>
+						<button class="btn-ver-produto"><a href="binoculoPretoFpehel.html" class="ancora-btn-ver">Ver
+								produto</a></button>
 					</div>
 				</div>
-			</div>
 		</section>
-		<section>
-			<div class="conteinersecaodeprodutos">
-				<div class="conteinerprodutos">
-					<div class="conteiner-nome-categoria-tudo">
-						<p class="nometelescopio">Telescopios</p>
-						<div class="contener-btn-seta">
-							<div class="conteinerbotao">
-								<a href="telescopio.html" class="btn-produto">Ver Tudo</a>
-							</div>
-							<div class="simboloavancar">
-								<span class="material-symbols-outlined" id="seta">
-									arrow_right_alt
-								</span>
-							</div>
-						</div>
+		<div class="conteinerprodutos">
+			<div class="conteiner-nome-categoria-tudo">
+				<p class="nomecamera">câmera</p>
+				<div class="contener-btn-seta">
+					<div class="conteinerbotao">
+						<a href="camera.html" class="btn-produto">Ver Tudo</a>
 					</div>
-					<div class="contener-imagens-telescopios">
-						<div class="contener-informacoes-first">
-							<a href="produtoRefratorDourao.html"><img
-									src="assets/imagens/telescopio-categoria-first.jpg" class="imagemtelescopio"
-									alt="imagem de um refrator dourado"></a>
-							<p class="produto-refrator">
-								Refrator dourado<br>
-							</p>
-							<h1 class="preco">
-								R$ 1000
-							</h1>
-							<button class="btn-ver-produto"><a href="produtoRefratorDourao.html"
-									class="ancora-btn-ver">Ver produto</a></button>
-						</div>
-						<div class="contener-informacao-second">
-							<a href="produtoRefratorMarrom.html"><img
-									src="assets/imagens/telescopio-categoria-second.jpg" class="imagemtelescopio"></a>
-							<p class="produto-refrator">
-								Refrator marrom<br>
-							</p>
-							<h1 class="preco">
-								R$ 1000
-							</h1>
-							<button class="btn-ver-produto"><a href="produtoRefratorMarrom.html"
-									class="ancora-btn-ver">Ver produto</a></button>
-						</div>
-						<div class="contener-informacao-terceiro">
-							<a href="produtoTelescopioPreto.html"><img
-									src="assets/imagens/telescopio-categoria-terceiro.png" class="imagemtelescopio"></a>
-							<p class="produto-refrator">
-								Telescopio preto<br>
-							</p>
-							<h1 class="preco">
-								R$ 1550
-							</h1>
-							<button class="btn-ver-produto"><a href="produtoTelescopioPreto.html"
-									class="ancora-btn-ver">Ver produto</a></button>
-						</div>
-					</div>
-				</div>
-				<div class="conteinerprodutos">
-					<div class="conteiner-nome-categoria-tudo">
-						<p class="nomebinoculo">binoculos</p>
-						<div class="contener-btn-seta">
-							<div class="conteinerbotao">
-								<a href="binoculo.html" class="btn-produto">Ver Tudo</a>
-							</div>
-							<div class="simboloavancar">
-								<span class="material-symbols-outlined" id="seta">
-									arrow_right_alt
-								</span>
-							</div>
-						</div>
-					</div>
-					<div class="contener-imagens-binoculo">
-						<div class="contener-informacoes-first">
-							<a href="binoculosPretoPeludo.html"><img src="assets/imagens/binoculos-produto-1.jpg"
-									class="imagembinoculo" alt="imagemde um produto da seção binoculo"></a>
-							<p class="produto-binoculo">
-								<br>
-							</p>
-							<h1 class="preco">
-								R$ 1000
-							</h1>
-							<button class="btn-ver-produto"><a href="binoculosPretoPeludo.html"
-									class="ancora-btn-ver">Ver produto</a></button>
-						</div>
-						<div class="contener-informacoes-second">
-							<a href="binoculoPretoRevue.html"><img src="assets/imagens/binoculo-produto-2.jpg"
-									class="imagembinoculo" alt="imagemde um produto da seção binoculo"></a>
-							<p class="produto-binoculo">
-								<br>
-							</p>
-							<h1 class="preco">
-								R$ 1000
-							</h1>
-							<button class="btn-ver-produto"><a href="binoculoPretoRevue.html" class="ancora-btn-ver">Ver
-									produto</a></button>
-						</div>
-						<div class="contener-informacoes-terceiro">
-							<a href="binoculoPretoFpehel.html"><img src="assets/imagens/binoculo-produto-3.jpg"
-									class="imagembinoculo" alt="imagemde um produto da seção binoculo"></a>
-							<p class="produto-binoculo">
-								<br>
-							</p>
-							<h1 class="preco">
-								R$ 1000
-							</h1>
-							<button class="btn-ver-produto"><a href="binoculoPretoFpehel.html"
-									class="ancora-btn-ver">Ver produto</a></button>
-						</div>
-					</div>
-				</div>
-				<div class="conteinerprodutos">
-					<div class="conteiner-nome-categoria-tudo">
-						<p class="nomecamera">câmera</p>
-						<div class="contener-btn-seta">
-							<div class="conteinerbotao">
-								<a href="camera.html" class="btn-produto">Ver Tudo</a>
-							</div>
-							<div class="simboloavancar">
-								<span class="material-symbols-outlined" id="seta">
-									arrow_right_alt
-								</span>
-							</div>
-						</div>
-					</div>
-					<div class="contener-imagens-camera">
-						<div class="contener-informacoes-first">
-							<a href="cameraPretaSony.html"><img src="assets/imagens/camera-produto-1.jpg"
-									class="imagemcamera" alt="imagem de um produto da seção câmera"></a>
-							<p class="produto-camera">
-								Câmera preta<br>
-							</p>
-							<h1 class="preco">
-								R$ 1000
-							</h1>
-							<button class="btn-ver-produto"><a href="cameraPretaSony.html" class="ancora-btn-ver">Ver
-									produto</a></button>
-						</div>
-						<div class="contener-informacoes-second">
-							<a href="cameraPreta.html"><img src="assets/imagens/camera-produto-2.png"
-									class="imagemcamera" alt="imagemde um produto da seção câmera"></a>
-							<p class="produto-camera">
-								Câmera preta<br>
-							</p>
-							<h1 class="preco">
-								R$ 1000
-							</h1>
-							<button class="btn-ver-produto"><a href="cameraPreta.html" class="ancora-btn-ver">Ver
-									produto</a></button>
-						</div>
-						<div class="contener-informacoes-terceiro">
-							<a href="cameraPrateada.html"><img src="assets/imagens/camera-produto-3.jpg"
-									class="imagemcamera" alt="imagemde um produto da seção câmera"></a>
-							<p class="produto-camera">
-								Câmera prateada<br>
-							</p>
-							<h1 class="preco">
-								R$ 1000
-							</h1>
-							<button class="btn-ver-produto"><a href="cameraPrateada.html" class="ancora-btn-ver">Ver
-									produto</a></button>
-						</div>
-					</div>
-				</div>
-				<div class="conteinerprodutos">
-					<div class="conteiner-nome-categoria-tudo">
-						<p class="nomefotosastronomicas">Fotos Astronômicas</p>
-						<div class="contener-btn-seta">
-							<div class="conteinerbotao">
-								<a href="fotoastronomicas.html" class="btn-produto">Ver Tudo</a>
-							</div>
-							<div class="simboloavancar">
-								<span class="material-symbols-outlined" id="seta">
-									arrow_right_alt
-								</span>
-							</div>
-						</div>
-					</div>
-					<div class="contener-imagens-fotos-astronomicas">
-						<div class="contener-informacoes-first">
-							<a href="ceuEstreladoVerde.html"><img src="assets/imagens/imagem-astronomica-segunda.jpg"
-									class="imagemfotosastronomicas"
-									alt="imagem de um produto da seção fotos astronômicas"></a>
-							<p class="produto-fotos-astronomicas">
-								Uma bela Nebulosa com tons esvedeadas<br>
-							</p>
-							<h1 class="preco" id="ajutando-precos">
-								R$ 100
-							</h1>
-							<button class="btn-ver-produto"><a href="ceuEstreladoVerde.html" class="ancora-btn-ver">Ver
-									produto</a></button>
-						</div>
-						<div class="contener-informacoes-second">
-							<a href="nebulosaVermelha.html"><img src="assets/imagens/imagem-astronomica-terceira.jpg"
-									class="imagemfotosastronomicas"
-									alt="imagemde um produto da seção fotos astronômicas"></a>
-							<p class="produto-fotos-astronomicas">
-								uma linda Nebulosa como tons que vão <br> deste ao vermelho , branco ao azul<br>
-							</p>
-							<h1 class="preco">
-								R$ 100
-							</h1>
-							<button class="btn-ver-produto"><a href="nebulosaVermelha.html" class="ancora-btn-ver">Ver
-									produto</a></button>
-						</div>
-						<div class="contener-informacoes-terceiro">
-							<a href="ceuNoturnoRosa.html"><img src="assets/imagens/imagem-astronomica-quarta.jpg"
-									class="imagemfotosastronomicas"
-									alt="imagemde um produto da seção fotos astronômicas"></a>
-							<p class="produto-fotos-astronomicas">
-								que noite linda , nâo acha , ela parecer <br>está roseada<br>
-							</p>
-							<h1 class="preco">
-								R$ 1000
-							</h1>
-							<button class="btn-ver-produto"><a href="ceuNoturnoRosa.html" class="ancora-btn-ver">Ver
-									produto</a></button>
-						</div>
+					<div class="simboloavancar">
+						<span class="material-symbols-outlined" id="seta">
+							arrow_right_alt
+						</span>
 					</div>
 				</div>
 			</div>
+			<div class="contener-imagens-camera">
+				<div class="contener-informacoes-first">
+					<a href="cameraPretaSony.html"><img src="assets/imagens/camera-produto-1.jpg" class="imagemcamera"
+							alt="imagem de um produto da seção câmera"></a>
+					<p class="produto-camera">
+						Câmera preta<br>
+					</p>
+					<h1 class="preco">
+						R$ 1000
+					</h1>
+					<button class="btn-ver-produto"><a href="cameraPretaSony.html" class="ancora-btn-ver">Ver
+							produto</a></button>
+				</div>
+				<div class="contener-informacoes-second">
+					<a href="cameraPreta.html"><img src="assets/imagens/camera-produto-2.png" class="imagemcamera"
+							alt="imagemde um produto da seção câmera"></a>
+					<p class="produto-camera">
+						Câmera preta<br>
+					</p>
+					<h1 class="preco">
+						R$ 1000
+					</h1>
+					<button class="btn-ver-produto"><a href="cameraPreta.html" class="ancora-btn-ver">Ver
+							produto</a></button>
+				</div>
+				<div class="contener-informacoes-terceiro">
+					<a href="cameraPrateada.html"><img src="assets/imagens/camera-produto-3.jpg" class="imagemcamera"
+							alt="imagemde um produto da seção câmera"></a>
+					<p class="produto-camera">
+						Câmera prateada<br>
+					</p>
+					<h1 class="preco">
+						R$ 1000
+					</h1>
+					<button class="btn-ver-produto"><a href="cameraPrateada.html" class="ancora-btn-ver">Ver
+							produto</a></button>
+				</div>
+			</div>
+		</div>
+		<div class="conteinerprodutos">
+			<div class="conteiner-nome-categoria-tudo">
+				<p class="nomefotosastronomicas">Fotos Astronômicas</p>
+				<div class="contener-btn-seta">
+					<div class="conteinerbotao">
+						<a href="fotoastronomicas.html" class="btn-produto">Ver Tudo</a>
+					</div>
+					<div class="simboloavancar">
+						<span class="material-symbols-outlined" id="seta">
+							arrow_right_alt
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="contener-imagens-fotos-astronomicas">
+				<div class="contener-informacoes-first">
+					<a href="ceuEstreladoVerde.html"><img src="assets/imagens/imagem-astronomica-segunda.jpg"
+							class="imagemfotosastronomicas" alt="imagem de um produto da seção fotos astronômicas"></a>
+					<p class="produto-fotos-astronomicas">
+						Uma bela Nebulosa com tons esvedeadas<br>
+					</p>
+					<h1 class="preco" id="ajutando-precos">
+						R$ 100
+					</h1>
+					<button class="btn-ver-produto"><a href="ceuEstreladoVerde.html" class="ancora-btn-ver">Ver
+							produto</a></button>
+				</div>
+				<div class="contener-informacoes-second">
+					<a href="nebulosaVermelha.html"><img src="assets/imagens/imagem-astronomica-terceira.jpg"
+							class="imagemfotosastronomicas" alt="imagemde um produto da seção fotos astronômicas"></a>
+					<p class="produto-fotos-astronomicas">
+						uma linda Nebulosa como tons que vão <br> deste ao vermelho , branco ao azul<br>
+					</p>
+					<h1 class="preco">
+						R$ 100
+					</h1>
+					<button class="btn-ver-produto"><a href="nebulosaVermelha.html" class="ancora-btn-ver">Ver
+							produto</a></button>
+				</div>
+				<div class="contener-informacoes-terceiro">
+					<a href="ceuNoturnoRosa.html"><img src="assets/imagens/imagem-astronomica-quarta.jpg"
+							class="imagemfotosastronomicas" alt="imagemde um produto da seção fotos astronômicas"></a>
+					<p class="produto-fotos-astronomicas">
+						que noite linda , nâo acha , ela parecer <br>está roseada<br>
+					</p>
+					<h1 class="preco">
+						R$ 1000
+					</h1>
+					<button class="btn-ver-produto"><a href="ceuNoturnoRosa.html" class="ancora-btn-ver">Ver
+							produto</a></button>
+				</div>
+			</div>
+		</div>
 		</section>
 	</main>
 	<footer class="rodape">
 		<div class="contener-all">
 			<div class="contener-logo-rodape">
-				<img src="assets/imagens/Logo.png" alt="">
+				<img src="assets/imagens/Adobe_Express_20220828_1144020_1 (2).png" class="imagem-logo">
 			</div>
 			<div class="contener-informacoes-adicionais">
 				<ul>

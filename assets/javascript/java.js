@@ -1,56 +1,16 @@
 
-function TornarVisivelOMenuAdicionar() {
-    var TresPotinhos = document.querySelector("#tres-pontinhos");
-    TresPotinhos.addEventListener("click", function (event) {
-        console.log(event)
-        var ContenerAdicionar = document.querySelector(".contener-adicionar");
-        ContenerAdicionar.style.visibility = "visible";
-    });
-}
-
-TornarVisivelOMenuAdicionar();
-
-// function esconderOMenuAdicionar() {
-//     var fechar = document.querySelector(".fechar-menu-produtos");
-//     fechar.addEventListener("click", function (event) {
-//         console.log(event);
-
-//         var ContenerAdicionar = document.querySelector(".contener-adicionar");
-//         ContenerAdicionar.style.visibility = "hidden";
-//     });
-// } esconderOMenuAdicionar();
-
-
-var menu = document.querySelector(".menu");
-var ul = document.querySelector("ul");
-var iconeMenu = document.querySelector(".icone-menu");
+var iconeMenu = document.querySelector(".pontinhos__icone");
 iconeMenu.addEventListener("click", function () {
 
-    var menus = ul.classList.toggle("menu-visible");
-
-    console.log(menus)
+    var ContenerAdicionar = document.querySelector(".menu__adicionar");
+    var menus = ContenerAdicionar.classList.toggle("menu-visible");
 
     if (menus) {
-        alert("menu esta")
-        ul.classList.remove("esconder-menu");
-        ul.classList.remove("menu");
-        ul.classList.add("menu-visible");
-
+        ContenerAdicionar.style.visibility = "hidden";
 
     } else {
-        alert("menu nao esta")
-        ul.classList.remove("mostar-visible");
-        ul.classList.remove("menu");
-        ul.classList.add("animation-menu");
-
-        setInterval(function () {
-            escondermenu();
-        }, 6000);
+        ContenerAdicionar.style.visibility = "visible";
     }
 });
-
-function escondermenu() {
-    ul.classList.add("esconder-menu");
-}
 
 
