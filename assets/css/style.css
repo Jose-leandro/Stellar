@@ -209,11 +209,10 @@ header {
     text-decoration: none;
 }
 
-
 .contener__telescopio {
     width: 100%;
     height: 450px;
-    margin-bottom: 2em;
+    margin: 3em 0;
 }
 
 .telescopio__titulo {
@@ -323,56 +322,208 @@ header {
     text-decoration: none;
 }
 
-.nomecamera {
-    font-size: 30px;
-    margin-left: 3em;
+.contener__binoculos {
+    width: 100%;
+    height: 450px;
+    margin: 3em 0;
 }
 
-.contener-imagens-camera {
-    margin-top: 2em;
+.binoculos__titulo {
+    height: 60px;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.binoculos__contener {
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: space-around;
 }
 
-.imagemcamera {
+.contener__binoculos--size {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.binoculos__imagem {
     border-radius: 20px;
     width: 24em;
     height: 14em;
 }
 
-.produto-camera {
+.binoculos__produto {
     margin-top: 1em;
     margin-left: 2em;
     font-size: 20px;
 }
 
-.nomefotosastronomicas {
-    font-size: 30px;
-    margin-left: 3em;
+.binoculos__preco {
+    margin-top: 2em;
+    color: #ffff;
+    margin-left: 2em;
 }
 
-.contener-imagens-fotos-astronomicas {
+.binoculos__btn {
+    border-radius: 8px;
+    background-color: #0a66ce;
     margin-top: 2em;
+    width: 30%;
+    height: 40px;
+    padding: 8px;
+    margin-left: 30%;
+    text-align: center;
+}
+
+.binoculos__btn:hover {
+    width: 119px;
+}
+
+.binoculos__btn:active {
+    width: 116px;
+}
+
+.binoculos__ancora {
+    color: #000;
+    text-decoration: none;
+}
+
+.camera__contener {
     width: 100%;
+    height: 450px;
+    margin: 3em 0;
+}
+
+.camera__titulo {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.camera__contener {
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: space-around;
 }
 
-.imagemfotosastronomicas {
+.contener__camera--size {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.camera__imagem {
     border-radius: 20px;
     width: 24em;
     height: 14em;
 }
 
-#ajutando-precos {
-    margin-top: 3em;
-}
-
-.produto-fotos-astronomicas {
+.camera__produto {
     margin-top: 1em;
     margin-left: 2em;
     font-size: 20px;
+}
+
+.camera__preco {
+    margin-top: 2em;
+    color: #ffff;
+    margin-left: 2em;
+}
+
+.camera__btn {
+    border-radius: 8px;
+    background-color: #0a66ce;
+    margin-top: 2em;
+    width: 30%;
+    height: 40px;
+    padding: 8px;
+    margin-left: 30%;
+    text-align: center;
+}
+
+.camera__btn:hover {
+    width: 119px;
+}
+
+.camera__btn:active {
+    width: 116px;
+}
+
+.camera__ancora {
+    color: #000;
+    text-decoration: none;
+}
+
+.contener__astronomicas {
+    width: 100%;
+    height: 450px;
+    margin: 3em 0;
+}
+
+.astronomicas__titulo  {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.astronomicas__contener {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contener__astronomicas--size {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.astronomicas__imagem {
+    border-radius: 20px;
+    width: 24em;
+    height: 14em;
+}
+
+.astronomicas__produto {
+    margin-top: 1em;
+    margin-left: 2em;
+    font-size: 20px;
+}
+
+.astronomicas__preco {
+    margin-top: 2em;
+    color: #ffff;
+    margin-left: 2em;
+}
+
+.astronomicas__btn {
+    border-radius: 8px;
+    background-color: #0a66ce;
+    margin-top: 2em;
+    width: 30%;
+    height: 40px;
+    padding: 8px;
+    margin-left: 30%;
+    text-align: center;
+}
+
+.astronomicas__btn:hover {
+    width: 119px;
+}
+
+.astronomicas__btn:active {
+    width: 116px;
+}
+
+.astronomicas__ancora {
+    color: #000;
+    text-decoration: none;
 }
 
 .rodape {
@@ -392,12 +543,13 @@ header {
 }
 
 .imagens-autorais {
-    text-decoration: none;
+    text-decoration: underline;
     color: #857f7a;
+    font-size: 18px;
 }
 
 .imagens-autorais:hover {
-    font-size: 17px;
+    font-size: 19px;
 }
 
 .imagens-autorais:active {
