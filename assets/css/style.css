@@ -156,7 +156,7 @@ header {
 }
 
 .contener__categoria {
-    height: 350px;
+    height: 300px;
     display: flex;
     width: 100%;
     justify-content: space-evenly;
@@ -164,7 +164,7 @@ header {
 }
 
 .categoria__item {
-    height: 80%;
+    height: 65%;
     width: 25%;
     display: flex;
     flex-direction: column;
@@ -211,12 +211,12 @@ header {
 
 .contener__telescopio {
     width: 100%;
-    height: 450px;
-    margin: 3em 0;
+    height: 500px;
+    margin: 1em 0;
 }
 
 .telescopio__titulo {
-    height: 60px;
+    height: 70px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -269,7 +269,7 @@ header {
 
 .telescopios__contener {
     width: 100%;
-    height: 100%;
+    height: 400px;
     display: flex;
     justify-content: space-around;
 }
@@ -324,12 +324,13 @@ header {
 
 .contener__binoculos {
     width: 100%;
-    height: 450px;
-    margin: 3em 0;
+    height: 480px;
+    margin-top: 2em;
+    margin-bottom: 4em;
 }
 
 .binoculos__titulo {
-    height: 60px;
+    height: 70px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -337,7 +338,7 @@ header {
 
 .binoculos__contener {
     width: 100%;
-    height: 100%;
+    height: 410px;
     display: flex;
     justify-content: space-around;
 }
@@ -390,14 +391,15 @@ header {
     text-decoration: none;
 }
 
-.camera__contener {
+.contener__camera {
     width: 100%;
-    height: 450px;
-    margin: 3em 0;
+    height: 480px;
+    margin-top: 3em;
+    margin-bottom: 4em;
 }
 
 .camera__titulo {
-    height: 60px;
+    height: 70px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -405,7 +407,7 @@ header {
 
 .camera__contener {
     width: 100%;
-    height: 100%;
+    height: 410px;
     display: flex;
     justify-content: space-around;
 }
@@ -460,12 +462,13 @@ header {
 
 .contener__astronomicas {
     width: 100%;
-    height: 450px;
-    margin: 3em 0;
+    height: 490px;
+    margin-top: 3em;
+    margin-bottom: 4em;
 }
 
 .astronomicas__titulo  {
-    height: 60px;
+    height: 70px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -473,7 +476,7 @@ header {
 
 .astronomicas__contener {
     width: 100%;
-    height: 100%;
+    height: 420px;
     display: flex;
     justify-content: space-around;
 }
@@ -530,29 +533,41 @@ header {
     height: 23em;
 }
 
-.contener-logo-rodape {
-    width: 210px;
+.rodape__contener {
+    width: 100%;
+    background: linear-gradient(90deg, #000000 50%, #16295e);
     height: 100%;
     display: flex;
-    align-items: center;
+    justify-content: space-around;
 }
 
-.contener-informacoes-adicionai {
+.contener__logo {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.logo__imagem {
+    width: 250px;
+    height: 65px;
+}
+
+.contener__informacoes {
     height: 100%;
     width: 150px;
 }
 
-.imagens-autorais {
+.imagens__autorais {
     text-decoration: underline;
     color: #857f7a;
     font-size: 18px;
 }
 
-.imagens-autorais:hover {
+.imagens__autorais:hover {
     font-size: 19px;
 }
 
-.imagens-autorais:active {
+.imagens__autorais:active {
     font-size: 16px;
 }
 
@@ -560,14 +575,7 @@ li {
     margin-top: 2em;
 }
 
-.contener-all {
-    background: linear-gradient(90deg, #000000 50%, #16295e);
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
-}
-
-.contener-foormulario {
+.contener__foormulario {
     width: 400px;
     height: 100%;
     display: flex;
@@ -579,21 +587,21 @@ h1 {
     text-align: center;
 }
 
-.input-nome {
+.formulario__nome {
     height: 25px;
     border-radius: 10px;
     border: transparent;
     opacity: 40%;
 }
 
-.input-mensagem {
+.formulario__mensagem {
     height: 60px;
     border-radius: 10px;
     border: transparent;
     opacity: 40%;
 }
 
-.btn-enviar {
+.formulario__btn {
     color: #857f7a;
     width: 60%;
     margin-left: 4em;
@@ -602,7 +610,7 @@ h1 {
     background: linear-gradient(40deg, #120d16, #193a5f);
 }
 
-.btn-enviar:hover {
+.formulario__btn:hover {
     width: 62%;
 }
 
