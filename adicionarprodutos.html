@@ -12,46 +12,48 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
 
-<body class="contener-body">
-    <header>
-        <div class="contener-logo-campo">
-            <a href="index.html"><img src="assets/imagens/logo_do_site.png" class="imagem-logo"></a>
-            <input class="campodepesquisa" placeholder="O que você ira procurar hoje">
-            <span class="material-symbols-outlined icone-pesquisar">
+<body class="corpo">
+    <header class="cabecalho">
+        <div class="contener__cabecalho">
+            <img src="assets/imagens/logo_do_site.png" class="cabecalho__logo">
+            <input class="cabecalho__input" placeholder="O que você ira procurar hoje">
+            <span class="material-symbols-outlined cabecalho__icone">
                 search
             </span>
-            <div class="contener-tres-potinhos">
-                <span class="material-symbols-outlined tres-pontinhos">
+            <button class="cabecalho__btn"><a href="escolherEntarOuCadrasto.html"
+                    class="cabecalho__ancora">Entar</a></button>
+            <div class="contener__potinhos">
+                <span class="material-symbols-outlined pontinhos__icone">
                     more_vert
                 </span>
             </div>
         </div>
-        <div class="contener-trespotinhos-adicionar">
-            <div class="contener-adicionar">
-                <ul class="menu">
-                    <li class="adicionar-produtos"><a href="adicionarprodutos.html"
-                            class="adicionar-produtos-ao-site">Adicionar Produtos</a></li>
+        <div class="contener__menu">
+            <div class="menu__adicionar adicionar">
+                <ul class="menu__lista">
+                    <li class="menu__item"><a href="adicionarprodutos.html" class="menu__ancora">Adicionar Produtos</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </header>
-    <main class="contener-main">
-        <div class="contener-adicionar-produto">
-            <h1 class="iniciar-secao">iniciar sessão</h1>
-            <div class="contener-escolher-adicionar">
-                <div class="contener-upload">
-                    <span class="material-symbols-outlined incone-upload">
+    <main class="contener__main">
+        <div class="main__adicionar">
+            <h1 class="adicionar__sessao">iniciar sessão</h1>
+            <div class="adicionar__escolher">
+                <div class="escolher__upload">
+                    <span class="material-symbols-outlined" id="upload__icone">
                         upload_file
                     </span>
                 </div>
-                <input type="file" class="input-escolher">
+                <input type="file" class="escolher__input">
             </div>
-            <div class="contener-btn-inputs">
-                <input class="campo-nome-produto" type="text" required placeholder="Digite o nome do produto">
-                <input class="campo-preco-produto" type="email" required placeholder="Digite o preço do produto">
-                <input class="campo-descricao-produto" type="password" required
+            <div class="adicionar__input">
+                <input class="input__nome" type="text" required placeholder="Digite o nome do produto">
+                <input class="input__preco" type="email" required placeholder="Digite o preço do produto">
+                <input class="input__descricao" type="password" required
                     placeholder="Digite a descrição do produto">
-                <button class="btn-adicionar-produto" onclick="mostarPopup()">Adicionar Produto</button>
+                <button class="input__btn" onclick="mostarPopup()">Adicionar Produto</button>
             </div>
         </div>
         <section>

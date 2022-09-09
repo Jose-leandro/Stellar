@@ -1,11 +1,11 @@
 
-body {
+.corpo {
     background-color: #000000;
     color: #857f7a;
     font-size: 18px;
 }
 
-header {
+.cabecalho {
     height: 4em;
 }
 
