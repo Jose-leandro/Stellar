@@ -33,6 +33,7 @@
     position: absolute;
 }
 
+
 .cabecalho__btn {
     background: linear-gradient(70deg, #3f1d55, #0a66ce);
     border-color: transparent;
@@ -119,7 +120,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     background: linear-gradient(-50deg, #000000 30%, #181941, #081412);
 }
 
@@ -129,11 +130,18 @@
 }
 
 .adicionar__escolher {
-    border: 7px dotted;
-    border-width: 2px;
-    padding: 15px;
-    width: 160px;
+    align-items: center;
+    display: flex;
+    height: 150px;
+    flex-direction: column;
     margin-left: 2em;
+    width: 50%;
+}
+
+.escolher__imagem {
+    height: 64px;
+    margin-bottom: 2em;
+    width: 64px;
 }
 
 .escolher__input {
@@ -144,13 +152,13 @@
 }
 
 .adicionar__input {
-    height: 200px;
+    height: 300px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
-.contener-btn-inputs {
+.adicionar__input {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -158,30 +166,30 @@
     width: 40%;
 }
 
-.campo-nome-produto {
+.input__nome {
     opacity: 60%;
     border: transparent;
     border-radius: 5px;
     height: 40px;
 }
 
-.campo-preco-produto {
+.input__preco {
     opacity: 60%;
     border: transparent;
     border-radius: 5px;
     height: 40px;
 }
 
-.campo-descricao-produto {
+.input__descricao {
     opacity: 60%;
     border: transparent;
     border-radius: 5px;
     height: 70px;
 }
 
-.btn-adicionar-produto {
+.input__btn {
     cursor: pointer;
-    color: #857f7a;
+    color: #a5a3a1;
     text-decoration: none;
     font-family: 'Arima', cursive;
     width: 80%;
@@ -193,12 +201,15 @@
     background: linear-gradient(70deg, #3f1d55, #0a66ce);
 }
 
-.ancora-voltar-inicio {
-    text-decoration: none;
-    color: #857f7a;
+.input__btn:hover {
+    width: 81%;
 }
 
-.contener-popup {
+.input__btn:active {
+    width: 79%;
+}
+
+.contener__popup {
     position: absolute;
     top: 60px;
     width: 100%;
@@ -218,7 +229,7 @@
     background-color: #152f4d;
 }
 
-.popup-close {
+.popup__close {
     cursor: pointer;
     color: #000000;
     position: absolute;
@@ -227,13 +238,13 @@
     font-size: 20px;
 }
 
-.descricao-popup {
+.descricao__popup {
     margin-top: 3em;
     font-size: 20px;
     font-family: 'Arima', cursive;
 }
 
-.btn-voltar-inicio {
+.btn__voltar {
     margin-top: 4em;
     cursor: pointer;
     color: #857f7a;
@@ -246,4 +257,19 @@
     border-radius: 10px;
     border-color: transparent;
     background: linear-gradient(70deg, #3f1d55, #0a66ce);
+}
+
+.popup__btn:hover {
+    width: 51%;
+    height: 37px;
+}
+
+.popup__btn:active {
+    width: 49%;
+    height: 34px;
+}
+
+.ancora__voltar {
+    text-decoration: none;
+    color: #857f7a;
 }

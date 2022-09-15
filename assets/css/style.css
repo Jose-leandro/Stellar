@@ -613,7 +613,11 @@
 }
 
 .formulario__btn:hover {
-    width: 62%;
+    width: 61%;
+}
+
+.formulario__btn:active {
+    width: 59%;
 }
 
 .contener__popup {
@@ -665,6 +669,16 @@
     padding: 5px 15px;
     text-decoration: none;
     width: 50%;
+}
+
+.popup__btn:hover {
+    width: 51%;
+    height: 37px;
+}
+
+.popup__btn:active {
+    width: 49%;
+    height: 34px;
 }
 
 .popup__ancora {

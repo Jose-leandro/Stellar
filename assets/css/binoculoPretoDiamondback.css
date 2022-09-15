@@ -1,73 +1,111 @@
-.contener-body {
-    background-color: rgb(7, 7, 7);
+
+.corpo {
+    background-color: #000000;
     color: #857f7a;
-    height: 100vh;
+    font-size: 18px;
 }
 
-header {
+.cabecalho {
     height: 4em;
 }
 
-.contener-logo-campo {
-    display: flex;
+.contener__cabecalho {
     align-items: center;
+    display: flex;
     justify-content: space-around;
-    margin-top: 1em;
 }
 
-.campodepesquisa {
+.cabecalho__logo {
+    height: 65px;
+    width: 250px;
+}
+
+.cabecalho__input {
+    background: transparent;
+    border-color: transparent;
+    border-radius: 10px;
     height: 30px;
     width: 35%;
-    border-color: transparent;
-    background: transparent;
-    border-radius: 10px;
 }
 
-.icone-pesquisar {
+.cabecalho__icone {
+    left: 65%;
     position: absolute;
-    left: 66%;
 }
 
-#tres-pontinhos {
+.cabecalho__btn {
+    background: linear-gradient(70deg, #3f1d55, #0a66ce);
+    border-color: transparent;
+    border-radius: 10px;
+    font-family: 'Arima', cursive;
+    font-size: 18px;
+    padding: 5px 15px;
+}
+
+.cabecalho__btn:hover {
+    height: 37px;
+    width: 79px;
+}
+
+.cabecalho__btn:active {
+    height: 33px;
+    width: 75px;
+}
+
+.cabecalho__ancora {
+    color: #c0bbb8;
+    text-decoration: none;
+}
+
+.contener__potinhos {
+    height: 30px;
+    width: 30px;
+}
+
+.pontinhos__icone {
     cursor: pointer;
-    font-size: 30px;
-    margin-left: 4em;
 }
 
-#tres-pontinhos:hover {
-    font-size: 30px;
-    color: #353434;
-    border-radius: 20px;
+.pontinhos__icone:hover {
     background: #c0bbb8;
     border: solid #c0bbb8;
+    border-radius: 20px;
+    color: #353434;
     opacity: 50%;
 }
 
-.contener-trespotinhos-adicionar {
-    width: 100%;
+.pontinhos__icone:active {
+    height: 26px;
+    width: 26px;
+}
+
+.contener__menu {
     display: flex;
     justify-content: end;
+    width: 100%;
 }
 
-.contener-adicionar {
+.menu__adicionar {
+    background: linear-gradient(40deg, #000000 60%, #300e2a);
+    border: solid 3px;
+    border-radius: 10px;
+    height: 200px;
     margin: 1em 1em 0 0;
+    position: absolute;
     text-align: center;
     visibility: hidden;
-    border: solid 3px;
-    position: absolute;
     width: 200px;
-    height: 200px;
-    background: linear-gradient(40deg, #000000 60%, #300e2a);
-    border-radius: 10px;
 }
 
-h2 {
-    margin-top: 1em;
+.menu__item {
+    font-size: 18px;
+    margin-top: 2em;
+    text-align: center;
 }
 
-.adicionar-produtos-ao-site {
-    text-decoration: none;
+.menu__ancora {
     color: #c0bbb8;
+    text-decoration: none;
 }
 
 .contener-produto-informacao {
