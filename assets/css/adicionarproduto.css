@@ -33,8 +33,13 @@
     position: absolute;
 }
 
+.cabecalho__ancora {
+    text-decoration: none;
+}
 
 .cabecalho__btn {
+    cursor: pointer;
+    color: #c0bbb8;
     background: linear-gradient(70deg, #3f1d55, #0a66ce);
     border-color: transparent;
     border-radius: 10px;
@@ -51,11 +56,6 @@
 .cabecalho__btn:active {
     height: 33px;
     width: 75px;
-}
-
-.cabecalho__ancora {
-    color: #c0bbb8;
-    text-decoration: none;
 }
 
 .contener__potinhos {
@@ -226,7 +226,7 @@
     position: fixed;
     top: 40%;
     left: 30%;
-    background-color: #152f4d;
+  background: linear-gradient(40deg,#152f4d, #300e0e, #260366);
 }
 
 .popup__close {
@@ -238,20 +238,34 @@
     font-size: 20px;
 }
 
+.popup__close:hover {
+    font-size: 21px;
+}
+
+.popup__close:active {
+    font-size: 19px;
+}
+
 .descricao__popup {
     margin-top: 3em;
     font-size: 20px;
     font-family: 'Arima', cursive;
 }
 
+.ancora__voltar {
+    text-decoration: none;
+    color: #857f7a;
+}
+
 .btn__voltar {
-    margin-top: 4em;
+    cursor: pointer;
+    margin-top: 3em;
     cursor: pointer;
     color: #857f7a;
     text-decoration: none;
     font-family: 'Arima', cursive;
     width: 50%;
-    font-size: 15px;
+    font-size: 18px;
     padding: 5px 15px;
     margin-left: 3em;
     border-radius: 10px;
@@ -259,17 +273,13 @@
     background: linear-gradient(70deg, #3f1d55, #0a66ce);
 }
 
-.popup__btn:hover {
+.btn__voltar:hover {
     width: 51%;
     height: 37px;
 }
 
-.popup__btn:active {
+.btn__voltar:active {
     width: 49%;
     height: 34px;
 }
 
-.ancora__voltar {
-    text-decoration: none;
-    color: #857f7a;
-}

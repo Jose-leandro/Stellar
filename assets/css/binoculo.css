@@ -32,10 +32,16 @@
     position: absolute;
 }
 
+.cabecalho__ancora {
+    text-decoration: none;
+}
+
 .cabecalho__btn {
     background: linear-gradient(70deg, #3f1d55, #0a66ce);
     border-color: transparent;
     border-radius: 10px;
+    color: #c0bbb8;
+    cursor: pointer;
     font-family: 'Arima', cursive;
     font-size: 18px;
     padding: 5px 15px;
@@ -51,11 +57,6 @@
     width: 75px;
 }
 
-.cabecalho__ancora {
-    color: #c0bbb8;
-    text-decoration: none;
-}
-
 .contener__potinhos {
     height: 30px;
     width: 30px;
@@ -67,8 +68,8 @@
 
 .pontinhos__icone:hover {
     background: #c0bbb8;
-    border: solid #c0bbb8;
     border-radius: 20px;
+    border: solid #c0bbb8;
     color: #353434;
     opacity: 50%;
 }
@@ -86,8 +87,8 @@
 
 .menu__adicionar {
     background: linear-gradient(40deg, #000000 60%, #300e2a);
-    border: solid 3px;
     border-radius: 10px;
+    border: solid 3px;
     height: 200px;
     margin: 1em 1em 0 0;
     position: absolute;
@@ -116,30 +117,36 @@
 
 .descricao__imagem {
     border-radius: 20px;
-    width: 320px;
     height: 179px;
     margin: 30px 30px 0 0;
+    width: 320px;
 }
 
 .descricao__binoculos {
-    margin-top: 1em;
-    margin-left: 4em;
     font-size: 20px;
+    margin-left: 4em;
+    margin-top: 1em;
 }
 
 .descricao__preco {
-    margin-top: 2em;
     color: #ffff;
     margin-left: 2em;
+    margin-top: 2em;
+}
+
+.descricao__ancora {
+    text-decoration: none;
 }
 
 .descricao__btn {
-    border-radius: 8px;
+    cursor: pointer;
+    color: #000;
     background-color: #0a66ce;
-    margin-left: 40%;
-    padding: 8px;
-    margin-top: 2em;
+    border-radius: 8px;
     margin-bottom: 4em;
+    margin-left: 40%;
+    margin-top: 2em;
+    padding: 8px;
 }
 
 .descricao__btn:hover {
@@ -148,11 +155,6 @@
 
 .descricao__btn:active {
     width: 105px;
-}
-
-.descricao__ancora {
-    text-decoration: none;
-    color: #000;
 }
 
 .descricao__ancora:hover {
@@ -218,21 +220,21 @@
 }
 
 .formulario__comunique {
-    text-align: center;
     font-size: 18px;
+    text-align: center;
 }
 
 .formulario__nome {
-    border: transparent;
     border-radius: 10px;
+    border: transparent;
     height: 30px;
     opacity: 40%;
     text-align: center;
 }
 
 .formulario__mensagem {
-    border: transparent;
     border-radius: 10px;
+    border: transparent;
     height: 70px;
     opacity: 40%;
     text-align: center;
@@ -240,8 +242,8 @@
 
 .formulario__btn {
     background: linear-gradient(40deg, #120d16, #193a5f);
-    border: transparent;
     border-radius: 5px;
+    border: transparent;
     color: #857f7a;
     font-size: 18px;
     height: 40px;
@@ -260,8 +262,8 @@
 .contener__popup {
     height: 450px;
     position: fixed;
-    top: 150px;
     text-align: center;
+    top: 150px;
     visibility: hidden;
     width: 100%;
 }
@@ -286,11 +288,24 @@
     top: 15px;
 }
 
+.popup__close:hover {
+    font-size: 21px;
+}
+
+.popup__close:active {
+    font-size: 19px;
+}
+
 .popup__descricao {
     color: #aca6a2;
     font-family: 'Arima', cursive;
     font-size: 20px;
     margin-top: 3em;
+}
+
+.popup__ancora {
+    color: #aca6a2;
+    text-decoration: none;
 }
 
 .popup__btn {
@@ -309,18 +324,13 @@
 }
 
 .popup__btn:hover {
-    width: 51%;
     height: 37px;
+    width: 51%;
 }
 
 .popup__btn:active {
-    width: 49%;
     height: 34px;
-}
-
-.popup__ancora {
-    text-decoration: none;
-    color: #aca6a2;
+    width: 49%;
 }
 
 .contner__desenvolvedor {
