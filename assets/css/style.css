@@ -608,6 +608,7 @@
 }
 
 .formulario__btn {
+    cursor: pointer;
     background: linear-gradient(40deg, #120d16, #193a5f);
     border-radius: 5px;
     border: transparent;
@@ -636,7 +637,7 @@
 }
 
 .popup {
-    background-color: #152f4d;
+    background: linear-gradient(40deg,#152f4d, #300e0e, #260366);
     border-radius: 15px;
     height: 30%;
     left: 30%;

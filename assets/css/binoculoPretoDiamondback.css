@@ -32,7 +32,13 @@
     position: absolute;
 }
 
+.cabecalho__ancora {
+    text-decoration: none;
+}
+
 .cabecalho__btn {
+    cursor: pointer;
+    color: #c0bbb8;
     background: linear-gradient(70deg, #3f1d55, #0a66ce);
     border-color: transparent;
     border-radius: 10px;
@@ -49,11 +55,6 @@
 .cabecalho__btn:active {
     height: 33px;
     width: 75px;
-}
-
-.cabecalho__ancora {
-    color: #c0bbb8;
-    text-decoration: none;
 }
 
 .contener__potinhos {
@@ -220,15 +221,28 @@
 .produto__ancora {
     font-size: 20px;
     text-decoration: none;
-    color: #000000;
+}
+
+.produto__ancora:active {
+    font-size: 19px;
 }
 
 .produto__btn {
+    color: #000000;
     cursor: pointer;
     width: 140px;
     height: 50px;
+    padding: 4px 6px;
     border-radius: 20px;
     background-color: #2a50b8;
+}
+
+.produto__btn:hover {
+    width: 143px;
+}
+
+.produto__btn:active {
+    width: 139px;
 }
 
 .rodape {
@@ -307,6 +321,7 @@
 }
 
 .formulario__btn {
+    cursor: pointer;
     background: linear-gradient(40deg, #120d16, #193a5f);
     border-radius: 5px;
     border: transparent;
@@ -335,7 +350,7 @@
 }
 
 .popup {
-    background-color: #152f4d;
+    background: linear-gradient(40deg,#152f4d, #300e0e, #260366);
     border-radius: 15px;
     height: 30%;
     left: 30%;
@@ -352,6 +367,14 @@
     position: absolute;
     right: 10px;
     top: 15px;
+}
+
+.popup__close:hover {
+    font-size: 21px;
+}
+
+.popup__close:active {
+    font-size: 19px;
 }
 
 .popup__descricao {
