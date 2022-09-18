@@ -384,6 +384,10 @@
     margin-top: 3em;
 }
 
+.popup__ancora {
+    text-decoration: none;
+}
+
 .popup__btn {
     background: linear-gradient(70deg, #3f1d55, #0a66ce);
     border-color: transparent;
@@ -392,7 +396,7 @@
     cursor: pointer;
     font-family: 'Arima', cursive;
     font-size: 18px;
-    margin-left: 3em;
+    margin-left: 2em;
     margin-top: 2em;
     padding: 5px 15px;
     text-decoration: none;
@@ -407,11 +411,6 @@
 .popup__btn:active {
     height: 34px;
     width: 49%;
-}
-
-.popup__ancora {
-    color: #aca6a2;
-    text-decoration: none;
 }
 
 .contner__desenvolvedor {

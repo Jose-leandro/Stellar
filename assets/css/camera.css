@@ -32,12 +32,16 @@
     position: absolute;
 }
 
+.cabecalho__ancora {
+    text-decoration: none;
+}
+
 .cabecalho__btn {
-    cursor: pointer;
-    color: #c0bbb8;
     background: linear-gradient(70deg, #3f1d55, #0a66ce);
     border-color: transparent;
     border-radius: 10px;
+    color: #c0bbb8;
+    cursor: pointer;
     font-family: 'Arima', cursive;
     font-size: 18px;
     padding: 5px 15px;
@@ -51,11 +55,6 @@
 .cabecalho__btn:active {
     height: 33px;
     width: 75px;
-}
-
-.cabecalho__ancora {
-    color: #c0bbb8;
-    text-decoration: none;
 }
 
 .contener__potinhos {
@@ -109,65 +108,61 @@
     text-decoration: none;
 }
 
-.contener-todos-produtos {
-    height: 900px;
+.contener__produtos {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
-.contener-todas-imagens {
-    height: 400px;
-    width: 400px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.produtoImagem {
+.descricao__imagem {
     border-radius: 20px;
-    width: 320px;
     height: 179px;
+    margin: 30px 30px 0 0;
+    width: 320px;
 }
 
-.produto-camera {
+.descricao__binoculos {
     font-size: 20px;
+    margin-left: 4em;
+    margin-top: 1em;
 }
 
-.preco {
+.descricao__preco {
     color: #ffff;
+    margin-left: 2em;
+    margin-top: 2em;
 }
 
-.ancora-btn-ver {
+.descricao__ancora {
     text-decoration: none;
 }
 
-.ancora-btn-ver:hover {
-    font-size: 19px;
-}
-
-.ancora-btn-ver:active {
-    font-size: 17px;
-}
-
-.btn-ver-produto {
+.descricao__btn {
     cursor: pointer;
     color: #000;
-    width: 130px;
-    height: 50px;
-    border-radius: 10px;
-    padding: 10px;
     background-color: #0a66ce;
+    border-radius: 8px;
+    margin-bottom: 4em;
+    margin-left: 40%;
+    margin-top: 2em;
+    padding: 8px;
 }
 
-.btn-ver-produto:hover {
-    width: 133px;
+.descricao__btn:hover {
+    width: 107px;
 }
 
-.btn-ver-produto:active {
-    width: 128px;
+.descricao__btn:active {
+    width: 105px;
+}
+
+.descricao__ancora:hover {
+    font-size: 18px;
+}
+
+.descricao__ancora:active {
+    font-size: 17px;
 }
 
 .rodape {
@@ -309,6 +304,10 @@
     margin-top: 3em;
 }
 
+.popup__ancora {
+    text-decoration: none;
+}
+
 .popup__btn {
     background: linear-gradient(70deg, #3f1d55, #0a66ce);
     border-color: transparent;
@@ -317,7 +316,7 @@
     cursor: pointer;
     font-family: 'Arima', cursive;
     font-size: 18px;
-    margin-left: 3em;
+    margin-left: 2em;
     margin-top: 2em;
     padding: 5px 15px;
     text-decoration: none;
@@ -332,11 +331,6 @@
 .popup__btn:active {
     height: 34px;
     width: 49%;
-}
-
-.popup__ancora {
-    color: #aca6a2;
-    text-decoration: none;
 }
 
 .contner__desenvolvedor {

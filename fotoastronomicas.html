@@ -10,130 +10,132 @@
     <link rel="stylesheet" type="text/css" href="assets/css/categoriaFotosAstronomicas.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100&display=swap" rel="stylesheet">
 </head>
 
-<body class="contener-body">
-    <header>
-        <div class="contener-logo-campo">
-            <a href="index.html"><img src="assets/imagens/Logo.png"></a>
-            <input class="campodepesquisa" placeholder="O que você ira procurar hoje">
-            <span class="material-symbols-outlined icone-pesquisar">
+<body class="corpo">
+    <header class="cabecalho">
+        <div class="contener__cabecalho">
+            <a href="index.html"><img src="assets/imagens/logo_do_site.png" class="cabecalho__logo"></a>
+            <input class="cabecalho__input" placeholder="O que você ira procurar hoje">
+            <span class="material-symbols-outlined cabecalho__icone">
                 search
             </span>
-            <span class="material-symbols-outlined" id="tres-pontinhos">
-                more_vert
-            </span>
+            <a href="escolherEntarOuCadrasto.html" class="cabecalho__ancora"><button
+                    class="cabecalho__btn">Entar</button></a>
+            <div class="contener__potinhos">
+                <span class="material-symbols-outlined pontinhos__icone">
+                    more_vert
+                </span>
+            </div>
         </div>
-        <div class="contener-trespotinhos-adicionar">
-            <div class="contener-adicionar">
-                <ul class="menu">
-                    <li class="adicionar-produtos"><a href="adicionarprodutos.html"
-                            class="adicionar-produtos-ao-site">Adicionar Produtos</a></li>
-                    <li class="fechar-menu-produtos">fechar menu</li>
+        <div class="contener__menu">
+            <div class="menu__adicionar adicionar">
+                <ul class="menu__lista">
+                    <li class="menu__item"><a href="adicionarprodutos.html" class="menu__ancora">Adicionar Produtos</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </header>
     <main class="contener-main">
         <section>
-            <div class="contener-todos-produtos">
-                <div class="contener-todas-imagens">
+            <div class="contener__produtos">
+                <div class="produtos__descricao">
                     <a href="ceuEstreladoVerde.html"><img src="assets/imagens/imagem-astronomica-segunda.jpg"
-                            class="produtoImagem" alt="imagem de um"></a>
-                    <p class="produto-fotos-astronomicas">
+                            class="descricao__imagem" alt="imagem de um"></a>
+                    <p class="descricao__astronomica">
                         Telescopio preto<br>
                     </p>
-                    <h1 class="preco">
+                    <h1 class="descricao__preco">
                         R$ 1550
                     </h1>
-                    <button class="btn-ver-produto"><a href="ceuEstreladoVerde.html" class="ancora-btn-ver">Ver
-                            produto</a></button>
+                    <a href="ceuEstreladoVerde.html" class="descricao__ancora"><button class="descricao__btn">Ver produto</button></a>
                 </div>
-                <div class="contener-todas-imagens">
+                <div class="produtos__descricao">
                     <a href="nebulosaVermelha.html"><img src="assets/imagens/imagem-astronomica-terceira.jpg"
-                            class="produtoImagem" alt="imagem de um "></a>
-                    <p class="produto-fotos-astronomicas">
+                            class="descricao__imagem" alt="imagem de um "></a>
+                    <p class="descricao__astronomica">
                         Telescopio preto<br>
                     </p>
-                    <h1 class="preco">
+                    <h1 class="descricao__preco">
                         R$ 1550
                     </h1>
-                    <button class="btn-ver-produto"><a href="nebulosaVermelha.html" class="ancora-btn-ver">Ver
-                            produto</a></button>
+                    <a href="nebulosaVermelha.html" class="descricao__ancora"><button class="descricao__btn">Ver produto</button></a>
                 </div>
-                <div class="contener-todas-imagens">
+                <div class="produtos__descricao">
                     <a href="ceuNoturnoRosa.html"><img src="assets/imagens/imagem-astronomica-quarta.jpg"
-                            class="produtoImagem" alt="imagem de um "></a>
-                    <p class="produto-fotos-astronomicas">
+                            class="descricao__imagem" alt="imagem de um "></a>
+                    <p class="descricao__astronomica">
                         Telescopio preto<br>
                     </p>
-                    <h1 class="preco">
+                    <h1 class="descricao__preco">
                         R$ 1550
                     </h1>
-                    <button class="btn-ver-produto"><a href="ceuNoturnoRosa.html" class="ancora-btn-ver">Ver
-                            produto</a></button>
+                    <a href="ceuNoturnoRosa.html" class="descricao__ancora"><button class="descricao__btn">Ver produto</button></a>
                 </div>
-                <div class="contener-todas-imagens">
+                <div class="produtos__descricao">
                     <a href="fotosAstronomicasAurora.html"><img src="assets/imagens/imagem-astronomica-quinta.jpg"
-                            class="produtoImagem" alt="imagem de um"></a>
-                    <p class="produto-fotos-astronomicas">
+                            class="descricao__imagem" alt="imagem de um"></a>
+                    <p class="descricao__astronomica">
                         Telescopio preto<br>
                     </p>
-                    <h1 class="preco">
+                    <h1 class="descricao__preco">
                         R$ 1550
                     </h1>
-                    <button class="btn-ver-produto"><a href="fotosAstronomicasAurora.html" class="ancora-btn-ver">Ver
-                            produto</a></button>
+                    <a href="fotosAstronomicasAurora.html" class="descricao__ancora"><button class="descricao__btn">Ver produto</button></a>
                 </div>
-                <div class="contener-todas-imagens">
+                <div class="produtos__descricao">
                     <a href="fotosAstronomicasBuraco.html"><img src="assets/imagens/imagem-astronomica-sexta.jpg"
-                            class="produtoImagem" alt="imagem de um"></a>
-                    <p class="produto-fotos-astronomicas">
+                            class="descricao__imagem" alt="imagem de um"></a>
+                    <p class="descricao__astronomica">
                         Telescopio preto<br>
                     </p>
-                    <h1 class="preco">
+                    <h1 class="descricao__preco">
                         R$ 1550
                     </h1>
-                    <button class="btn-ver-produto"><a href="fotosAstronomicasBuraco.html" class="ancora-btn-ver">Ver
-                            produto</a></button>
+                    <a href="fotosAstronomicasBuraco.html" class="descricao__ancora"><button class="descricao__btn">Ver produto</button></a>
                 </div>
             </div>
         </section>
     </main>
     <footer class="rodape">
-        <div class="contener-all">
-            <div class="contener-logo-rodape">
-                <img src="assets/imagens/Logo.png" alt="">
+        <div class="rodape__contener">
+            <div class="contener__logo">
+                <img src="assets/imagens/logo_do_site.png" class="logo__imagem">
             </div>
-            <div class="contener-informacoes-adicionais">
+            <div class="contener__informacoes">
                 <ul>
-                    <li>Quem somos nós</li>
-                    <li>Política de privacidade</li>
-                    <li>Programa fidelidade</li>
-                    <li>nossas lojas</li>
-                    <li>Quero ser franqueado</li>
-                    <li>Anuncie aqui</li>
+                    <li class="informacoes__item">Quem somos nós</li>
+                    <li class="informacoes__item">Política de privacidade</li>
+                    <li class="informacoes__item">Programa fidelidade</li>
+                    <li class="informacoes__item">nossas lojas</li>
+                    <li class="informacoes__item">Quero ser franqueado</li>
+                    <li class="informacoes__item">Anuncie aqui</li>
+                    <li class="informacoes__item"><a href="direitosAutorais.html" class="imagens__autorais">Imagens
+                            autorais</a></li>
                 </ul>
             </div>
-            <div class="contener-foormulario">
-                <h1>Fale conosco</h1>
-                <input class="input-nome" type="text" placeholder="Digite seu nome">
+            <div class="contener__foormulario">
+                <h1 class="formulario__comunique">Fale conosco</h1>
+                <input class="formulario__nome" type="text" placeholder="Digite seu nome">
 
-                <input class="input-mensagem" type="text" placeholder="Digite sua mensagem" required>
+                <input class="formulario__mensagem" type="text" placeholder="Digite sua mensagem" required>
 
-                <button class="btn-enviar" onclick="mostarPopup()">Enviar mensagem</button>
+                <button class="formulario__btn" onclick="mostarPopup()">Enviar mensagem</button>
             </div>
         </div>
-        <div class="contener-popup">
+        <div class="contener__popup">
             <div class="popup">
-                <h1 class="popup-close">X</h1>
-                <h1 class="descricao-popup">Sua mensagem foi enviada com sucesso<br> Muito obrigrado , por ser comunicar
+                <h1 class="popup__close">X</h1>
+                <h1 class="popup__descricao">Sua mensagem foi enviada com sucesso<br> Muito obrigrado , por ser
+                    comunicar
                     conosco</h1>
-                <button class="btn-voltar-inicio"><a href="index.html" class="ancora-voltar-inicio">Voltar para a
-                        página inicial</a></button>
+                    <a href="index.html" class="popup__ancora"><button class="popup__btn">Voltar para a
+                        página inicial</button></a>
             </div>
         </div>
-        <div class="contner-desenvolvedor">
+        <div class="contner__desenvolvedor">
             <p class="desenvolvedor">&copy; desenvolvido por josé leandro do nascimento<br>2022</p>
         </div>
     </footer>
@@ -141,3 +143,4 @@
 
 </html>
 <script src="assets/javascript/java.js"></script>
+<script src="assets/javascript/popupDeConcluidos.js"></script>

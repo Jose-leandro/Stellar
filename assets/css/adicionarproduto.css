@@ -246,39 +246,38 @@
     font-size: 19px;
 }
 
-.descricao__popup {
+.popup__descricao {
     margin-top: 3em;
     font-size: 20px;
     font-family: 'Arima', cursive;
 }
 
-.ancora__voltar {
+.popup__ancora {
     text-decoration: none;
-    color: #857f7a;
 }
 
-.btn__voltar {
+.popup__btn {
     cursor: pointer;
     margin-top: 3em;
     cursor: pointer;
-    color: #857f7a;
+    color: #c0bbb8;
     text-decoration: none;
     font-family: 'Arima', cursive;
     width: 50%;
     font-size: 18px;
     padding: 5px 15px;
-    margin-left: 3em;
+    margin-left: 2em;
     border-radius: 10px;
     border-color: transparent;
     background: linear-gradient(70deg, #3f1d55, #0a66ce);
 }
 
-.btn__voltar:hover {
+.popup__btn:hover {
     width: 51%;
     height: 37px;
 }
 
-.btn__voltar:active {
+.popup__btn:active {
     width: 49%;
     height: 34px;
 }

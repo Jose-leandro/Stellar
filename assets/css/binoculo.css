@@ -305,7 +305,6 @@
 }
 
 .popup__ancora {
-    color: #aca6a2;
     text-decoration: none;
 }
 
@@ -317,7 +316,7 @@
     cursor: pointer;
     font-family: 'Arima', cursive;
     font-size: 18px;
-    margin-left: 3em;
+    margin-left: 2em;
     margin-top: 2em;
     padding: 5px 15px;
     text-decoration: none;

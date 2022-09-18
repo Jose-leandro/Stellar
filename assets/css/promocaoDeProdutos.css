@@ -1,273 +1,348 @@
-.contener-body {
-    background-color: rgb(7, 7, 7);
+.corpo {
+    background-color: #000000;
     color: #857f7a;
-    height: 100vh;
+    font-size: 18px;
 }
 
-header {
+.cabecalho {
     height: 4em;
 }
 
-.contener-logo-campo {
-    display: flex;
+.contener__cabecalho {
     align-items: center;
+    display: flex;
     justify-content: space-around;
-    margin-top: 1em;
 }
 
-.campodepesquisa {
+.cabecalho__logo {
+    height: 65px;
+    width: 250px;
+}
+
+.cabecalho__input {
+    background: transparent;
+    border-color: transparent;
+    border-radius: 10px;
     height: 30px;
     width: 35%;
-    border-color: transparent;
-    background: transparent;
-    border-radius: 10px;
 }
 
-.icone-pesquisar {
+.cabecalho__icone {
+    left: 65%;
     position: absolute;
-    left: 84%;
 }
 
-#tres-pontinhos {
+.cabecalho__ancora {
+    text-decoration: none;
+}
+
+.cabecalho__btn {
+    background: linear-gradient(70deg, #3f1d55, #0a66ce);
+    border-color: transparent;
+    border-radius: 10px;
+    color: #c0bbb8;
     cursor: pointer;
-    font-size: 30px;
-    margin-left: 4em;
+    font-family: 'Arima', cursive;
+    font-size: 18px;
+    padding: 5px 15px;
 }
 
-#tres-pontinhos:hover {
-    font-size: 30px;
-    color: #353434;
-    border-radius: 20px;
+.cabecalho__btn:hover {
+    height: 37px;
+    width: 79px;
+}
+
+.cabecalho__btn:active {
+    height: 33px;
+    width: 75px;
+}
+
+.contener__potinhos {
+    height: 30px;
+    width: 30px;
+}
+
+.pontinhos__icone {
+    cursor: pointer;
+}
+
+.pontinhos__icone:hover {
     background: #c0bbb8;
+    border-radius: 20px;
     border: solid #c0bbb8;
+    color: #353434;
     opacity: 50%;
 }
 
-.contener-trespotinhos-adicionar {
-    width: 100%;
+.pontinhos__icone:active {
+    height: 26px;
+    width: 26px;
+}
+
+.contener__menu {
     display: flex;
     justify-content: end;
+    width: 100%;
 }
 
-.contener-adicionar {
-    margin: 1em 1em 0 0;
-    text-align: center;
-    visibility: hidden;
-    border: solid 3px;
-    position: absolute;
-    width: 200px;
-    height: 200px;
+.menu__adicionar {
     background: linear-gradient(40deg, #000000 60%, #300e2a);
     border-radius: 10px;
+    border: solid 3px;
+    height: 200px;
+    margin: 1em 1em 0 0;
+    position: absolute;
+    text-align: center;
+    visibility: hidden;
+    width: 200px;
 }
 
-li {
-    margin-top: 1em;
+.menu__item {
+    font-size: 18px;
+    margin-top: 2em;
+    text-align: center;
 }
 
-.adicionar-produtos-ao-site {
-    text-decoration: none;
+.menu__ancora {
     color: #c0bbb8;
-}
-
-.fechar-menu-produtos {
-    cursor: pointer;
     text-decoration: none;
-    color: #c0bbb8;
 }
 
-.contener-todos-produtos {
+.contener__produtos {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-.produtoImagem {
+.produtos__descricao{
+    height: 480px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.descricao__imagem {
     border-radius: 20px;
-    width: 320px;
     height: 179px;
-    margin: 30px 30px 0 0;
+    width: 320px;
 }
 
-.produto-promocional-astronomico {
-    margin-top: 1em;
-    margin-left: 4em;
+.descricao__astronomica {
     font-size: 20px;
 }
 
-
-.produto-promocional-binoculos {
-    margin-top: 1em;
-    margin-left: 4em;
-    font-size: 20px;
-}
-
-.produto-promocional-camera {
-    margin-top: 1em;
-    margin-left: 4em;
-    font-size: 20px;
-}
-
-.produto-promocional-refrator {
-    margin-top: 1em;
-    margin-left: 4em;
-    font-size: 20px;
-}
-
-.quantidade-desconto {
-    margin-top: 2em;
-    margin-left: 2em;
-}
-
-.preco-original {
-    margin-top: 2em;
-    text-decoration-line: line-through;
-}
-
-.preco-promocional {
+.descricao__preco {
     color: #ffff;
-    margin-left: 2em;
-    margin-top: 1em;
 }
 
-.ancora-btn-ver {
+.descricao__ancora {
     text-decoration: none;
+}
+
+.descricao__ancora:hover {
+    font-size: 18px;
+}
+
+.descricao__ancora:active {
+    font-size: 17px;
+}
+
+.descricao__btn {
+    cursor: pointer;
     color: #000;
-}
-
-.btn-ver-produto {
-    border-radius: 4px;
     background-color: #0a66ce;
-    margin-left: 40%;
-    margin-top: 2em;
-    margin-bottom: 4em;
+    border-radius: 8px;
+    padding: 8px;
 }
 
+.descricao__btn:hover {
+    width: 108px;
+}
+
+.descricao__btn:active {
+    width: 105px;
+}
 
 .rodape {
-    height: 20em;
+    height: 23em;
 }
 
-.contener-logo-rodape {
-    width: 210px;
-    height: 100%;
+.rodape__contener {
+    background: linear-gradient(90deg, #000000 50%, #16295e);
     display: flex;
-    align-items: center;
+    height: 100%;
+    justify-content: space-around;
+    width: 100%;
 }
 
-.contener-informacoes-adicionai {
+.contener__logo {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo__imagem {
+    height: 65px;
+    width: 250px;
+}
+
+.contener__informacoes {
     height: 100%;
     width: 150px;
 }
 
-li {
+.informacoes__item {
     margin-top: 2em;
 }
 
-.contener-all {
-    background: linear-gradient(90deg, #000000 50%, #16295e);
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
+.imagens__autorais {
+    color: #857f7a;
+    font-size: 18px;
+    text-decoration: underline;
 }
 
-.contener-foormulario {
-    width: 400px;
-    height: 100%;
+.imagens__autorais:hover {
+    font-size: 19px;
+}
+
+.imagens__autorais:active {
+    font-size: 16px;
+}
+
+.contener__foormulario {
     display: flex;
     flex-direction: column;
+    height: 100%;
     justify-content: space-evenly;
+    width: 400px;
 }
 
-h1 {
+.formulario__comunique {
+    font-size: 18px;
     text-align: center;
 }
 
-.input-nome {
-    height: 25px;
+.formulario__nome {
     border-radius: 10px;
     border: transparent;
+    height: 30px;
     opacity: 40%;
+    text-align: center;
 }
 
-.input-mensagem {
-    height: 60px;
+.formulario__mensagem {
     border-radius: 10px;
     border: transparent;
+    height: 70px;
     opacity: 40%;
+    text-align: center;
 }
 
-.btn-enviar {
-    color: #857f7a;
-    width: 60%;
-    margin-left: 4em;
+.formulario__btn {
+    cursor: pointer;
+    background: linear-gradient(40deg, #120d16, #193a5f);
     border-radius: 5px;
     border: transparent;
-    background: linear-gradient(40deg, #120d16, #193a5f);
+    color: #857f7a;
+    font-size: 18px;
+    height: 40px;
+    margin-left: 4em;
+    width: 60%;
 }
 
-.btn-enviar:hover {
-    width: 62%;
+.formulario__btn:hover {
+    width: 61%;
 }
 
-.ancora-voltar-inicio {
-    text-decoration: none;
-    color: #aca6a2;
+.formulario__btn:active {
+    width: 59%;
 }
 
-.contener-popup {
-    position: fixed;
-    top: 150px;
-    width: 100%;
+.contener__popup {
     height: 450px;
+    position: fixed;
     text-align: center;
+    top: 150px;
     visibility: hidden;
+    width: 100%;
 }
 
 .popup {
-    text-align: center;
-    width: 40%;
-    height: 30%;
+    background: linear-gradient(40deg,#152f4d, #300e0e, #260366);
     border-radius: 15px;
-    position: fixed;
-    top: 40%;
+    height: 30%;
     left: 30%;
-    background-color: #152f4d;
-}
-
-.popup-close {
-    cursor: pointer;
-    color: #000000;
-    position: absolute;
-    top: 15px;
-    right: 10px;
-    font-size: 20px;
-}
-
-.descricao-popup {
-    color: #aca6a2;
-    margin-top: 3em;
-    font-size: 20px;
-    font-family: 'Arima', cursive;
-}
-
-.btn-voltar-inicio {
-    margin-top: 2em;
-    cursor: pointer;
-    color: #aca6a2;
-    text-decoration: none;
-    font-family: 'Arima', cursive;
-    width: 50%;
-    font-size: 18px;
-    padding: 5px 15px;
-    margin-left: 3em;
-    border-radius: 10px;
-    border-color: transparent;
-    background: linear-gradient(70deg, #3f1d55, #0a66ce);
-}
-
-.contner-desenvolvedor {
+    position: fixed;
     text-align: center;
+    top: 40%;
+    width: 40%;
+}
+
+.popup__close {
+    color: #000000;
+    cursor: pointer;
+    font-size: 20px;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+}
+
+.popup__close:hover {
+    font-size: 21px;
+}
+
+.popup__close:active {
+    font-size: 19px;
+}
+
+.popup__descricao {
+    color: #aca6a2;
+    font-family: 'Arima', cursive;
+    font-size: 20px;
+    margin-top: 3em;
+}
+
+.popup__ancora {
+    text-decoration: none;
+}
+
+.popup__btn {
+    background: linear-gradient(70deg, #3f1d55, #0a66ce);
+    border-color: transparent;
+    border-radius: 10px;
+    color: #aca6a2;
+    cursor: pointer;
+    font-family: 'Arima', cursive;
+    font-size: 18px;
+    margin-left: 2em;
+    margin-top: 2em;
+    padding: 5px 15px;
+    text-decoration: none;
+    width: 50%;
+}
+
+.popup__btn:hover {
+    height: 37px;
+    width: 51%;
+}
+
+.popup__btn:active {
+    height: 34px;
+    width: 49%;
+}
+
+.contner__desenvolvedor {
     background: linear-gradient(90deg, #000000 50%, #16295e);
+    display: flex;
+    flex-direction: column;
+    height: 5em;
+    justify-content: center;
+    text-align: center;
+}
+
+.desenvolvedor {
+    font-size: 18px;
 }

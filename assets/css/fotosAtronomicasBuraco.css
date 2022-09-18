@@ -1,281 +1,457 @@
-.contener-body {
-    background-color: rgb(7, 7, 7);
+.corpo {
+    background-color: #000000;
     color: #857f7a;
-    height: 100vh;
-}
-
-header {
-    height: 4em;
-}
-
-.contener-logo-campo {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin-top: 1em;
-}
-
-.campodepesquisa {
-    height: 30px;
-    width: 35%;
-    border-color: transparent;
-    background: transparent;
-    border-radius: 10px;
-}
-
-.icone-pesquisar {
-    position: absolute;
-    left: 84%;
-}
-
-#tres-pontinhos {
-    cursor: pointer;
-    font-size: 30px;
-    margin-left: 4em;
-}
-
-#tres-pontinhos:hover {
-    font-size: 30px;
-    color: #353434;
-    border-radius: 20px;
-    background: #c0bbb8;
-    border: solid #c0bbb8;
-    opacity: 50%;
-}
-
-.contener-trespotinhos-adicionar {
-    width: 100%;
-    display: flex;
-    justify-content: end;
-}
-
-.contener-adicionar {
-    margin: 1em 1em 0 0;
-    text-align: center;
-    visibility: hidden;
-    border: solid 3px;
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    background: linear-gradient(40deg, #000000 60%, #300e2a);
-    border-radius: 10px;
-}
-
-h2 {
-    margin-top: 1em;
-}
-
-.adicionar-produtos-ao-site {
-    text-decoration: none;
-    color: #c0bbb8;
-}
-
-.contener-produto-informacao {
-    display: flex;
-    flex-wrap: wrap;
-    height: 100%;
-    justify-content: space-around;
-    margin-top: 4rem;
-    margin-bottom: 5rem;
-    width: 100%;
-}
-
-.imagem-fotos-astronomicas-buraco {
-    border-radius: 20px;
-    width: 640px;
-    height: 359px;
-}
-
-.imagemFotosAstronomicas {
-    border-radius: 20px;
-    width: 24em;
-    height: 14em;
-}
-
-.contener-informacoes-adicionais {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 4em;
-}
-
-.nome-produto {
-    font-size: 50px;
-}
-
-.preco-produto {
-    font-size: 30px;
-    margin-bottom: 3em;
-}
-
-.btn-compar {
-    cursor: pointer;
-    color: #454553;
-    font-size: 22px;
-    margin-bottom: 4em;
-    border-radius: 5px;
-    border: transparent;
-    background: linear-gradient(40deg, #120d16, #193a5f);
-}
-
-.btn-compar:hover {
-    font-size: 23px;
-}
-
-.informacoes-produto {
-    margin-bottom: 5em;
     font-size: 18px;
 }
 
-.btn-saiba-mais {
+.cabecalho {
+    height: 4em;
+}
+
+.contener__cabecalho {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.cabecalho__logo {
+    height: 65px;
+    width: 250px;
+}
+
+.cabecalho__input {
+    background: transparent;
+    border-color: transparent;
+    border-radius: 10px;
+    height: 30px;
+    width: 35%;
+}
+
+.cabecalho__icone {
+    left: 65%;
+    position: absolute;
+}
+
+.cabecalho__ancora {
+    text-decoration: none;
+}
+
+.cabecalho__btn {
+    background: linear-gradient(70deg, #3f1d55, #0a66ce);
+    border-color: transparent;
+    border-radius: 10px;
+    color: #c0bbb8;
     cursor: pointer;
-    color: #86898d;
-    font-size: 17px;
+    font-family: 'Arima', cursive;
+    font-size: 18px;
+    padding: 5px 15px;
+}
+
+.cabecalho__btn:hover {
+    height: 37px;
+    width: 79px;
+}
+
+.cabecalho__btn:active {
+    height: 33px;
+    width: 75px;
+}
+
+.contener__potinhos {
+    height: 30px;
+    width: 30px;
+}
+
+.pontinhos__icone {
+    cursor: pointer;
+}
+
+.pontinhos__icone:hover {
+    background: #c0bbb8;
+    border-radius: 20px;
+    border: solid #c0bbb8;
+    color: #353434;
+    opacity: 50%;
+}
+
+.pontinhos__icone:active {
+    height: 26px;
+    width: 26px;
+}
+
+.contener__menu {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+
+.menu__adicionar {
+    background: linear-gradient(40deg, #000000 60%, #300e2a);
+    border-radius: 10px;
+    border: solid 3px;
+    height: 200px;
+    margin: 1em 1em 0 0;
+    position: absolute;
+    text-align: center;
+    visibility: hidden;
+    width: 200px;
+}
+
+.menu__item {
+    font-size: 18px;
     margin-top: 2em;
+    text-align: center;
+}
+
+.menu__ancora {
+    color: #c0bbb8;
+    text-decoration: none;
+}
+
+.contener__menu {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+
+.menu__adicionar {
+    background: linear-gradient(40deg, #000000 60%, #300e2a);
+    border-radius: 10px;
+    border: solid 3px;
+    height: 200px;
+    margin: 1em 1em 0 0;
+    position: absolute;
+    text-align: center;
+    visibility: hidden;
+    width: 200px;
+}
+
+.menu__item {
+    font-size: 18px;
+    margin-top: 2em;
+    text-align: center;
+}
+
+.menu__ancora {
+    color: #c0bbb8;
+    text-decoration: none;
+}
+
+.astronomica__contener {
+    display: flex;
+    height: 100%;
+    margin-bottom: 5rem;
+    margin-top: 4rem;
+    width: 100%;
+}
+
+.contener__imagem {
+    display: flex;
+    height: 359px;
+    justify-content: center;
+    width: 60%;
+}
+
+.contener__informacao {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 40%;
+}
+
+.imagem__produto {
+    border-radius: 20px;
+    height: 359px;
+    width: 640px;
+}
+
+.informacao__nome {
+    font-size: 50px;
+}
+
+.informacao__preco {
+    font-size: 30px;
+}
+
+.informacao__compar {
+    background: linear-gradient(40deg, #120d16, #193a5f);
     border-radius: 5px;
     border: transparent;
-    background: linear-gradient(40deg, #120d16, #193a5f);
+    color: #888899;
+    cursor: pointer;
+    font-size: 22px;
+    height: 40px;
+    padding: 4px 6px;
 }
 
-.contener-nome-produtos-similares {
+.informacao__compar:hover {
+    font-size: 23px;
+}
+
+.informacao__compar:active {
+    font-size: 21px;
+}
+
+.informacao__descricao {
+    font-size: 18px;
+}
+
+.contener__similar {
+    display: flex;
+    flex-direction: column;
     font-size: 35px;
-    height: 200px;
+    height: 600px;
+    justify-content: space-around;
     width: 100%;
-    display: flex;
-    justify-content: space-around;
 }
 
-.contener-produtos-similares {
-    display: flex;
-    justify-content: space-around;
+.similar__titulo {
+    height: 100px;
+    text-align: center;
+    width: 100%;
 }
 
+.titulo__descricao {
+    font-size: 35px;
+    height: 60px;
+}
+
+.similar__contener {
+    align-items: center;
+    display: flex;
+    height: 700px;
+    justify-content: space-evenly;
+}
+
+.contener__produtos {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
+    width: 33%;
+}
+
+.produto__imagem {
+    border-radius: 20px;
+    height: 224px;
+    width: 384px;
+}
+
+.produto__titulo {
+    font-size: 23px;
+}
+
+.produto__preco {
+    font-size: 22px;
+}
+
+.produto__ancora {
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.produto__ancora:active {
+    font-size: 19px;
+}
+
+.produto__btn {
+    background-color: #2a50b8;
+    border-radius: 20px;
+    color: #000000;
+    cursor: pointer;
+    height: 50px;
+    padding: 4px 6px;
+    width: 140px;
+}
+
+.produto__btn:hover {
+    width: 143px;
+}
+
+.produto__btn:active {
+    width: 139px;
+}
 
 .rodape {
-    height: 20em;
+    height: 23em;
 }
 
-.contener-logo-rodape {
-    width: 210px;
-    height: 100%;
+.rodape__contener {
+    background: linear-gradient(90deg, #000000 50%, #16295e);
     display: flex;
-    align-items: center;
+    height: 100%;
+    justify-content: space-around;
+    width: 100%;
 }
 
-.contener-informacoes-adicionai {
+.contener__logo {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo__imagem {
+    height: 65px;
+    width: 250px;
+}
+
+.contener__informacoes {
     height: 100%;
     width: 150px;
 }
 
-li {
+.informacoes__item {
     margin-top: 2em;
 }
 
-.contener-all {
-    background: linear-gradient(90deg, #000000 50%, #16295e);
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
+.imagens__autorais {
+    color: #857f7a;
+    font-size: 18px;
+    text-decoration: underline;
 }
 
-.contener-foormulario {
-    width: 400px;
-    height: 100%;
+.imagens__autorais:hover {
+    font-size: 19px;
+}
+
+.imagens__autorais:active {
+    font-size: 16px;
+}
+
+.contener__foormulario {
     display: flex;
     flex-direction: column;
+    height: 100%;
     justify-content: space-evenly;
+    width: 400px;
 }
 
-h1 {
+.formulario__comunique {
+    font-size: 18px;
     text-align: center;
 }
 
-.input-nome {
-    height: 25px;
+.formulario__nome {
     border-radius: 10px;
     border: transparent;
+    height: 30px;
     opacity: 40%;
+    text-align: center;
 }
 
-.input-mensagem {
-    height: 60px;
+.formulario__mensagem {
     border-radius: 10px;
     border: transparent;
+    height: 70px;
     opacity: 40%;
+    text-align: center;
 }
 
-.btn-enviar {
-    color: #857f7a;
-    width: 60%;
-    margin-left: 4em;
+.formulario__btn {
+    cursor: pointer;
+    background: linear-gradient(40deg, #120d16, #193a5f);
     border-radius: 5px;
     border: transparent;
-    background: linear-gradient(40deg, #120d16, #193a5f);
+    color: #857f7a;
+    font-size: 18px;
+    height: 40px;
+    margin-left: 4em;
+    width: 60%;
 }
 
-.btn-enviar:hover {
-    width: 62%;
+.formulario__btn:hover {
+    width: 61%;
 }
 
-.ancora-voltar-inicio {
-    text-decoration: none;
-    color: #aca6a2;
+.formulario__btn:active {
+    width: 59%;
 }
 
-.contener-popup {
-    position: fixed;
-    top: 150px;
-    width: 100%;
+.contener__popup {
     height: 450px;
+    position: fixed;
     text-align: center;
+    top: 150px;
     visibility: hidden;
+    width: 100%;
 }
 
 .popup {
-    text-align: center;
-    width: 40%;
-    height: 30%;
+    background: linear-gradient(40deg, #152f4d, #300e0e, #260366);
     border-radius: 15px;
-    position: fixed;
-    top: 40%;
+    height: 30%;
     left: 30%;
-    background-color: #152f4d;
+    position: fixed;
+    text-align: center;
+    top: 40%;
+    width: 40%;
 }
 
-.popup-close {
-    cursor: pointer;
+.popup__close {
     color: #000000;
-    position: absolute;
-    top: 15px;
-    right: 10px;
-    font-size: 20px;
-}
-
-.descricao-popup {
-    color: #aca6a2;
-    margin-top: 3em;
-    font-size: 20px;
-    font-family: 'Arima', cursive;
-}
-
-.btn-voltar-inicio {
-    margin-top: 2em;
     cursor: pointer;
+    font-size: 20px;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+}
+
+.popup__close:hover {
+    font-size: 21px;
+}
+
+.popup__close:active {
+    font-size: 19px;
+}
+
+.popup__descricao {
+    color: #aca6a2;
+    font-family: 'Arima', cursive;
+    font-size: 20px;
+    margin-top: 3em;
+}
+
+.popup__btn {
+    background: linear-gradient(70deg, #3f1d55, #0a66ce);
+    border-color: transparent;
+    border-radius: 10px;
+    color: #aca6a2;
+    cursor: pointer;
+    font-family: 'Arima', cursive;
+    font-size: 18px;
+    margin-left: 3em;
+    margin-top: 2em;
+    padding: 5px 15px;
+    text-decoration: none;
+    width: 50%;
+}
+
+.popup__btn:hover {
+    height: 37px;
+    width: 51%;
+}
+
+.popup__btn:active {
+    height: 34px;
+    width: 49%;
+}
+
+.popup__ancora {
     color: #aca6a2;
     text-decoration: none;
-    font-family: 'Arima', cursive;
-    width: 50%;
-    font-size: 18px;
-    padding: 5px 15px;
-    margin-left: 3em;
-    border-radius: 10px;
-    border-color: transparent;
-    background: linear-gradient(70deg, #3f1d55, #0a66ce);
 }
 
-.contner-desenvolvedor {
-    text-align: center;
+.contner__desenvolvedor {
     background: linear-gradient(90deg, #000000 50%, #16295e);
+    display: flex;
+    flex-direction: column;
+    height: 5em;
+    justify-content: center;
+    text-align: center;
+}
+
+.desenvolvedor {
+    font-size: 18px;
 }
