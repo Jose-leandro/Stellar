@@ -1,0 +1,205 @@
+@media screen and (max-width: 480px) {
+
+    .cabecalho__logo {
+        height: 50px;
+        width: 100px;
+    }
+
+    
+.cabecalho__input {
+    border-radius: 10px;
+    height: 30px;
+    width: 10%;
+}
+
+
+.contener__banner {
+    height: 180px;
+    width: 100%;
+}
+
+.banner__imagem {
+    border-radius: 10px;
+    height: 150px;
+    width: 100%;
+}
+
+.banner__ancora {
+    font-size: 14px;
+}
+
+.banner__btn {
+    width: 80px;
+    height: 50px;
+    position: absolute;
+    top: 100px;
+    left: 80px;
+}
+
+.contener__categoria {
+    height: 250px;
+    width: 100%;
+}
+
+.categoria__item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 40%;
+    justify-content: space-evenly;
+    width: 25%;
+}
+
+.item__imagem {
+    height: 40px;
+    width: 40px;
+}
+
+.item__nome {
+    font-size: 14px;
+}
+
+.titulo__nome {
+    cursor: default;
+    font-size: 22px;
+    margin-left: 1em;
+}
+
+.titulo__ancora {
+    width: 100px;
+    margin-right: 1em;
+}
+
+.titulo__btn {
+    width: 50px;
+}
+
+.contener__telescopio {
+    height: 1200px;
+}
+
+.telescopios__contener {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.refrator__imagem {
+    height: 130px;
+    width: 200px;
+}
+
+.contener__binoculos {
+    height: 1200px;
+}
+
+.binoculos__contener {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.binoculos__imagem {
+    height: 130px;
+    width: 200px;
+}
+
+.contener__camera {
+    height: 1200px;
+}
+
+.camera__contener {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.camera__imagem {
+    height: 130px;
+    width: 200px;
+}
+
+
+.contener__astronomicas {
+    height: 1200px;
+}
+
+.astronomicas__contener {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.astronomicas__imagem {
+    height: 130px;
+    width: 200px;
+}
+
+.rodape {
+    height: 800px;
+}
+
+.rodape__contener {
+    display: flex;
+    flex-direction: column;
+}
+
+.contener__logo {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+}
+
+.logo__imagem {
+    width: 150px;
+    height: 50px;
+}
+
+.contener__informacoes {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.informacoes__item {
+    font-size: 14px;
+}
+
+.contener__formulario {
+    width: 90%;
+}
+
+.formulario__comunique {
+    width: 80%;
+}
+
+.formulario__nome {
+    width: 60%;
+}
+
+.formulario__mensagem {
+    width: 60%;
+}
+
+.contener__popup {
+    width: 70%;
+}
+
+}

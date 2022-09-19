@@ -148,6 +148,11 @@
     font-size: 20px;
 }
 
+.autoral__icone {
+    width: 70px;
+    height: 70px;
+}
+
 .autoral__banner {
     height: 70px;
     width: 200px;
@@ -160,5 +165,10 @@
 
 .autoral__binoculo {
     height: 80px;
+    width: 150px;
+}
+
+.autoral__telescopio {
+    height: 100px;
     width: 150px;
 }
