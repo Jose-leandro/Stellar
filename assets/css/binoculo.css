@@ -115,23 +115,27 @@
     justify-content: space-around;
 }
 
+.produtos__descricao{
+    width: 400px;
+    height: 450px;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .descricao__imagem {
     border-radius: 20px;
     height: 179px;
-    margin: 30px 30px 0 0;
     width: 320px;
 }
 
 .descricao__binoculos {
     font-size: 20px;
-    margin-left: 4em;
-    margin-top: 1em;
 }
 
 .descricao__preco {
     color: #ffff;
-    margin-left: 2em;
-    margin-top: 2em;
 }
 
 .descricao__ancora {
@@ -143,9 +147,6 @@
     color: #000;
     background-color: #0a66ce;
     border-radius: 8px;
-    margin-bottom: 4em;
-    margin-left: 40%;
-    margin-top: 2em;
     padding: 8px;
 }
 
@@ -211,7 +212,7 @@
     font-size: 16px;
 }
 
-.contener__foormulario {
+.contener__formulario {
     display: flex;
     flex-direction: column;
     height: 100%;

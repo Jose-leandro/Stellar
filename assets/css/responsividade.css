@@ -311,6 +311,14 @@
         width: 90%;
     }
 
+    .astronomica__contener {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-evenly;
+        width: 90%;
+    }
+
     .contener__astronomicas--size {
         height: 400px;
     }
@@ -383,7 +391,7 @@
     }
 
     .formulario__nome {
-        margin-left: 2em;
+        margin-left: 1em;
         width: 80%;
     }
 
@@ -481,7 +489,7 @@
 
     .imagem__produto {
         height: 200px;
-        width: 300px;
+        width: 270px;
     }
 
     .contener__informacao {
@@ -495,6 +503,7 @@
 
     .informacao__descricao {
         width: 300px;
+        margin-left: 1em;
     }
 
     .contener__similar {
@@ -521,11 +530,47 @@
         flex-direction: column;
         height: 100%;
         justify-content: space-evenly;
-        width: 33%;
+        width: 100%;
     }
 
     .produto__imagem {
         height: 200px;
         width: 250px;
     }
+
+    .produtos__descricao {
+        width: 100%;
+    }
+
+    .descricao__imagem {
+        width: 270px;
+    }
+
+    .formulario__email {
+        margin-left: 1em;
+        width: 80%;
+    }
+
+    .formulario__senha {
+        margin-left: 1em;
+        width: 80%;
+    }
+
+    .main__formulario {
+        width: 310px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .formulario__localizacao {
+        margin-left: 1em;
+        width: 80%;
+    }
+
+    .formulario__nascimento {
+        margin-left: 1em;
+        width: 80%;
+    }
+
 }
