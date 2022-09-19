@@ -1,6 +1,8 @@
 @media screen and (max-width: 480px) {
 
     .contener__cabecalho {
+        width: 100%;
+        height: 70px;
         display: flex;
         justify-content: space-around;
     }
@@ -19,7 +21,7 @@
 
 .cabecalho__icone {
 
-    left: 55%;
+    left: 58%;
     position: absolute;
 }
 
@@ -34,6 +36,37 @@
     font-size: 14px;
 }
 
+.cabecalho__btn:hover {
+    height: 31px;
+    width: 61px;
+}
+
+.cabecalho__btn:active {
+    height: 29px;
+    width: 59px;
+}
+
+
+.contener__menu {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+
+.menu__adicionar {
+    height: 120px;
+    margin: 1em 1em 0 0;
+    position: absolute;
+    text-align: center;
+    width: 150px;
+}
+
+.menu__item {
+    font-size: 14px;
+    margin-top: 2em;
+    text-align: center;
+}
+
 .contener__banner {
     height: 180px;
     width: 98%;
@@ -45,6 +78,10 @@
     width: 98%;
 }
 
+.banner__ancora:active {
+    font-size: 15px;
+}
+
 .banner__btn {
     font-size: 14px;
     width: 100px;
@@ -52,6 +89,11 @@
     position: absolute;
     top: 190px;
     left: 120px;
+}
+
+.banner__btn:hover {
+    height: 28px;
+    width: 101px;
 }
 
 .banner__btn:active {
@@ -82,6 +124,11 @@
     width: 40px;
 }
 
+.item__imagem:hover {
+    height: 41px;
+    width: 41px;
+}
+
 .item__imagem:active {
     height: 39px;
     width: 39px;
@@ -91,6 +138,10 @@
     width: 30px;
     height: 20px;
     font-size: 14px;
+}
+
+.item__nome:hover {
+    font-size: 15px;
 }
 
 .item__nome:active {
@@ -109,15 +160,25 @@
 }
 
 .titulo__nome {
+    width: 120px;
     cursor: default;
     font-size: 22px;
     margin-left: 1em;
+}
+
+.titulo__nome:hover {
+    font-size: 23px;
 }
 
 .titulo__btn {
     height: 45px;
     width: 50px;
     margin-right: 1em;
+}
+
+.titulo__btn:hover {
+    height: 46px;
+    width: 51px;
 }
 
 .titulo__btn:active {
@@ -237,13 +298,14 @@
     width: 200px;
 }
 
-.astronomicas__produtos {
+.astronomicas__produto {
     text-align: center;
+    margin-left: 1em;
 }
 
 .rodape {
     width: 100%;
-    height: 800px;
+    height: 850px;
 }
 
 .rodape__contener {
@@ -267,16 +329,27 @@
 
 .contener__informacoes {
     width: 90%;
-    height: 500px;
+    height: 540px;
     display: flex;
     justify-content: space-evenly;
 }
 
 .informacoes__item {
+    height: 30px;
+    width: 150px;
     font-size: 14px;
 }
 
+.imagens__autorais {
+    height: 25px;
+}
+
+.imagens__autorais:hover {
+    font-size: 19px;
+}
+
 .contener__formulario {
+    margin-top: 1em;
     width: 90%;
    text-align: center;
 }
@@ -297,5 +370,69 @@
     margin-left: 2em;
 }
 
+
+.contener__popup {
+    height: 450px;
+    position: fixed;
+    text-align: center;
+    top: 150px;
+    visibility: hidden;
+    width: 100%;
+}
+
+.popup {
+    height: 30%;
+    left: 20%;
+    position: fixed;
+    text-align: center;
+    top: 40%;
+    width: 55%;
+}
+
+.popup__close {
+    cursor: pointer;
+    font-size: 20px;
+    top: 10px;
+}
+
+.popup__close:hover {
+    font-size: 21px;
+}
+
+.popup__close:active {
+    font-size: 19px;
+}
+
+.popup__descricao {
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.popup__btn {
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 1em;
+    margin-left: 0;
+    padding: 5px 8px;
+    text-decoration: none;
+    width: 50%;
+}
+
+.popup__btn:hover {
+    height: 37px;
+    width: 51%;
+}
+
+.popup__btn:active {
+    height: 34px;
+    width: 49%;
+}
+
+.main__btns {
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
 
 }
