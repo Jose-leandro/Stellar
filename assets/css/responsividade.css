@@ -1,53 +1,80 @@
 @media screen and (max-width: 480px) {
 
+    .contener__cabecalho {
+        display: flex;
+        justify-content: space-around;
+    }
+
     .cabecalho__logo {
-        height: 50px;
-        width: 100px;
+        height: 30px;
+        width: 80px;
     }
 
     
 .cabecalho__input {
     border-radius: 10px;
     height: 30px;
-    width: 10%;
+    width: 120px;
 }
 
+.cabecalho__icone {
+
+    left: 55%;
+    position: absolute;
+}
+
+.cabecalho__ancora {
+    text-align: center;
+}
+
+.cabecalho__btn {
+    text-align: center;
+    height: 30px;
+    width: 60px;
+    font-size: 14px;
+}
 
 .contener__banner {
     height: 180px;
-    width: 100%;
+    width: 98%;
 }
 
 .banner__imagem {
     border-radius: 10px;
     height: 150px;
-    width: 100%;
-}
-
-.banner__ancora {
-    font-size: 14px;
+    width: 98%;
 }
 
 .banner__btn {
-    width: 80px;
-    height: 50px;
+    font-size: 14px;
+    width: 100px;
+    height: 27px;
     position: absolute;
-    top: 100px;
-    left: 80px;
+    top: 190px;
+    left: 120px;
+}
+
+.banner__btn:active {
+    height: 26px;
+    width: 99px;
 }
 
 .contener__categoria {
-    height: 250px;
-    width: 100%;
+    height: 150px;
+    width: 300px;
 }
 
 .categoria__item {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 40%;
-    justify-content: space-evenly;
-    width: 25%;
+    height: 100px;
+    justify-content: space-around;
+    width: 70px;
+}
+
+.item__imagens--height {
+    height: 66%;
 }
 
 .item__imagem {
@@ -55,8 +82,30 @@
     width: 40px;
 }
 
+.item__imagem:active {
+    height: 39px;
+    width: 39px;
+}
+
 .item__nome {
+    width: 30px;
+    height: 20px;
     font-size: 14px;
+}
+
+.item__nome:active {
+    font-size: 13px;
+}
+
+.contener__telescopio {
+    height: 1200px;
+    margin-bottom: 3em;
+}
+
+.telescopio__titulo {
+    display: flex;
+    height: 50px;
+    justify-content: space-around;
 }
 
 .titulo__nome {
@@ -65,26 +114,38 @@
     margin-left: 1em;
 }
 
-.titulo__ancora {
-    width: 100px;
+.titulo__btn {
+    height: 45px;
+    width: 50px;
     margin-right: 1em;
 }
 
-.titulo__btn {
-    width: 50px;
+.titulo__btn:active {
+    height: 44px;
+    width: 49px;
 }
 
-.contener__telescopio {
-    height: 1200px;
+#titulo__seta {
+    cursor: default;
+    font-size: 30px;
+    position: absolute;
+    right: 10px;
+}
+
+#titulo__seta:hover {
+    font-size: 31px;
 }
 
 .telescopios__contener {
-    align-items: center;
     display: flex;
     height: 100%;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-evenly;
-    width: 100%;
+    width: 90%;
+}
+
+.contener__refrator {
+    height: 350px;
 }
 
 .refrator__imagem {
@@ -94,16 +155,25 @@
 
 .contener__binoculos {
     height: 1200px;
+    margin-bottom: 3em;
+}
+
+.binoculos__titulo {
+    display: flex;
+    height: 50px;
+    justify-content: space-around;
 }
 
 .binoculos__contener {
-    align-items: center;
     display: flex;
     height: 100%;
     flex-direction: column;
-    flex-wrap: wrap;
     justify-content: space-evenly;
-    width: 100%;
+    width: 90%;
+}
+
+.contener__binoculos--size {
+    height: 350px;
 }
 
 .binoculos__imagem {
@@ -113,16 +183,25 @@
 
 .contener__camera {
     height: 1200px;
+    margin-bottom: 3em;
+}
+
+.camera__titulo {
+    display: flex;
+    height: 50px;
+    justify-content: space-around;
 }
 
 .camera__contener {
-    align-items: center;
     display: flex;
     height: 100%;
     flex-direction: column;
-    flex-wrap: wrap;
     justify-content: space-evenly;
-    width: 100%;
+    width: 90%;
+}
+
+.contener__camera--size {
+    height: 350px;
 }
 
 .camera__imagem {
@@ -130,19 +209,27 @@
     width: 200px;
 }
 
-
 .contener__astronomicas {
-    height: 1200px;
+    height: 1300px;
+    margin-bottom: 3em;
+}
+
+.astronomicas__titulo {
+    display: flex;
+    height: 50px;
+    justify-content: space-around;
 }
 
 .astronomicas__contener {
-    align-items: center;
     display: flex;
     height: 100%;
     flex-direction: column;
-    flex-wrap: wrap;
     justify-content: space-evenly;
-    width: 100%;
+    width: 90%;
+}
+
+.contener__astronomicas--size {
+    height: 400px;
 }
 
 .astronomicas__imagem {
@@ -150,11 +237,18 @@
     width: 200px;
 }
 
+.astronomicas__produtos {
+    text-align: center;
+}
+
 .rodape {
+    width: 100%;
     height: 800px;
 }
 
 .rodape__contener {
+    align-items: center;
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -167,12 +261,12 @@
 }
 
 .logo__imagem {
-    width: 150px;
+    width: 180px;
     height: 50px;
 }
 
 .contener__informacoes {
-    width: 100%;
+    width: 90%;
     height: 500px;
     display: flex;
     justify-content: space-evenly;
@@ -184,22 +278,24 @@
 
 .contener__formulario {
     width: 90%;
+   text-align: center;
 }
 
 .formulario__comunique {
+    margin-left: 2em;
     width: 80%;
+    text-align: center;
 }
 
 .formulario__nome {
-    width: 60%;
+    width: 80%;
+    margin-left: 2em;
 }
 
 .formulario__mensagem {
-    width: 60%;
+    width: 80%;
+    margin-left: 2em;
 }
 
-.contener__popup {
-    width: 70%;
-}
 
 }

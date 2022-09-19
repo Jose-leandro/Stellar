@@ -199,7 +199,7 @@
     height: 7%;
     text-align: center;
     text-decoration: none;
-    width: 100%;
+    width: 70px;
 }
 
 .item__nome:hover {
@@ -214,6 +214,7 @@
 .contener__telescopio {
     height: 570px;
     margin: 1em 0;
+    margin-bottom: 2em;
     width: 100%;
 }
 
@@ -347,6 +348,7 @@
 .contener__binoculos--size {
     height: 500px;
     display: flex;
+    align-items: center;
     flex-direction: column;
     justify-content: space-evenly;
 }
@@ -388,8 +390,8 @@
 }
 
 .contener__camera {
-    height: 480px;
-    margin-bottom: 4em;
+    height: 570px;
+    margin-bottom: 2em;
     margin-top: 3em;
     width: 100%;
 }
@@ -403,13 +405,15 @@
 
 .camera__contener {
     display: flex;
-    height: 410px;
+    height: 500px;
     justify-content: space-around;
     width: 100%;
 }
 
 .contener__camera--size {
+    height: 500px;
     display: flex;
+    align-items: center;
     flex-direction: column;
     justify-content: space-evenly;
 }
@@ -422,14 +426,10 @@
 
 .camera__produto {
     font-size: 20px;
-    margin-left: 2em;
-    margin-top: 1em;
 }
 
 .camera__preco {
     color: #ffff;
-    margin-left: 2em;
-    margin-top: 2em;
 }
 
 .camera__ancora {
@@ -442,8 +442,6 @@
     background-color: #0a66ce;
     border-radius: 8px;
     height: 44px;
-    margin-left: 30%;
-    margin-top: 2em;
     text-align: center;
     width: 122px;
 }
@@ -457,7 +455,7 @@
 }
 
 .contener__astronomicas {
-    height: 490px;
+    height: 570px;
     margin-bottom: 4em;
     margin-top: 3em;
     width: 100%;
@@ -472,13 +470,16 @@
 
 .astronomicas__contener {
     display: flex;
-    height: 420px;
+    height: 500px;
     justify-content: space-around;
     width: 100%;
 }
 
 .contener__astronomicas--size {
+    height: 500px;
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     flex-direction: column;
     justify-content: space-evenly;
 }
@@ -491,14 +492,10 @@
 
 .astronomicas__produto {
     font-size: 20px;
-    margin-left: 2em;
-    margin-top: 1em;
 }
 
 .astronomicas__preco {
     color: #ffff;
-    margin-left: 2em;
-    margin-top: 2em;
 }
 
 .astronomicas__ancora {
@@ -511,8 +508,6 @@
     background-color: #0a66ce;
     border-radius: 8px;
     height: 44px;
-    margin-left: 30%;
-    margin-top: 2em;
     text-align: center;
     width: 122px;
 }
@@ -550,7 +545,7 @@
 
 .contener__informacoes {
     height: 100%;
-    width: 150px;
+    width: 200px;
 }
 
 .informacoes__item {
@@ -571,7 +566,7 @@
     font-size: 16px;
 }
 
-.contener__foormulario {
+.contener__formulario {
     display: flex;
     flex-direction: column;
     height: 100%;
