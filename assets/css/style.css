@@ -4,15 +4,34 @@
     font-size: 18px;
 }
 
+.cabecalho {
+    height: 4em;
+}
+
+
 .contener__cabecalho {
+    align-items: center;
+    justify-content: space-around;
     display: flex;
-     width: 100%;
+    width: 100%;
+}
+
+.cabecalho__logo {
+    height: 65px;
+    width: 250px;
 }
 
 .cabecalho__input {
+    height: 30px;
+    width: 35%;
     background: transparent;
     border-color: transparent;
     border-radius: 10px;
+}
+
+.cabecalho__icone {
+    left: 65%;
+    position: absolute;
 }
 
 .cabecalho__ancora {
@@ -20,6 +39,8 @@
 }
 
 .cabecalho__btn {
+    font-size: 18px;
+    padding: 5px 15px;
     background: linear-gradient(70deg, #3f1d55, #0a66ce);
     border-color: transparent;
     border-radius: 10px;
@@ -37,6 +58,11 @@
 .cabecalho__btn:active {
     height: 33px;
     width: 75px;
+}
+
+.contener__potinhos {
+    height: 30px;
+    width: 30px;
 }
 
 .pontinhos__icone {
@@ -57,17 +83,29 @@
 }
 
 .contener__menu {
+    justify-content: end;
+    width: 100%;
     display: flex;
     justify-content: end;
     width: 100%;
 }
 
 .menu__adicionar {
+    height: 200px;
+    margin: 1em 1em 0 0;
+    text-align: center;
+    width: 200px;
     background: linear-gradient(40deg, #000000 60%, #300e2a);
     border-radius: 10px;
     border: solid 3px;
     position: absolute;
     visibility: hidden;
+}
+
+.menu__item {
+    font-size: 18px;
+    margin-top: 2em;
+    text-align: center;
 }
 
 .menu__ancora {
@@ -79,6 +117,10 @@
     border-radius: 10px;
 }
 
+.banner__ancora:active {
+    font-size: 17px;
+}
+
 .banner__ancora {
     text-decoration: none;
 }
@@ -88,7 +130,8 @@
     border-radius: 8px;
     border: transparent;
     color: #aca6a2;
-    position: absolute;
+    font-size: 18px;
+    width: 150px;
 }
 
 .banner__btn:hover {
@@ -120,7 +163,17 @@
     text-decoration: none;
 }
 
+.item__nome:active {
+    text-decoration: none;
+}
+
+.contener__telescopio {
+    margin: 1em 0;
+    margin-bottom: 2em;
+}
+
 .telescopio__titulo {
+    width: 100%;
     display: flex;
 }
 
@@ -144,13 +197,23 @@
 
 .telescopios__contener {
     display: flex;
+    height: 500px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
 }
 
 .contener__refrator {
+    height: 500px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
     display: flex;
 }
 
 .refrator__imagem {
+    height: 10em;
+    width: 19em;
     border-radius: 20px;
 }
 
@@ -167,29 +230,51 @@
 }
 
 .refrator__btn {
+    cursor: pointer;
+    height: 44px;
+    text-align: center;
+    width: 122px;
     background-color: #0a66ce;
     border-radius: 8px;
     color: #000;
 }
 
+.refrator__btn:hover {
+    width: 126px;
+}
+
+.refrator__btn:active {
+    width: 120px;
+}
+
 .contener__binoculos {
+    height: 570px;
+    width: 100%;
     margin-bottom: 2em;
     margin-top: 1em;
 }
 
 .binoculos__titulo {
+    width: 100%;
     display: flex;
 }
 
 .binoculos__contener {
+    width: 100%;
     display: flex;
 }
 
 .contener__binoculos--size {
     display: flex;
+    height: 500px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .binoculos__imagem {
+    height: 10em;
+    width: 19em;
     border-radius: 20px;
 }
 
@@ -206,16 +291,30 @@
 }
 
 .binoculos__btn {
+    cursor: pointer;
+    height: 44px;
+    text-align: center;
+    width: 122px;
     color: #000;
     background-color: #0a66ce;
     border-radius: 8px;
 }
 
+.binoculos__btn:hover {
+    width: 126px;
+}
+
+.binoculos__btn:active {
+    width: 120px;
+}
+
 .contener__camera {
-    width: 100%;
+    margin-bottom: 2em;
+    margin-top: 3em;
 }
 
 .camera__titulo {
+    width: 100%;
     display: flex;
 }
 
@@ -225,9 +324,15 @@
 
 .contener__camera--size {
     display: flex;
+    height: 500px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .camera__imagem {
+    height: 10em;
+    width: 19em;
     border-radius: 20px;
 }
 
@@ -244,9 +349,21 @@
 }
 
 .camera__btn {
+    cursor: pointer;
+    height: 44px;
+    text-align: center;
+    width: 122px;
     color: #000;
     background-color: #0a66ce;
     border-radius: 8px;
+}
+
+.camera__btn:hover {
+    width: 126px;
+}
+
+.camera__btn:active {
+    width: 120px;
 }
 
 .contener__astronomicas {
@@ -260,16 +377,20 @@
 
 .astronomicas__contener {
     display: flex;
-    height: 500px;
-    justify-content: space-around;
-    width: 100%;
 }
 
 .contener__astronomicas--size {
     display: flex;
+    height: 500px;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .astronomicas__imagem {
+    height: 10em;
+    width: 19em;
     border-radius: 20px;
 }
 
@@ -287,8 +408,20 @@
 
 .astronomicas__btn {
     cursor: pointer;
+    height: 44px;
+    text-align: center;
+    width: 122px;
+    cursor: pointer;
     background-color: #0a66ce;
     border-radius: 8px;
+}
+
+.astronomicas__btn:hover {
+    width: 126px;
+}
+
+.astronomicas__btn:active {
+    width: 122px;
 }
 
 .rodape__contener {
@@ -297,13 +430,16 @@
 }
 
 .contener__logo {
-    align-self: center;
     display: flex;
-    flex-direction: column;
+}
+
+.contener__informacoes {
+    height: 100%;
+    width: 200px;
 }
 
 .informacoes__item {
-    margin-top: 2em;
+    margin-top: 1em;
 }
 
 .imagens__autorais {
@@ -321,6 +457,10 @@
 }
 
 .contener__formulario {
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
+    width: 400px;
     display: flex;
 }
 
@@ -330,11 +470,17 @@
 }
 
 .formulario__nome {
+    height: 30px;
+    opacity: 40%;
+    text-align: center;
     border-radius: 10px;
     border: transparent;
 }
 
 .formulario__mensagem {
+    height: 70px;
+    opacity: 40%;
+    text-align: center;
     border-radius: 10px;
     border: transparent;
 }
@@ -344,22 +490,58 @@
     border-radius: 5px;
     border: transparent;
     color: #857f7a;
+    cursor: pointer;
+    font-size: 18px;
+    height: 40px;
+    margin-left: 4em;
+    width: 60%;
+}
+
+
+.formulario__btn:hover {
+    width: 61%;
+}
+
+.formulario__btn:active {
+    width: 59%;
 }
 
 .contener__popup {
+    height: 450px;
+    text-align: center;
+    top: 150px;
+    width: 100%;
     position: fixed;
     visibility: hidden;
 }
 
 .popup {
-    background: linear-gradient(40deg,#152f4d, #300e0e, #260366);
+    background: linear-gradient(40deg, #152f4d, #300e0e, #260366);
     border-radius: 15px;
+    height: 30%;
+    left: 30%;
+    text-align: center;
+    top: 40%;
+    width: 40%;
     position: fixed;
 }
 
 .popup__close {
     color: #000000;
     position: absolute;
+    cursor: pointer;
+    font-size: 20px;
+    right: 10px;
+    top: 15px;
+}
+
+
+.popup__close:hover {
+    font-size: 21px;
+}
+
+.popup__close:active {
+    font-size: 19px;
 }
 
 .popup__descricao {
@@ -375,6 +557,12 @@
 }
 
 .popup__btn {
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 3em;
+    margin-top: 2em;
+    padding: 5px 15px;
+    width: 50%;
     background: linear-gradient(70deg, #3f1d55, #0a66ce);
     border-color: transparent;
     border-radius: 10px;
@@ -388,7 +576,21 @@
     width: 51%;
 }
 
+.popup__btn:active {
+    height: 34px;
+    width: 49%;
+}
+
 .contner__desenvolvedor {
     background: linear-gradient(90deg, #000000 50%, #16295e);
     display: flex;
+    flex-direction: column;
+    height: 5em;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.desenvolvedor {
+    font-size: 18px;
 }

@@ -160,8 +160,10 @@
     }
 
     .contener__categoria {
+        display: flex;
+        justify-content: space-evenly;
         height: 150px;
-        width: 300px;
+        width: 100%;
     }
 
     .categoria__item {
@@ -348,6 +350,7 @@
     .contener__logo {
         align-items: center;
         display: flex;
+        justify-content: center;
         height: 100px;
         width: 100%;
     }
@@ -359,13 +362,13 @@
 
     .contener__informacoes {
         display: flex;
-        height: 500px;
+        height: 300px;
         justify-content: space-evenly;
         width: 90%;
     }
 
     .informacoes__item {
-        font-size: 14px;
+        font-size: 16px;
         height: 30px;
         width: 150px;
     }
@@ -908,7 +911,7 @@
         width: 90%;
     }
 
-    
+
     .refrator__contener {
         display: flex;
         flex-direction: column;
@@ -978,7 +981,7 @@
         width: 350px;
         height: 190px;
     }
-    
+
     .astronomica__contener {
         display: flex;
         flex-direction: column;
@@ -986,10 +989,9 @@
         justify-content: space-evenly;
         width: 90%;
     }
-
 }
 
-@media screen and (min-width: 768px)  {
+@media screen and (min-width: 768px) {
     .contener__banner {
         height: 310px;
     }
@@ -1046,7 +1048,7 @@
         height: 47px;
         width: 99px;
     }
-    
+
     .contener__telescopio {
         height: 1050px;
         margin-bottom: 3em;
@@ -1059,7 +1061,7 @@
         justify-content: space-around;
         flex-wrap: wrap;
     }
-    
+
     .contener__binoculos {
         height: 1050px;
         margin-bottom: 3em;
@@ -1072,7 +1074,7 @@
         justify-content: space-around;
         flex-wrap: wrap;
     }
-    
+
     .contener__camera {
         height: 1050px;
         margin-bottom: 3em;
@@ -1085,242 +1087,168 @@
         justify-content: space-around;
         flex-wrap: wrap;
     }
-    
+
     .contener__astronomicas {
         height: 1050px;
         margin-bottom: 3em;
     }
+
+    .contener__logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .contener__informacoes {
+        height: 450px;
+    }
+
+    .informacoes__item {
+        text-align: center;
+        font-size: 18px;
+        margin-top: 2em;
+        width: 300px;
+    }
 }
 
 @media screen and (min-width: 1024px) {
- 
-.cabecalho {
-    height: 4em;
-}
 
-.contener__cabecalho {
-    align-items: center;
-    justify-content: space-around;
-}
+    .contener__banner {
+        height: 450px;
+        width: 100%;
+    }
 
-.cabecalho__logo {
-    height: 65px;
-    width: 250px;
-}
+    .banner__imagem {
+        height: 25em;
+        width: 100%;
+    }
 
-.cabecalho__input {
-    height: 30px;
-    width: 35%;
-}
+    .banner__btn {
+        position: absolute;
+        cursor: pointer;
+        height: 40px;
+        left: 35em;
+        top: 25em;
+    }
 
-.cabecalho__icone {
-    left: 65%;
-    position: absolute;
-}
+    .contener__categoria {
+        align-items: center;
+        height: 350px;
+        justify-content: space-evenly;
+    }
 
-.cabecalho__btn {
-    font-size: 18px;
-    padding: 5px 15px;
-}
+    .categoria__item {
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 250px;
+        justify-content: space-evenly;
+        width: 25%;
+    }
 
-.contener__potinhos {
-    height: 30px;
-    width: 30px;
-}
+    .item__imagens--height {
+        width: 100%;
+        height: 76%;
+    }
 
-.contener__menu {
-    justify-content: end;
-    width: 100%;
-}
+    .item__imagem {
+        align-items: center;
+        height: 120px;
+        justify-content: center;
+        margin-left: 35%;
+        width: 120px;
+    }
 
-.menu__adicionar {
-    height: 200px;
-    margin: 1em 1em 0 0;
-    text-align: center;
-    width: 200px;
-}
+    .item__imagem:hover {
+        height: 121px;
+        width: 121px;
+    }
 
-.menu__item {
-    font-size: 18px;
-    margin-top: 2em;
-    text-align: center;
-}
+    .item__imagem:active {
+        height: 118px;
+        width: 118px;
+    }
 
-.contener__banner {
-    height: 450px;
-    width: 100%;
-}
+    .item__nome {
+        font-size: 18px;
+    }
 
-.banner__imagem {
-    height: 25em;
-    width: 100%;
-}
 
-.banner__ancora:active {
-    font-size: 17px;
-}
+    .item__nome:hover {
+        font-size: 17px;
+    }
 
-.banner__btn {
-    cursor: pointer;
-    font-size: 18px;
-    height: 40px;
-    left: 32em;
-    top: 25em;
-    width: 150px;
-}
+    .item__nome:active {
+        font-size: 15px;
+    }
 
-.contener__categoria {
-    align-items: center;
-    height: 300px;
-    justify-content: space-evenly;
-}
 
-.categoria__item {
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 65%;
-    justify-content: space-evenly;
-    width: 25%;
-}
+    .contener__telescopio {
+        height: 570px;
+        width: 100%;
+    }
 
-.item__imagens--height {
-    height: 76%;
-}
+    .telescopio__titulo {
+        height: 70px;
+        justify-content: space-between;
+    }
 
-.item__imagem {
-    align-items: center;
-    height: 120px;
-    justify-content: center;
-    margin-left: 35%;
-    width: 120px;
-}
+    .titulo__nome {
+        font-size: 30px;
+        margin-left: 4em;
+    }
 
-.item__imagem:hover {
-    height: 122px;
-    width: 122px;
-}
+    .titulo__nome:hover {
+        font-size: 31px;
+    }
 
-.item__imagem:active {
-    height: 118px;
-    width: 118px;
-}
+    .titulo__btn {
+        cursor: pointer;
+        font-size: 16px;
+        height: 40px;
+        margin-right: 8em;
+        width: 90px;
+    }
 
-.item__nome {
-    font-size: 18px;
-    height: 7%;
-    text-align: center;
-    width: 70px;
-}
+    .titulo__btn:hover {
+        height: 42px;
+        width: 92px;
+    }
 
-.item__nome:hover {
-    font-size: 17px;
-}
+    .titulo__btn:active {
+        height: 39px;
+        width: 89px;
+    }
 
-.item__nome:active {
-    font-size: 15px;
-    text-decoration: none;
-}
+    #titulo__seta {
+        font-size: 35px;
+        right: 70px;
+        position: absolute;
+    }
 
-.contener__telescopio {
-    height: 570px;
-    margin: 1em 0;
-    margin-bottom: 2em;
-    width: 100%;
-}
+    #titulo__seta:hover {
+        font-size: 37px;
+    }
 
-.telescopio__titulo {
-    height: 70px;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.titulo__nome {
-    font-size: 30px;
-    margin-left: 4em;
-}
-
-.titulo__nome:hover {
-    font-size: 31px;
-}
-
-.titulo__btn {
-    cursor: pointer;
-    font-size: 16px;
-    height: 40px;
-    margin-right: 8em;
-    width: 90px;
-}
-
-.titulo__btn:hover {
-    height: 42px;
-    width: 92px;
-}
-
-.titulo__btn:active {
-    height: 39px;
-    width: 89px;
-}
-
-#titulo__seta {
-    font-size: 35px;
-    right: 70px;
-}
-
-#titulo__seta:hover {
-    font-size: 37px;
-}
-
-.telescopios__contener {
-    height: 500px;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 100%;
-}
-
-.contener__refrator {
-    height: 500px;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
-.refrator__imagem {
-    height: 10em;
-    width: 19em;
-}
-
-.refrator__btn {
-    cursor: pointer;
-    height: 44px;
-    text-align: center;
-    width: 122px;
-}
-
-.refrator__btn:hover {
-    width: 126px;
-}
-
-.refrator__btn:active {
-    width: 120px;
-}
-
+    
 .contener__binoculos {
     height: 570px;
     width: 100%;
+    margin-bottom: 2em;
+    margin-top: 1em;
 }
+
 
 .binoculos__titulo {
     height: 70px;
     justify-content: space-between;
-    width: 100%;
 }
 
 .binoculos__contener {
     align-items: center;
     height: 500px;
     justify-content: space-around;
-    width: 100%;
 }
+
 
 .contener__binoculos--size {
     height: 500px;
@@ -1329,36 +1257,14 @@
     justify-content: space-evenly;
 }
 
-.binoculos__imagem {
-    height: 10em;
-    width: 19em;
-}
-
-.binoculos__btn {
-    cursor: pointer;
-    height: 44px;
-    text-align: center;
-    width: 122px;
-}
-
-.binoculos__btn:hover {
-    width: 126px;
-}
-
-.binoculos__btn:active {
-    width: 120px;
-}
-
 .contener__camera {
     height: 570px;
-    margin-bottom: 2em;
-    margin-top: 3em;
+    width: 100%;
 }
 
 .camera__titulo {
     height: 70px;
     justify-content: space-between;
-    width: 100%;
 }
 
 .camera__contener {
@@ -1374,26 +1280,6 @@
     justify-content: space-evenly;
 }
 
-.camera__imagem {
-    height: 10em;
-    width: 19em;
-}
-
-.camera__btn {
-    cursor: pointer;
-    height: 44px;
-    text-align: center;
-    width: 122px;
-}
-
-.camera__btn:hover {
-    width: 126px;
-}
-
-.camera__btn:active {
-    width: 120px;
-}
-
 .contener__astronomicas {
     height: 570px;
     width: 100%;
@@ -1405,6 +1291,10 @@
     width: 100%;
 }
 
+.titulo__nome {
+    width: 300px;
+}
+
 .astronomicas__contener {
     height: 500px;
     justify-content: space-around;
@@ -1412,6 +1302,7 @@
 }
 
 .contener__astronomicas--size {
+    display: flex;
     height: 500px;
     flex-wrap: wrap;
     align-items: center;
@@ -1419,29 +1310,11 @@
     justify-content: space-evenly;
 }
 
-.astronomicas__imagem {
-    height: 10em;
-    width: 19em;
-}
-
-.astronomicas__btn {
-    cursor: pointer;
-    height: 44px;
-    text-align: center;
-    width: 122px;
-}
-
-.astronomicas__btn:hover {
-    width: 126px;
-}
-
-.astronomicas__btn:active {
-    width: 122px;
-}
 
 .rodape {
     height: 23em;
 }
+
 
 .rodape__contener {
     flex-direction: row;
@@ -1451,118 +1324,32 @@
 }
 
 .contener__logo {
-    width: 300px;
     align-self: center;
     display: flex;
     flex-direction: column;
+    width: 550px;
 }
 
 .logo__imagem {
-    height: 65px;
-    width: 250px;
+    height: 70px;
+    width: 290px;
 }
 
 .contener__informacoes {
+    display: flex;
+    align-items: center;
     height: 100%;
-    width: 200px;
+    width: 600px;
 }
 
 .informacoes__item {
-    font-size: 16px;
-}
-
-.contener__formulario {
-    flex-direction: column;
-    height: 100%;
-    justify-content: space-evenly;
-    width: 400px;
-}
-
-.formulario__nome {
-    height: 30px;
-    opacity: 40%;
-    text-align: center;
-}
-
-.formulario__mensagem {
-    height: 70px;
-    opacity: 40%;
-    text-align: center;
-}
-
-.formulario__btn {
-    cursor: pointer;
-    font-size: 18px;
-    height: 40px;
-    margin-left: 4em;
-    width: 60%;
-}
-
-.formulario__btn:hover {
-    width: 61%;
-}
-
-.formulario__btn:active {
-    width: 59%;
-}
-
-.contener__popup {
-    height: 450px;
-    text-align: center;
-    top: 150px;
-    width: 100%;
-}
-
-.popup {
-    height: 30%;
-    left: 30%;
-    text-align: center;
-    top: 40%;
-    width: 40%;
-}
-
-.popup__close {
-    cursor: pointer;
-    font-size: 20px;
-    right: 10px;
-    top: 15px;
-}
-
-.popup__close:hover {
-    font-size: 21px;
-}
-
-.popup__close:active {
-    font-size: 19px;
-}
-
-.popup__btn {
-    cursor: pointer;
-    font-size: 18px;
-    margin-left: 3em;
-    margin-top: 2em;
-    padding: 5px 15px;
-    width: 50%;
-}
-
-.popup__btn:hover {
-    height: 37px;
-    width: 51%;
-}
-
-.popup__btn:active {
-    height: 34px;
-    width: 49%;
-}
-
-.contner__desenvolvedor {
-    flex-direction: column;
-    height: 5em;
-    justify-content: center;
-    text-align: center;
-}
-
-.desenvolvedor {
+    width: 200px;
     font-size: 18px;
 }
+
+
+
+
+
+
 }
