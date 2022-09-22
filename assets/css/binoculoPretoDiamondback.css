@@ -133,8 +133,6 @@
 
 .imagem__produto {
     border-radius: 20px;
-    height: 359px;
-    width: 640px;
 }
 
 .informacao__nome {
@@ -172,7 +170,6 @@
     display: flex;
     flex-direction: column;
     font-size: 35px;
-    height: 600px;
     justify-content: space-around;
     width: 100%;
 }
@@ -189,10 +186,8 @@
 }
 
 .similar__contener {
-    display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 700px;
 }
 
 .contener__produtos {
@@ -206,8 +201,6 @@
 
 .produto__imagem {
     border-radius: 20px;
-    width: 384px;
-    height: 224px;
 }
 
 .produto__titulo {

@@ -161,8 +161,8 @@
 
     .contener__categoria {
         display: flex;
-        justify-content: space-evenly;
         height: 150px;
+        justify-content: space-evenly;
         width: 100%;
     }
 
@@ -350,8 +350,8 @@
     .contener__logo {
         align-items: center;
         display: flex;
-        justify-content: center;
         height: 100px;
+        justify-content: center;
         width: 100%;
     }
 
@@ -911,7 +911,6 @@
         width: 90%;
     }
 
-
     .refrator__contener {
         display: flex;
         flex-direction: column;
@@ -978,8 +977,8 @@
     }
 
     .descricao__imagem {
-        width: 350px;
         height: 190px;
+        width: 350px;
     }
 
     .astronomica__contener {
@@ -992,6 +991,26 @@
 }
 
 @media screen and (min-width: 768px) {
+    .banner__btn:active {
+        height: 39px;
+        width: 119px;
+    }
+
+    .banner__btn:hover {
+        height: 41px;
+        width: 121px;
+    }
+
+    .titulo__btn:active {
+        height: 47px;
+        width: 99px;
+    }
+
+    .titulo__btn:hover {
+        height: 49px;
+        width: 101px;
+    }
+
     .contener__banner {
         height: 310px;
     }
@@ -1008,16 +1027,6 @@
         position: absolute;
         top: 320px;
         width: 120px;
-    }
-
-    .banner__btn:hover {
-        height: 41px;
-        width: 121px;
-    }
-
-    .banner__btn:active {
-        height: 39px;
-        width: 119px;
     }
 
     .telescopio__titulo {
@@ -1039,27 +1048,17 @@
         width: 100px;
     }
 
-    .titulo__btn:hover {
-        height: 49px;
-        width: 101px;
-    }
-
-    .titulo__btn:active {
-        height: 47px;
-        width: 99px;
-    }
-
     .contener__telescopio {
         height: 1050px;
         margin-bottom: 3em;
     }
 
     .binoculos__contener {
-        width: 100%;
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
         flex-wrap: wrap;
+        justify-content: space-around;
+        width: 100%;
     }
 
     .contener__binoculos {
@@ -1068,11 +1067,11 @@
     }
 
     .camera__contener {
-        width: 100%;
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
         flex-wrap: wrap;
+        justify-content: space-around;
+        width: 100%;
     }
 
     .contener__camera {
@@ -1081,11 +1080,11 @@
     }
 
     .astronomicas__contener {
-        width: 100%;
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
         flex-wrap: wrap;
+        justify-content: space-around;
+        width: 100%;
     }
 
     .contener__astronomicas {
@@ -1103,14 +1102,49 @@
     }
 
     .informacoes__item {
-        text-align: center;
         font-size: 18px;
         margin-top: 2em;
+        text-align: center;
         width: 300px;
     }
 }
 
 @media screen and (min-width: 1024px) {
+    .item__imagem:active {
+        height: 118px;
+        width: 118px;
+    }
+
+    .item__imagem:hover {
+        height: 121px;
+        width: 121px;
+    }
+
+    .item__nome:active {
+        font-size: 15px;
+    }
+
+    .item__nome:hover {
+        font-size: 17px;
+    }
+
+    .titulo__btn:active {
+        height: 39px;
+        width: 89px;
+    }
+
+    .titulo__btn:hover {
+        height: 42px;
+        width: 92px;
+    }
+
+    .titulo__nome:hover {
+        font-size: 31px;
+    }
+
+    .titulo__seta:hover {
+        font-size: 37px;
+    }
 
     .contener__banner {
         height: 450px;
@@ -1123,10 +1157,10 @@
     }
 
     .banner__btn {
-        position: absolute;
         cursor: pointer;
         height: 40px;
         left: 35em;
+        position: absolute;
         top: 25em;
     }
 
@@ -1146,8 +1180,8 @@
     }
 
     .item__imagens--height {
-        width: 100%;
         height: 76%;
+        width: 100%;
     }
 
     .item__imagem {
@@ -1158,29 +1192,9 @@
         width: 120px;
     }
 
-    .item__imagem:hover {
-        height: 121px;
-        width: 121px;
-    }
-
-    .item__imagem:active {
-        height: 118px;
-        width: 118px;
-    }
-
     .item__nome {
         font-size: 18px;
     }
-
-
-    .item__nome:hover {
-        font-size: 17px;
-    }
-
-    .item__nome:active {
-        font-size: 15px;
-    }
-
 
     .contener__telescopio {
         height: 570px;
@@ -1197,10 +1211,6 @@
         margin-left: 4em;
     }
 
-    .titulo__nome:hover {
-        font-size: 31px;
-    }
-
     .titulo__btn {
         cursor: pointer;
         font-size: 16px;
@@ -1209,147 +1219,156 @@
         width: 90px;
     }
 
-    .titulo__btn:hover {
-        height: 42px;
-        width: 92px;
-    }
-
-    .titulo__btn:active {
-        height: 39px;
-        width: 89px;
-    }
-
     #titulo__seta {
         font-size: 35px;
-        right: 70px;
         position: absolute;
+        right: 70px;
     }
 
-    #titulo__seta:hover {
-        font-size: 37px;
+    .contener__binoculos {
+        height: 570px;
+        margin-bottom: 2em;
+        margin-top: 1em;
+        width: 100%;
     }
 
-    
-.contener__binoculos {
-    height: 570px;
-    width: 100%;
-    margin-bottom: 2em;
-    margin-top: 1em;
-}
+    .binoculos__titulo {
+        height: 70px;
+        justify-content: space-between;
+    }
 
+    .binoculos__contener {
+        align-items: center;
+        height: 500px;
+        justify-content: space-around;
+    }
 
-.binoculos__titulo {
-    height: 70px;
-    justify-content: space-between;
-}
+    .contener__binoculos--size {
+        align-items: center;
+        flex-direction: column;
+        height: 500px;
+        justify-content: space-evenly;
+    }
 
-.binoculos__contener {
-    align-items: center;
-    height: 500px;
-    justify-content: space-around;
-}
+    .contener__camera {
+        height: 570px;
+        width: 100%;
+    }
 
+    .camera__titulo {
+        height: 70px;
+        justify-content: space-between;
+    }
 
-.contener__binoculos--size {
-    height: 500px;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
+    .camera__contener {
+        height: 500px;
+        justify-content: space-around;
+        width: 100%;
+    }
 
-.contener__camera {
-    height: 570px;
-    width: 100%;
-}
+    .contener__camera--size {
+        align-items: center;
+        flex-direction: column;
+        height: 500px;
+        justify-content: space-evenly;
+    }
 
-.camera__titulo {
-    height: 70px;
-    justify-content: space-between;
-}
+    .contener__astronomicas {
+        height: 570px;
+        width: 100%;
+    }
 
-.camera__contener {
-    height: 500px;
-    justify-content: space-around;
-    width: 100%;
-}
+    .astronomicas__titulo {
+        height: 70px;
+        justify-content: space-between;
+        width: 100%;
+    }
 
-.contener__camera--size {
-    height: 500px;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
+    .titulo__nome {
+        width: 300px;
+    }
 
-.contener__astronomicas {
-    height: 570px;
-    width: 100%;
-}
+    .astronomicas__contener {
+        height: 500px;
+        justify-content: space-around;
+        width: 100%;
+    }
 
-.astronomicas__titulo {
-    height: 70px;
-    justify-content: space-between;
-    width: 100%;
-}
+    .contener__astronomicas--size {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 500px;
+        justify-content: space-evenly;
+    }
 
-.titulo__nome {
-    width: 300px;
-}
+    .rodape {
+        height: 23em;
+    }
 
-.astronomicas__contener {
-    height: 500px;
-    justify-content: space-around;
-    width: 100%;
-}
+    .rodape__contener {
+        flex-direction: row;
+        height: 100%;
+        justify-content: space-around;
+        width: 100%;
+    }
 
-.contener__astronomicas--size {
-    display: flex;
-    height: 500px;
-    flex-wrap: wrap;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
+    .contener__logo {
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        width: 550px;
+    }
 
+    .logo__imagem {
+        height: 70px;
+        width: 290px;
+    }
 
-.rodape {
-    height: 23em;
-}
+    .contener__informacoes {
+        align-items: center;
+        display: flex;
+        height: 100%;
+        width: 600px;
+    }
 
+    .informacoes__item {
+        font-size: 18px;
+        width: 200px;
+    }
 
-.rodape__contener {
-    flex-direction: row;
-    height: 100%;
-    justify-content: space-around;
-    width: 100%;
-}
+    .contener__produtos--flex {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
 
-.contener__logo {
-    align-self: center;
-    display: flex;
-    flex-direction: column;
-    width: 550px;
-}
+    .produtos__descricao--flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 400px;
+    }
 
-.logo__imagem {
-    height: 70px;
-    width: 290px;
-}
+    .imagem__produto {
+        height: 300px;
+        width: 500px;
+    }
 
-.contener__informacoes {
-    display: flex;
-    align-items: center;
-    height: 100%;
-    width: 600px;
-}
+    .contener__similar {
+        height: 700px;
+    }
 
-.informacoes__item {
-    width: 200px;
-    font-size: 18px;
-}
+    .similar__contener {
+        display: flex;
+        flex-direction: row;
+        height: 550px;
+    }
 
-
-
-
-
-
+    .produto__imagem {
+        height: 200px;
+        width: 300px;
+    }
 }

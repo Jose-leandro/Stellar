@@ -108,19 +108,13 @@
     text-decoration: none;
 }
 
-.contener__produtos {
+.contener__produtos--flex {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
 }
 
-.produtos__descricao {
+.produtos__descricao--flex {
     align-items: center;
-    display: flex;
-    flex-direction: column;
     height: 480px;
-    justify-content: space-evenly;
-    width: 400px;
 }
 
 .descricao__imagem {

@@ -108,14 +108,14 @@
     text-decoration: none;
 }
 
-.contener__produtos {
+.contener__produtos--flex {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-.produtos__descricao{
+.produtos__descricao--flex {
     height: 480px;
     width: 400px;
     display: flex;
