@@ -137,12 +137,16 @@
 .main__formulario {
     align-items: center;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 90vh;
-    justify-content: center;
     text-align: center;
-    width: 100%;
+}
+
+.lable__nome {
+    text-align: left;
+    width: 70%;
+}
+
+.lable__nome--color {
+    color: #db1616;
 }
 
 .formulario__nome {
@@ -155,6 +159,19 @@
     width: 500px;
 }
 
+.erro__nome {
+    border: solid 2px #db1616;
+}
+
+.lable__localizacao {
+    text-align: left;
+    width: 70%;
+}
+
+.lable__localizacao--color {
+    color: #db1616;
+}
+
 .formulario__localizacao {
     border-radius: 10px;
     border: 1px solid #0a66ce;
@@ -162,7 +179,20 @@
     height: 30px;
     margin: 25px 5px;
     opacity: 50%;
-    width: 500px;
+    width: 80%;
+}
+
+.erro__localizacao {
+    border: solid 2px #db1616;
+}
+
+.lable__nascimento {
+    text-align: left;
+    width: 70%;
+}
+
+.lable__nascimento--color {
+    color: #db1616;
 }
 
 .formulario__nascimento {
@@ -175,6 +205,19 @@
     width: 500px;
 }
 
+.erro__nascimento {
+    border: solid 2px #db1616;
+}
+
+.lable__email {
+    text-align: left;
+    width: 70%;
+}
+
+.lable__email--color {
+    color: #db1616;
+}
+
 .formulario__email {
     border-radius: 10px;
     border: 1px solid #0a66ce;
@@ -185,6 +228,19 @@
     width: 500px;
 }
 
+.erro__email {
+    border: solid 2px #db1616;
+}
+
+.lable__senha {
+    text-align: left;
+    width: 70%;
+}
+
+.lable__senha--color {
+    color: #db1616;
+}
+
 .formulario__senha {
     border-radius: 10px;
     border: 1px solid #0a66ce;
@@ -193,6 +249,14 @@
     margin: 25px 5px;
     opacity: 50%;
     width: 500px;
+}
+
+.erro__senha {
+    border: solid 2px #db1616;
+}
+
+.span__erro {
+     color: #db1616;
 }
 
 .formulario__btn {

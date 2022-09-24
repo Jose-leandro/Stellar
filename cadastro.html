@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/cradastro.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/conta/cradastro.css">
     <link rel="stylesheet" type="text/css" href="assets/css/responsividade.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
@@ -42,14 +42,26 @@
         <div class="main__titulo">
             <h1 class="titulo__descricao">Crie uma conta</h1>
         </div>
-        <div class="main__formulario">
-            <input class="formulario__nome" type="text" required placeholder="Digite seu nome">
-            <input class="formulario__localizacao" type="text" required placeholder="Digite sua localidade">
-            <input class="formulario__nascimento" type="date" required placeholder="Digite sua data de nacimento">
-            <input class="formulario__email" type="email" required placeholder="Digite seu email">
-            <input class="formulario__senha" type="password" required placeholder="Digite sua senha">
-           <button class="formulario__btn" onclick="mostarPopup()">Cadastre-se</button>
-        </div>
+        <form class="main__formulario">
+            <label for="nome" class="lable__nome">Nome</label>
+            <input class="formulario__nome" id="nome" data-tipo="nome" type="text" title="seu nome não pode conter números e nem caracteres especiais" pattern="^((?!.*[0-9])(?!.*[!@#$%^&*_=+-])).{10,40}$" required placeholder="Digite seu nome">
+
+            <label for="localizacao" class="lable__localizacao">Localização</label>
+            <input class="formulario__localizacao" id="localizacao" data-tipo="localizacao" type="text" title="adicionei onde você vive" required pattern="^((?!*[!@#$%^&*_=+])).{20,70}$" placeholder="Digite sua localidade">
+
+            <label for="nascimento" class="lable__nascimento">Nacimento</label>
+            <input class="formulario__nascimento" id="nascimento" type="date" title="adicionei sua dada de nascimento" required placeholder="Digite sua data de nacimento">
+
+            <label for="email" class="lable__email">Email</label>
+            <input class="formulario__email" id="email" data-tipo="email" type="email" title="seu email dever conter, está estrutura nomedousuario@proverdor.com" pattern="^((?=.*[0-9])(?!.*[!#$%^&*_=+-]))(?=.*[.])(?=.*[[a-z].{3,15}]).{7,60}$" required placeholder="Digite seu email">
+            
+            <label for="senha" class="lable__senha">Senha</label>
+            <input class="formulario__senha" id="senha" data-tipo="senha" type="password" title="sua senha dever ter no mínimo 8 caracteres, não dever ter caracteres especiais" required placeholder="Digite sua senha">
+
+            <span class="span__erro"></span>
+
+           <button class="formulario__btn" onclick="mostaropup()">Cadastre-se</button>
+        </form>
         <div class="contener__popup">
             <div class="popup">
                 <h1 class="popup__close">X</h1>
@@ -64,3 +76,5 @@
 
 </html>
 <script src="assets/javascript/popupDeConcluidos.js"></script>
+<script src="assets/javascript/animacoes.js"></script>
+<script src="assets/javascript/validacoes.js"></script>

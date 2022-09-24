@@ -190,12 +190,12 @@
         width: 30px;
     }
 
-    .contener__telescopio {
+    .contener__refrator {
         height: 1200px;
         margin-bottom: 3em;
     }
 
-    .telescopio__titulo {
+    .refrator__titulo {
         display: flex;
         height: 50px;
         justify-content: space-around;
@@ -221,7 +221,7 @@
         right: 10px;
     }
 
-    .telescopios__contener {
+    .refrator__contener {
         display: flex;
         flex-direction: column;
         height: 100%;
@@ -380,7 +380,7 @@
     .contener__formulario {
         display: flex;
         flex-direction: column;
-        height: 400px;
+        height: 430px;
         justify-content: space-evenly;
         margin-top: 1em;
         text-align: center;
@@ -401,6 +401,10 @@
     .formulario__mensagem {
         margin-left: 2em;
         width: 80%;
+    }
+
+    .formulario__btn {
+        margin-top: 3em;
     }
 
     .contener__popup {
@@ -551,12 +555,10 @@
 
     .formulario__email {
         margin-left: 1em;
-        width: 80%;
     }
 
     .formulario__senha {
         margin-left: 1em;
-        width: 80%;
     }
 
     .main__formulario {
@@ -568,12 +570,23 @@
 
     .formulario__localizacao {
         margin-left: 1em;
-        width: 80%;
     }
 
     .formulario__nascimento {
         margin-left: 1em;
-        width: 80%;
+    }
+
+    .contener__produtos--flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .produtos__descricao--flex {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
     }
 }
 
@@ -685,12 +698,12 @@
         width: 30px;
     }
 
-    .contener__telescopio {
+    .contener__refrator {
         height: 1500px;
         margin-bottom: 3em;
     }
 
-    .telescopio__titulo {
+    .refrator__titulo {
         display: flex;
         height: 50px;
         justify-content: space-around;
@@ -829,7 +842,7 @@
     .contener__formulario {
         display: flex;
         flex-direction: column;
-        height: 400px;
+        height: 430px;
         justify-content: space-evenly;
         margin-top: 1em;
         text-align: center;
@@ -844,12 +857,14 @@
 
     .formulario__nome {
         margin-left: 2em;
-        width: 80%;
     }
 
     .formulario__mensagem {
         margin-left: 2em;
-        width: 80%;
+    }
+
+    .formulario__btn {
+        margin-top: 3em;
     }
 
     .contener__popup {
@@ -889,22 +904,18 @@
 
     .formulario__localizacao {
         margin-left: 1em;
-        width: 80%;
     }
 
     .formulario__nascimento {
         margin-left: 1em;
-        width: 80%;
     }
 
     .formulario__email {
         margin-left: 1em;
-        width: 80%;
     }
 
     .formulario__senha {
         margin-left: 1em;
-        width: 80%;
     }
 
     .adicionar__input {
@@ -988,6 +999,19 @@
         justify-content: space-evenly;
         width: 90%;
     }
+
+    .contener__produtos--flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .produtos__descricao--flex {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -1029,7 +1053,7 @@
         width: 120px;
     }
 
-    .telescopio__titulo {
+    .refrator__titulo {
         display: flex;
         height: 50px;
         justify-content: space-around;
@@ -1048,7 +1072,7 @@
         width: 100px;
     }
 
-    .contener__telescopio {
+    .contener__refrator {
         height: 1050px;
         margin-bottom: 3em;
     }
@@ -1106,6 +1130,19 @@
         margin-top: 2em;
         text-align: center;
         width: 300px;
+    }
+
+    .contener__produtos--flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .produtos__descricao--flex {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
     }
 }
 
@@ -1196,12 +1233,13 @@
         font-size: 18px;
     }
 
-    .contener__telescopio {
+    .contener__refrator {
         height: 570px;
         width: 100%;
     }
 
-    .telescopio__titulo {
+    .refrator__titulo {
+        width: 100%;
         height: 70px;
         justify-content: space-between;
     }
@@ -1223,6 +1261,13 @@
         font-size: 35px;
         position: absolute;
         right: 70px;
+    }
+
+    .refrator__contener {
+        flex-direction: row;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
     }
 
     .contener__binoculos {
@@ -1304,7 +1349,7 @@
     }
 
     .rodape {
-        height: 23em;
+        height: 550px;
     }
 
     .rodape__contener {
@@ -1338,6 +1383,7 @@
         width: 200px;
     }
 
+
     .contener__produtos--flex {
         display: flex;
         flex-direction: row;
@@ -1370,5 +1416,12 @@
     .produto__imagem {
         height: 200px;
         width: 300px;
+    }
+    
+    .main__formulario {
+        justify-content: space-evenly;
+        flex-direction: column;
+        width: 610px;
+        height: 800px;
     }
 }

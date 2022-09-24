@@ -167,12 +167,12 @@
     text-decoration: none;
 }
 
-.contener__telescopio {
+.contener__refrator {
     margin: 1em 0;
     margin-bottom: 2em;
 }
 
-.telescopio__titulo {
+.refrator__titulo {
     width: 100%;
     display: flex;
 }
@@ -195,20 +195,16 @@
     position: absolute;
 }
 
-.telescopios__contener {
-    display: flex;
+.refrator__contener {
     height: 500px;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 100%;
 }
 
 .contener__refrator {
     height: 500px;
     align-items: center;
+    display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    display: flex;
 }
 
 .refrator__imagem {
@@ -469,12 +465,40 @@
     text-align: center;
 }
 
+.label__nome {
+  text-align: start;
+  margin-top: 2em;
+  margin-left: 3em;
+  margin-bottom: 1em;
+}
+
+.lable__nome--color {
+    color: #db1616;
+}
+
 .formulario__nome {
     height: 30px;
     opacity: 40%;
+    margin: 0 0 1em 0;
     text-align: center;
     border-radius: 10px;
-    border: transparent;
+    border: transparent none;
+    width: 80%;
+}
+
+.erro__nome {
+    border: solid 2px  #db1616;
+}
+
+.label__mensagem {
+    text-align: left;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 3em;
+}
+
+.lable__mensagem--color {
+    color: #db1616;
 }
 
 .formulario__mensagem {
@@ -483,6 +507,16 @@
     text-align: center;
     border-radius: 10px;
     border: transparent;
+    width: 80%;
+}
+
+.erro__mensagem {
+    border: solid 2px #db1616;
+}
+
+.span__erro {
+    margin-top: 2em;
+    color: #db1616;
 }
 
 .formulario__btn {

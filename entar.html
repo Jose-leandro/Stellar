@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link  rel="stylesheet" type="text/css" href="assets/css/normalize.css">
         <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-        <link rel="stylesheet" type="text/css" href="assets/css/entar.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/conta/entar.css">
         <link rel="stylesheet" type="text/css" href="assets/css/responsividade.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
         <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100&display=swap" rel="stylesheet">
@@ -41,8 +41,11 @@
                 <h1 class="titulo__descricao">entar</h1>
             </div>
             <div class="main__formulario">
-                <input class="formulario__email" type="email" required placeholder="Digite seu email">
-                <input  class="formulario__senha" type="password" required placeholder="Digite sua senha">
+                <label for="email">Email</label>
+                <input class="formulario__email" id="email" type="email" title="seu email dever conter, está estrutura nomedousuario@proverdor.com" required placeholder="Digite seu email">
+
+                <label for="senha"></label>
+                <input  class="formulario__senha" id="senha" type="password" title="sua senha dever ter no mínimo 8 caracteres, não dever ter caracteres especiais" required placeholder="Digite sua senha">
                 <a class="ancora-entar"><button class="formulario__btn" onclick="mostarPopup()">Entar</button></a>
             </div>
             <div class="contener__popup">
@@ -59,4 +62,5 @@
     </body>
 </html>
 <script src="assets/javascript/popupDeConcluidos.js"></script>
-<script src="assets/javascript/java.js"></script>
+<script src="assets/javascript/validacoes.js"></script>
+<script src="assets/javascript/animacoes.js"></script>

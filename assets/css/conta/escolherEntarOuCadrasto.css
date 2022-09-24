@@ -125,7 +125,7 @@
 }
 
 .btns__cadastar {
-    color: #000000;
+    color: #c0bbb8;
     cursor: pointer;
     background: linear-gradient(70deg, #3f1d55, #0a66ce);
     border-color: transparent;
@@ -145,7 +145,7 @@
 }
 
 .btns__entar {
-    color: #000000;
+    color: #c0bbb8;
     cursor: pointer;
     background: linear-gradient(70deg, #3f1d55, #0a66ce);
     border-color: transparent;
