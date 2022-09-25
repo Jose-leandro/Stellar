@@ -47,20 +47,20 @@
             <input class="formulario__nome" id="nome" data-tipo="nome" type="text" title="seu nome não pode conter números e nem caracteres especiais" pattern="^((?!.*[0-9])(?!.*[!@#$%^&*_=+-])).{10,40}$" required placeholder="Digite seu nome">
 
             <label for="localizacao" class="lable__localizacao">Localização</label>
-            <input class="formulario__localizacao" id="localizacao" data-tipo="localizacao" type="text" title="adicionei onde você vive" required pattern="^((?!*[!@#$%^&*_=+])).{20,70}$" placeholder="Digite sua localidade">
+            <input class="formulario__localizacao" id="localizacao" data-tipo="localizacao" type="text" title="adicionei onde você vive" required pattern="^(?!*[!@#$%^&*_=+]).{8,70}$" placeholder="Digite sua localidade">
 
             <label for="nascimento" class="lable__nascimento">Nacimento</label>
             <input class="formulario__nascimento" id="nascimento" type="date" title="adicionei sua dada de nascimento" required placeholder="Digite sua data de nacimento">
 
             <label for="email" class="lable__email">Email</label>
-            <input class="formulario__email" id="email" data-tipo="email" type="email" title="seu email dever conter, está estrutura nomedousuario@proverdor.com" pattern="^((?=.*[0-9])(?!.*[!#$%^&*_=+-]))(?=.*[.])(?=.*[[a-z].{3,15}]).{7,60}$" required placeholder="Digite seu email">
+            <input class="formulario__email" id="email" data-tipo="email" type="email" title="seu email dever conter, está estrutura nomedousuario@proverdor.com" pattern="^((?!.*[!#$%^&*_=+-]))(((?=.*[0-9])[a-z]{4,20})(?=.*@)([a-z]{4,20})(\.)([a-z]{3,20}))$" required placeholder="Digite seu email">
             
             <label for="senha" class="lable__senha">Senha</label>
             <input class="formulario__senha" id="senha" data-tipo="senha" type="password" title="sua senha dever ter no mínimo 8 caracteres, não dever ter caracteres especiais" required placeholder="Digite sua senha">
 
             <span class="span__erro"></span>
 
-           <button class="formulario__btn" onclick="mostaropup()">Cadastre-se</button>
+           <button class="formulario__btn" onclick="mostarPopup()">Cadastre-se</button>
         </form>
         <div class="contener__popup">
             <div class="popup">
@@ -77,4 +77,4 @@
 </html>
 <script src="assets/javascript/popupDeConcluidos.js"></script>
 <script src="assets/javascript/animacoes.js"></script>
-<script src="assets/javascript/validacoes.js"></script>
+<script src="assets/javascript/ValidandoCadrastamento.js"></script>

@@ -110,7 +110,7 @@
 }
 
 .contener__main {
-    height: 120vh;
+    height: 190vh;
 }
 
 .main__adicionar {
@@ -151,62 +151,103 @@
     border-radius: 5px;
 }
 
-.adicionar__input {
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
-.adicionar__input {
+.adicionar__formulario {
+    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 300px;
-    width: 40%;
+    height: 600px;
+    width: 100%;
 }
 
-.input__nome {
+.lable__nome {
+    text-align: left;
+    width: 50%;
+}
+
+.lable__nome--color {
+    color: #db1616;
+}
+
+.formulario__nome {
     opacity: 60%;
     border: transparent;
     border-radius: 5px;
     height: 40px;
+    margin-right: 2em;
+    width: 50%;
 }
 
-.input__preco {
+.erro__nome {
+    border: solid 2px#db1616;
+}
+
+.lable__preco {
+    text-align: left;
+    width: 45%;
+}
+
+.lable__preco--color {
+    color: #db1616;
+}
+
+.formulario__preco {
     opacity: 60%;
     border: transparent;
     border-radius: 5px;
     height: 40px;
+    width: 50%;
 }
 
-.input__descricao {
+.erro__preco {
+   border: solid 2px #db1616;
+}
+
+.lable__descricao {
+    text-align: left;
+    width: 45%;
+}
+
+.lable__descricao--color {
+    color: #db1616;
+}
+
+.formulario__descricao {
     opacity: 60%;
     border: transparent;
     border-radius: 5px;
     height: 70px;
+    width: 50%;
 }
 
-.input__btn {
+.erro__descricao {
+    border: solid 2px #db1616;
+}
+
+.span__erro {
+    color: #db1616;
+}
+
+.formulario__btn {
     cursor: pointer;
     color: #a5a3a1;
     text-decoration: none;
     font-family: 'Arima', cursive;
-    width: 80%;
+    width: 20%;
     font-size: 18px;
     padding: 5px 15px;
-    margin-left: 3em;
     border-radius: 10px;
     border-color: transparent;
+    margin-bottom: 2em;
     background: linear-gradient(70deg, #3f1d55, #0a66ce);
 }
 
-.input__btn:hover {
-    width: 81%;
+.formulario__btn:hover {
+    width: 21%;
 }
 
-.input__btn:active {
-    width: 79%;
+.formulario__btn:active {
+    width: 19%;
 }
 
 .contener__popup {

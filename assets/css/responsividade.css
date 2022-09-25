@@ -1383,6 +1383,10 @@
         width: 200px;
     }
 
+    .lable__nome {
+        text-align: left;
+        margin-left: 3em;
+    }
 
     .contener__produtos--flex {
         display: flex;
@@ -1422,6 +1426,5 @@
         justify-content: space-evenly;
         flex-direction: column;
         width: 610px;
-        height: 800px;
     }
 }

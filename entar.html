@@ -40,14 +40,17 @@
             <div class="main__titulo">
                 <h1 class="titulo__descricao">entar</h1>
             </div>
-            <div class="main__formulario">
-                <label for="email">Email</label>
-                <input class="formulario__email" id="email" type="email" title="seu email dever conter, está estrutura nomedousuario@proverdor.com" required placeholder="Digite seu email">
+            <form class="main__formulario">
+                <label for="email" class="lable__email">Email</label>
+                <input class="formulario__email" id="email" data-tipo="email" type="email" title="seu email dever conter, está estrutura nomedousuario@proverdor.com"  placeholder="Digite seu email" required>
 
-                <label for="senha"></label>
-                <input  class="formulario__senha" id="senha" type="password" title="sua senha dever ter no mínimo 8 caracteres, não dever ter caracteres especiais" required placeholder="Digite sua senha">
+                <label for="senha" class="lable__senha">Senha</label>
+                <input  class="formulario__senha" id="senha" data-tipo="senha" type="password" title="sua senha dever ter no mínimo 8 caracteres, não dever ter caracteres especiais" required placeholder="Digite sua senha">
+
+                <span class="span__erro"></span>
+
                 <a class="ancora-entar"><button class="formulario__btn" onclick="mostarPopup()">Entar</button></a>
-            </div>
+            </form>
             <div class="contener__popup">
                 <div class="popup">
                     <h1 class="popup__close">X</h1>
@@ -62,5 +65,5 @@
     </body>
 </html>
 <script src="assets/javascript/popupDeConcluidos.js"></script>
-<script src="assets/javascript/validacoes.js"></script>
+<script src="assets/javascript/validandoEntarComSuaConta.js"></script>
 <script src="assets/javascript/animacoes.js"></script>

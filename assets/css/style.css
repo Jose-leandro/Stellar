@@ -27,6 +27,7 @@
     background: transparent;
     border-color: transparent;
     border-radius: 10px;
+    color: #aca6a2;
 }
 
 .cabecalho__icone {
@@ -466,9 +467,7 @@
 }
 
 .label__nome {
-  text-align: start;
   margin-top: 2em;
-  margin-left: 3em;
   margin-bottom: 1em;
 }
 

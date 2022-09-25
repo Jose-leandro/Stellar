@@ -47,12 +47,20 @@
                 <img src="assets/imagens/new-document.png" class="escolher__imagem">
                 <input type="file" class="escolher__input">
             </div>
-            <div class="adicionar__input">
-                <input class="input__nome" type="text" required placeholder="Digite o nome do produto">
-                <input class="input__preco" type="email" required placeholder="Digite o preço do produto">
-                <input class="input__descricao" type="password" required placeholder="Digite a descrição do produto">
-                <button class="input__btn" onclick="mostarPopup()">Adicionar Produto</button>
-            </div>
+            <form class="adicionar__formulario">
+                <label for="nome" class="lable__nome">Nome</label>
+                <input class="formulario__nome" id="nome" data-tipo="nome" type="text" required placeholder="Digite o nome do produto" title="O nome do produto não pode conter números e nem caracteres especiais , apenas letras" pattern="^((?!.*[0-9])(?!.*[!@#$%^&*_=+-])).{5,30}$">
+
+                <label for="preco" class="lable__preco">Preço</label>
+                <input class="formulario__preco" id="preco" data-tipo="preco"  type="number" required placeholder="Digite o preço do produto" title="O preço não pode conter letras e nem caracteres especiais, apenas números" pattern="^((?!.*[a-Z])(?!.*[!@#$%^&*_=+-])).{2,10}$">
+
+                <label for="descricao" class="lable__descricao">Descrição</label>
+                <input class="formulario__descricao" id="descricao" data-tipo="descricao" type="text" required placeholder="Digite a descrição do produto" title="Descrevar de maneira clara o produto como exemplo binoculo preto" pattern="^((?!.*[!@#$:;>~¨&*^&*_=+-]).{10,50}$">
+
+                <span class="span__erro"></span>
+
+                <button class="formulario__btn" onclick="mostarPpup()">Adicionar Produto</button>
+            </form>
         </div>
         <section>
             <div class="contener__popup">
@@ -69,5 +77,6 @@
 </body>
 
 </html>
-<script src="assets/javascript/java.js"></script>
+<script src="assets/javascript/validandoAdicionarProdutos.js"></script>
 <script src="assets/javascript/popupDeConcluidos.js"></script>
+<script src="assets/javascript/animacoes.js"></script>
