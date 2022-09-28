@@ -1,0 +1,76 @@
+{
+    "produtos": [
+           {
+            "url": "assets/imagens/refrator-primeiro.jpg",
+            "nome": "refrator dourado",
+            "preco": "R$ 1100",
+            "id": 1
+           },
+           {
+            "url": "assets/imagens/refrator-segundo.jpg",
+            "nome": "refrator marrom",
+            "preco": "R$ 1000",
+            "id": 2
+           },
+           {
+            "url": "assets/imagens/refrator-terceiro.png",
+            "nome": "refrator preto",
+            "preco": "R$ 900",
+            "id": 3
+           }, 
+           {
+            "url": "assets/imagens/binoculos-produto-1.jpg",
+            "nome": "binóculo preto",
+            "preco": "R$ 100",
+            "id": 4
+           },
+           {
+            "url": "assets/imagens/binoculo-produto-2.jpg",
+            "nome": "binóculo preto da revue",
+            "preco": "R$ 300",
+            "id": 5
+           },
+           {
+            "url": "assets/imagens/binoculo-produto-3.jpg",
+            "nome": "binóculo preto da fphel",
+            "preco": "R$ 400",
+            "id": 6
+           },
+           {
+            "url": "assets/imagens/camera-produto-1.jpg",
+            "nome": "câmera preta da sony",
+            "preco": "R$ 800",
+            "id": 7
+           },
+           {
+            "url": "assets/imagens/camera-produto-2.png",
+            "nome": "câmera preta",
+            "preco": "R$ 400",
+            "id": 8
+           },
+           {
+            "url": "assets/imagens/camera-produto-3.jpg",
+            "nome": "câmera prateada",
+            "preco": "R$ 200",
+            "id": 9
+           },
+           {
+            "url": "assets/imagens/imagem-astronomica-segunda.jpg",
+            "nome": "céu estrelado verde",
+            "preco": "R$ 200",
+            "id": 10
+           },
+           {
+            "url": "assets/imagens/imagem-astronomica-terceira.jpg",
+            "nome": "nebulosa em vermelho, branco ao azul",
+            "preco": "R$ 300",
+            "id": 11
+           },
+           {
+            "url": "assets/imagens/imagem-astronomica-quarta.jpg",
+            "nome": "céu estrelado rosa",
+            "preco": "R$ 230",
+            "id": 12
+           }
+    ]
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>E-commecer AluraGeek</title>
+    <link rel="icon" href="assets/imagens/icone-da-pagina3.svg" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/adicionarproduto.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/responsividade.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100&display=swap" rel="stylesheet">
+</head>
+
+<body class="corpo">
+    <header class="cabecalho">
+        <div class="contener__cabecalho">
+            <a href="index.html"><img src="assets/imagens/logo_do_site.png" class="cabecalho__logo"></a>
+            <input class="cabecalho__input" placeholder="procurar">
+            <span class="material-symbols-outlined cabecalho__icone">
+                search
+            </span>
+           <a href="escolherEntarOuCadrasto.html"
+					class="cabecalho__ancora"><button class="cabecalho__btn">Entar</button></a>
+            <div class="contener__potinhos">
+                <span class="material-symbols-outlined pontinhos__icone">
+                    more_vert
+                </span>
+            </div>
+        </div>
+        <div class="contener__menu">
+            <div class="menu__adicionar adicionar">
+                <ul class="menu__lista">
+                    <li class="menu__item"><a href="adicionarprodutos.html" class="menu__ancora">Adicionar Produtos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main class="contener__main">
+        <div class="main__adicionar">
+            <h1 class="adicionar__sessao">iniciar sessão</h1>
+            <div class="adicionar__escolher">
+                <img src="assets/imagens/new-document.png" class="escolher__imagem">
+                <input type="file" class="escolher__input">
+            </div>
+            <form class="adicionar__formulario">
+                <label for="nome" class="lable__nome">Nome</label>
+                <input class="formulario__nome" id="nome" data-tipo="nome" type="text" required placeholder="Digite o nome do produto" title="O nome do produto não pode conter números e nem caracteres especiais , apenas letras" pattern="^((?!.*[0-9])(?!.*[!@#$%^&*_=+-])).{5,30}$">
+
+                <label for="preco" class="lable__preco">Preço</label>
+                <input class="formulario__preco" id="preco" data-tipo="preco"  type="number" required placeholder="Digite o preço do produto" title="O preço não pode conter letras e nem caracteres especiais, apenas números" pattern="^((?!.*[a-Z])(?!.*[!@#$%^&*_=+-])).{2,10}$">
+
+                <label for="categoria" class="lable__categoria">Categoria</label>
+                <input class="formulario__categoria" id="categoria" data-tipo="categoria"  type="text" required placeholder="Digite a categorai do produto" title="O categora não pode conter números e nem caracteres especiais, apenas letras" pattern="^((?!.*[0-9])(?!.*[!@#$:;>~¨&*^&*_=+-])).{6,50}$">
+
+                <label for="descricao" class="lable__descricao">Descrição</label>
+                <input class="formulario__descricao" id="descricao" data-tipo="descricao" type="text" required placeholder="Digite a descrição do produto" title="Descrevar de maneira clara o produto como exemplo binoculo preto" pattern="^((?!.*[!@#$:;>~¨&*^&*_=+-]).{10,50}$">
+
+                <span class="span__erro"></span>
+
+                <button class="formulario__btn" >Adicionar Produto</button>
+            </form>
+        </div>
+        <section>
+            <div class="contener__popup">
+                <div class="popup">
+                    <h1 class="popup__close">X</h1>
+                    <h1 class="popup__descricao">Produto adicionado com sucesso</h1>
+                    <a href="index.html" class="popup__ancora"><button class="popup__btn">Voltar para a página inicial</button></a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+    </footer>
+</body>
+
+</html>
+<script src="assets/javascript/validandoAdicionarProdutos.js"></script>
+<script src="assets/javascript/popupDeConcluidos.js"></script>
+<script src="assets/javascript/animacoes.js"></script>
+<script src="assets/javascript/adicionarProduto.js"></script>
