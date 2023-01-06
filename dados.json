@@ -31,9 +31,9 @@
       "id3": 6
     }
   ],
-  "cameras": [ 
-    { 
-    "url1": "assets/imagens/camera-produto-1.jpg",
+  "cameras": [
+    {
+      "url1": "assets/imagens/camera-produto-1.jpg",
       "nome1": "câmera preta da sony",
       "preco1": "R$ 800",
       "id1": 7,
@@ -45,14 +45,14 @@
       "nome3": "câmera prateada",
       "preco3": "R$ 200",
       "id3": 9
-  }
+    }
   ],
   "astronomicas": [
     {
-      "url": "assets/imagens/imagem-astronomica-segunda.jpg",
-      "nome": "céu estrelado verde",
-      "preco": "R$ 200",
-      "id": 10,
+      "url1": "assets/imagens/imagem-astronomica-segunda.jpg",
+      "nome1": "céu estrelado verde",
+      "preco1": "R$ 200",
+      "id1": 10,
       "url2": "assets/imagens/imagem-astronomica-terceira.jpg",
       "nome2": "nebulosa em vermelho, branco ao azul",
       "preco2": "R$ 300",
@@ -61,6 +61,14 @@
       "nome3": "céu estrelado rosa",
       "preco3": "R$ 230",
       "id3": 12
+    }
+  ],
+  "refratordourado": [
+    {
+      "link": "produtoRefratorMarrom.html",
+      "url": "assets/imagens/refrator-segundo.jpg",
+      "nome": "refrator dourado",
+      "preco": "R$ 1100"
     }
   ]
 }
