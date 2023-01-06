@@ -1,9 +1,9 @@
 
-var btn = document.querySelector(".cabecalho__pesquisar");
+let inputBuscar = document.querySelector(".cabecalho__input");
 
 var contenerProdutos = document.querySelector('[data-tipo="produtos"]');
 
-var criarProdutos = function (link, url, nome, preco) {
+var criarProdutosPesquisados = function (link, url, nome, preco) {
 
     const conteudo = `
    
@@ -23,37 +23,50 @@ var criarProdutos = function (link, url, nome, preco) {
     return contenerProdutos;
 }
 
-var http = new XMLHttpRequest();
 
-http.open("GET", "http://localhost:3000/produtos");
+function validandoPesquisar(nomeDaPesquisar) {
+    console.log(nomeDaPesquisar)
 
-http.send();
+    inputBuscar.addEventListener("keydown", (event) => {
+        console.log(event.key)
+        if (event.key == "Enter") {
+            let dado = inputBuscar.value;
+            
 
-http.onload = function () {
-    var dados = JSON.parse(http.response);
+            if (nomeDaPesquisar == dado) {
 
-    dados.forEach(Element => {
+                const fetchListaProdutos = () => {
+                    const url = "http://localhost:3000/refratordourado";
 
-        var nome = Element.nome;
+                    fetch(url)
+                        .then(Response => Response.json())
+                        .then(
+                            Response => Response.forEach(Element => {
+                                contenerProdutos.appendChild(criarProdutosPesquisados(Element.link, Element.url, Element.nome, Element.preco));
+                            })
+                        )
+                }
+                fetchListaProdutos();
 
-        btn.addEventListener('click', function () {
-            var input = document.querySelector(".cabecalho__input");
-            console.log(input)
-
-            var valorDoInput = input.value;
-            console.log(valorDoInput);
-
-            console.log(nome)
-            if (valorDoInput == nome) {
-                alert("ceerto")
-                dados.appendChild(criarProdutos(Element.link, Element.url, Element.nome, Element.preco));
+            } else {
+                resultadoDaValidacao = "flase";
             }
-
-        })
-
-    });
+        }
+    })
 }
+validandoPesquisar();
 
 
+const fetchListaProdutos = () => {
+    const url = "http://localhost:3000/refratordourado";
 
+    fetch(url)
+        .then(Response => Response.json())
+        .then(
+            Response => Response.forEach(Element => {
+                validandoPesquisar(Element.nome)
+            })
+        )
+}
+fetchListaProdutos();
 

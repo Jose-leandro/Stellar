@@ -197,7 +197,7 @@
 
     .refrator__titulo {
         display: flex;
-        height: 50px;
+        height: 40px;
         justify-content: space-around;
         margin-bottom: 2em;
     }
@@ -391,8 +391,8 @@
     }
 
     .lable__nome {
-        margin: 1em 0;
         margin-left: 3em;
+        margin: 1em 0;
         text-align: left;
     }
 
@@ -702,14 +702,15 @@
     }
 
     .contener__refrator {
-        height: 1500px;
+        height: 1300px;
         margin-bottom: 3em;
     }
 
     .refrator__titulo {
         display: flex;
-        height: 50px;
+        height: 40px;
         justify-content: space-around;
+        margin: 2em 0;
     }
 
     .titulo__nome {
@@ -732,8 +733,30 @@
         right: 10px;
     }
 
+    .refrator__dados {
+        height: 100%;
+    }
+
+    .dados__refrator {
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .refrator__dados {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+    }
+
     .contener__binoculos {
-        height: 1400px;
+        height: 1300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .binoculos__titulo {
@@ -742,21 +765,25 @@
         justify-content: space-around;
     }
 
-    .binoculos__contener {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        justify-content: space-evenly;
-        width: 90%;
+    .binoculos__dados {
+        margin: 2em 0 3em 0;
+        height: 90%;
     }
 
-    .contener__binoculos--size {
+    .dados__binoculos {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 100%;
         height: 400px;
+        align-items: center;
     }
 
     .contener__camera {
-        height: 1400px;
+        height: 1300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .camera__titulo {
@@ -765,21 +792,25 @@
         justify-content: space-around;
     }
 
-    .camera__contener {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        justify-content: space-evenly;
-        width: 90%;
+    .camera__dados {
+        margin: 2em 0 3em 0;
+        height: 90%;
     }
 
-    .contener__camera--size {
+    .dados__camera {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 100%;
         height: 400px;
+        align-items: center;
     }
 
     .contener__astronomicas {
-        height: 1400px;
+        height: 1300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .astronomicas__titulo {
@@ -788,17 +819,18 @@
         justify-content: space-around;
     }
 
-    .astronomicas__contener {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        justify-content: space-evenly;
-        width: 90%;
+    .astronomicas__dados {
+        margin: 2em 0 3em 0;
+        height: 90%;
     }
 
-    .contener__astronomicas--size {
+    .dados__astronomicas {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 100%;
         height: 400px;
+        align-items: center;
     }
 
     .rodape {
@@ -1056,9 +1088,14 @@
         width: 120px;
     }
 
+    .contener__refrator {
+        height: 1300px;
+        margin-bottom: 3em;
+    }
+
     .refrator__titulo {
         display: flex;
-        height: 50px;
+        height: 40px;
         justify-content: space-around;
     }
 
@@ -1075,48 +1112,86 @@
         width: 100px;
     }
 
-    .contener__refrator {
-        height: 1050px;
-        margin-bottom: 3em;
+    .refrator__dados {
+        height: 100%;
     }
 
-    .binoculos__contener {
+    .dados__refrator {
+        height: 400px;
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        width: 100%;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .refrator__dados {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
     }
 
     .contener__binoculos {
-        height: 1050px;
+        height: 1300px;
         margin-bottom: 3em;
     }
 
-    .camera__contener {
+    .binoculos__dados {
+        margin: 2em 0 3em 0;
+        height: 90%;
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
+    }
+
+    .dados__binoculos {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
         width: 100%;
+        height: 400px;
     }
 
     .contener__camera {
-        height: 1050px;
+        height: 1300px;
         margin-bottom: 3em;
     }
 
-    .astronomicas__contener {
+    .camera__dados {
+        margin: 2em 0 3em 0;
+        height: 90%;
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
+    }
+
+    .dados__camera {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
         width: 100%;
+        height: 400px;
+        align-items: center;
     }
 
     .contener__astronomicas {
-        height: 1050px;
+        height: 1300px;
         margin-bottom: 3em;
+    }
+
+    .astronomicas__dados {
+        margin: 2em 0 3em 0;
+        height: 90%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .dados__astronomicas {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 400px;
+        align-items: center;
     }
 
     .contener__logo {
@@ -1237,14 +1312,14 @@
     }
 
     .contener__refrator {
-        height: 570px;
+        height: 500px;
         width: 100%;
     }
 
     .refrator__titulo {
-        width: 100%;
-        height: 70px;
+        height: 40px;
         justify-content: space-between;
+        width: 100%;
     }
 
     .titulo__nome {
@@ -1266,68 +1341,83 @@
         right: 70px;
     }
 
-    .refrator__contener {
-        flex-direction: row;
+    .refrator__dados {
+        margin: 2em 0 3em 0;
+        height: 90%;
         display: flex;
-        justify-content: space-around;
+        flex-direction: row;
+    }
+
+    .dados__refrator {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
         width: 100%;
+        height: 400px;
     }
 
     .contener__binoculos {
-        height: 570px;
-        margin-bottom: 2em;
-        margin-top: 1em;
+        height: 500px;
         width: 100%;
     }
 
     .binoculos__titulo {
-        height: 70px;
+        height: 40px;
         justify-content: space-between;
     }
 
-    .binoculos__contener {
-        align-items: center;
-        height: 500px;
-        justify-content: space-around;
+    .binoculos__dados {
+        margin: 2em 0 3em 0;
+        height: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
     }
 
-    .contener__binoculos--size {
-        align-items: center;
+    .dados__binoculos {
+        display: flex;
         flex-direction: column;
-        height: 500px;
         justify-content: space-evenly;
+        width: 100%;
+        height: 400px;
     }
 
     .contener__camera {
-        height: 570px;
+        height: 500px;
         width: 100%;
     }
 
     .camera__titulo {
-        height: 70px;
+        height: 40px;
         justify-content: space-between;
     }
 
-    .camera__contener {
-        height: 500px;
-        justify-content: space-around;
+   .camera__dados {
+        margin: 2em 0 3em 0;
+        height: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
         width: 100%;
     }
 
-    .contener__camera--size {
-        align-items: center;
+    .dados__camera {
+        display: flex;
         flex-direction: column;
-        height: 500px;
         justify-content: space-evenly;
+        width: 100%;
+        height: 400px;
+        align-items: center;
     }
 
     .contener__astronomicas {
-        height: 570px;
+        height: 500px;
         width: 100%;
     }
 
     .astronomicas__titulo {
-        height: 70px;
+        height: 40px;
         justify-content: space-between;
         width: 100%;
     }
@@ -1336,19 +1426,22 @@
         width: 300px;
     }
 
-    .astronomicas__contener {
-        height: 500px;
-        justify-content: space-around;
+    .astronomicas__dados {
+        margin: 2em 0 3em 0;
+        height: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
         width: 100%;
     }
 
-    .contener__astronomicas--size {
-        align-items: center;
+    .dados__astronomicas {
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
-        height: 500px;
         justify-content: space-evenly;
+        width: 100%;
+        height: 400px;
+        align-items: center;
     }
 
     .rodape {
@@ -1387,8 +1480,8 @@
     }
 
     .lable__nome {
-        text-align: left;
         margin-left: 3em;
+        text-align: left;
     }
 
     .contener__produtos--flex {
@@ -1424,10 +1517,10 @@
         height: 200px;
         width: 300px;
     }
-    
+
     .main__formulario {
-        justify-content: space-evenly;
         flex-direction: column;
+        justify-content: space-evenly;
         width: 610px;
     }
 }

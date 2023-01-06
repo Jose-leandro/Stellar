@@ -1,0 +1,74 @@
+{
+  "refratores": [
+    {
+      "url1": "assets/imagens/refrator-primeiro.jpg",
+      "nome1": "refrator dourado",
+      "preco1": "R$ 1100",
+      "id1": 1,
+      "url2": "assets/imagens/refrator-segundo.jpg",
+      "nome2": "refrator marrom",
+      "preco2": "R$ 1000",
+      "id2": 2,
+      "url3": "assets/imagens/refrator-terceiro.png",
+      "nome3": "refrator preto",
+      "preco3": "R$ 900",
+      "id3": 3
+    }
+  ],
+  "binoculos": [
+    {
+      "url1": "assets/imagens/binoculos-produto-1.jpg",
+      "nome1": "binóculo preto",
+      "preco1": "R$ 100",
+      "id1": 4,
+      "url2": "assets/imagens/binoculo-produto-2.jpg",
+      "nome2": "binóculo preto da revue",
+      "preco2": "R$ 300",
+      "id2": 5,
+      "url3": "assets/imagens/binoculo-produto-3.jpg",
+      "nome3": "binóculo preto da fphel",
+      "preco3": "R$ 400",
+      "id3": 6
+    }
+  ],
+  "cameras": [
+    {
+      "url1": "assets/imagens/camera-produto-1.jpg",
+      "nome1": "câmera preta da sony",
+      "preco1": "R$ 800",
+      "id1": 7,
+      "url2": "assets/imagens/camera-produto-2.png",
+      "nome2": "câmera preta",
+      "preco2": "R$ 400",
+      "id2": 8,
+      "url3": "assets/imagens/camera-produto-3.jpg",
+      "nome3": "câmera prateada",
+      "preco3": "R$ 200",
+      "id3": 9
+    }
+  ],
+  "astronomicas": [
+    {
+      "url1": "assets/imagens/imagem-astronomica-segunda.jpg",
+      "nome1": "céu estrelado verde",
+      "preco1": "R$ 200",
+      "id1": 10,
+      "url2": "assets/imagens/imagem-astronomica-terceira.jpg",
+      "nome2": "nebulosa em vermelho, branco ao azul",
+      "preco2": "R$ 300",
+      "id2": 11,
+      "url3": "assets/imagens/imagem-astronomica-quarta.jpg",
+      "nome3": "céu estrelado rosa",
+      "preco3": "R$ 230",
+      "id3": 12
+    }
+  ],
+  "refratordourado": [
+    {
+      "link": "produtoRefratorMarrom.html",
+      "url": "assets/imagens/refrator-segundo.jpg",
+      "nome": "refrator dourado",
+      "preco": "R$ 1100"
+    }
+  ]
+}

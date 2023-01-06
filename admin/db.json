@@ -49,10 +49,10 @@
   ],
   "astronomicas": [
     {
-      "url1": "assets/imagens/imagem-astronomica-segunda.jpg",
-      "nome1": "céu estrelado verde",
-      "preco1": "R$ 200",
-      "id1": 10,
+      "url": "assets/imagens/imagem-astronomica-segunda.jpg",
+      "nome": "céu estrelado verde",
+      "preco": "R$ 200",
+      "id": 10,
       "url2": "assets/imagens/imagem-astronomica-terceira.jpg",
       "nome2": "nebulosa em vermelho, branco ao azul",
       "preco2": "R$ 300",

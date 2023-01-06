@@ -1,4 +1,5 @@
 
+
 var dadoDeImagem = document.querySelector(".escolher__input");
 console.log(dadoDeImagem);
 var dadoImagem = dadoDeImagem.value;
@@ -34,35 +35,36 @@ var contenerAstronomicas = document.querySelector('[data-tipo="astronomicas"]');
 
 var formularioBtn = document.querySelector(".formulario__btn");
 
+var dd = imagem.refratores[1]
+console.log(dd)
+console.log("errro")
+
 function adicionadoProduto() {
 
-formularioBtn.addEventListener("click", function () {
+    
 
-    if (dadoCategoria == nomeRefratores) {
+    formularioBtn.addEventListener("click", function () {
 
-        var criarProdutosRefratores = function (url, nome, preco) {
+        if (dadoCategoria == nomeRefratores) {
 
-        const conteudo = `
+            const conteudo = `
     <div class="contener__refrator">
-    <a href="#"><img src="${url}"
+    <a href="#"><img src="${imagem.refratores[0]}"
             class="refrator__imagem" alt="imagem de um refrator"></a>
     <p class="refrator__descricao">
-        ${nome}<br>
+        ${imagem.refratores[1]}<br>
     </p>
     <h1 class="refrator__preco">
-        ${preco}
+        ${imagem.refratores[2]}
     </h1>
-    <p class="refrator__descricao">
-    ${descricao}
-    </p>
     <a href="#" class="refrator__ancora"><button class="refrator__btn">Ver produto</button></a>
     </div>
 `
-    refratorContener.innerHTML = conteudo;
-    return refratorContener;
-}
-var produto = refratorContener.appendChild(criarProdutosRefratores(dadoDeImagem, dadoNome, dadoPreco, dadoDescricao));
+            refratorContener.innerHTML = conteudo;
+
+            refratorContener.appendChild();
 
         }
     });
-}adicionadoProduto();
+} 
+adicionadoProduto();

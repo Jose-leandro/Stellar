@@ -5,9 +5,9 @@ console.log(refratorContener);
 
 
 var criarProdutosRefratores = function (url1, nome1, preco1, url2, nome2, preco2, url3, nome3, preco3) {
-  
+
     const conteudo = `
-    <div class="contener__refrator">
+    <div class="dados__refrator">
     <a href="produtoRefratorDourao.html"><img src="${url1}"
             class="refrator__imagem" alt="imagem de um refrator dourado"></a>
     <p class="refrator__descricao">
@@ -18,7 +18,7 @@ var criarProdutosRefratores = function (url1, nome1, preco1, url2, nome2, preco2
     </h1>
     <a href="produtoRefratorDourao.html" class="refrator__ancora"><button class="refrator__btn">Ver produto</button></a>
 </div>
-<div class="contener__refrator">
+<div class="dados__refrator">
 <a href="produtoRefratorMarrom.html"><img src="${url2}"
         class="refrator__imagem"></a>
 <p class="refrator__descricao">
@@ -28,7 +28,7 @@ ${nome2}<br>
 ${preco2}
 </h1>
 <a href="produtoRefratorMarrom.html" class="refrator__ancora"><button class="refrator__btn">Ver produto</button></a>
-</div><div class="contener__refrator">
+</div><div class="dados__refrator">
 <a href="produtoRefratorPreto.html"><img src="${url3}"
         class="refrator__imagem"></a>
 <p class="produto-refrator">
@@ -45,28 +45,29 @@ ${preco3}
     return refratorContener;
 }
 
-var http = new XMLHttpRequest();
 
-http.open("GET", "http://localhost:3000/refratores");
+const fetchRefratores = () => {
+    const url = "http://localhost:3000/refratores";
 
-http.send();
+    fetch(url)
+        .then(Response => Response.json())
+        .then(
+            Response => Response.forEach(Element => {
+                console.log(Element)
+                refratorContener.appendChild(criarProdutosRefratores(Element.url1, Element.nome1, Element.preco1,
+                    Element.url2, Element.nome2, Element.preco2,
+                    Element.url3, Element.nome3, Element.preco3));
+                localStorage.setItem("ProdutoRefrator", criarProdutosRefratores)
+            })
+        )
 
-http.onload = function () {
-    var dados = JSON.parse(http.response);
-    dados.forEach(Element => {
-       
-       refratorContener.appendChild(criarProdutosRefratores( Element.url1, Element.nome1, Element.preco1, 
-            Element.url2, Element.nome2, Element.preco2,
-            Element.url3, Element.nome3, Element.preco3));
-        localStorage.setItem("ProdutoRefrator", criarProdutosRefratores)
-           
-    });
 }
+fetchRefratores();
 
 
 var criarProdutosBinoculos = function (url1, nome1, preco1, url2, nome2, preco2, url3, nome3, preco3) {
     const conteudoBinoculo = `
-    <div class="contener__binoculos--size">
+    <div class="dados__binoculos">
 					<a href="binoculosPretoPeludo.html"><img src="${url1}"
 							class="binoculos__imagem" alt="imagem que descrever um binóculo preto, um pouco velho e rugoso"></a>
 					<p class="binoculos__produto">
@@ -77,7 +78,7 @@ var criarProdutosBinoculos = function (url1, nome1, preco1, url2, nome2, preco2,
 					</h1>
 					<a href="binoculosPretoPeludo.html" class="binoculos__ancora"><button class="binoculos__btn">Ver produto</button></a>
 				</div>
-				<div class="contener__binoculos--size">
+				<div class="dados__binoculos">
 					<a href="binoculoPretoRevue.html"><img src="${url2}"
 							class="binoculos__imagem" alt="imagem que descrever um binóculo um pouco verder e preto, grande, e um modelo mais antigo"></a>
 					<p class="binoculos__produto">
@@ -88,7 +89,7 @@ var criarProdutosBinoculos = function (url1, nome1, preco1, url2, nome2, preco2,
 					</h1>
 					<a href="binoculoPretoRevue.html" class="binoculos__ancora"><button class="binoculos__btn">Ver produto</button></a>
 				</div>
-				<div class="contener__binoculos--size">
+				<div class="dados__binoculos">
 					<a href="binoculoPretoFpehel.html"><img src="${url3}"
 							class="binoculos__imagem" alt="imagem de um binóculo de cor cinza e preto , sobre uma superfície de madeira, da marca fphel"></a>
 					<p class="binoculos__produto">
@@ -106,31 +107,32 @@ var criarProdutosBinoculos = function (url1, nome1, preco1, url2, nome2, preco2,
 
 var binoculosContener = document.querySelector('[data-tipo="binoculos"]');
 
-var http2 = new XMLHttpRequest();
 
-http2.open("GET", "http://localhost:3000/binoculos");
+const fetchBinoculos = () => {
+    const url = "http://localhost:3000/binoculos";
 
-http2.send();
+    fetch(url)
+        .then(Response => Response.json())
+        .then(
+            Response => Response.forEach(Element => {
+                binoculosContener.appendChild(criarProdutosBinoculos(Element.url1, Element.nome1, Element.preco1,
+                    Element.url2, Element.nome2, Element.preco2,
+                    Element.url3, Element.nome3, Element.preco3));
 
-http2.onload = function () {
+                localStorage.setItem("criarProdutoCamera", criarProdutosBinoculos)
+            })
+        )
 
-    var dadosDeBinoculos = JSON.parse(http2.response);
+}
+fetchBinoculos();
 
-    dadosDeBinoculos.forEach(Element =>  {
-        binoculosContener.appendChild(criarProdutosBinoculos( Element.url1, Element.nome1, Element.preco1, 
-            Element.url2, Element.nome2, Element.preco2,
-            Element.url3, Element.nome3, Element.preco3));
 
-            localStorage.setItem("criarProdutoCamera", criarProdutosBinoculos)
-    }
-   )};
+var contenerCameras = document.querySelector('[data-tipo="cameras"]');
 
-   var contenerCameras = document.querySelector('[data-tipo="cameras"]');
-   
-   var criarProdutosCameras = function (url1, nome1, preco1, url2, nome2, preco2, url3, nome3, preco3) {
-     
-       const conteudoCamera = `
-       <div class="contener__camera--size">
+var criarProdutosCameras = function (url1, nome1, preco1, url2, nome2, preco2, url3, nome3, preco3) {
+
+    const conteudoCamera = `
+       <div class="dados__camera">
        <a href="cameraPretaSony.html"><img src="${url1}" class="camera__imagem"
                alt="imagem de um produto da seção câmera"></a>
        <p class="camera__produto">
@@ -141,7 +143,7 @@ http2.onload = function () {
        </h1>
        <a href="cameraPretaSony.html" class="camera__ancora"><button class="camera__btn">Ver produto</button></a>
    </div>
-   <div class="contener__camera--size">
+   <div class="dados__camera">
        <a href="cameraPreta.html"><img src="${url2}" class="camera__imagem"
                alt="imagemde um produto da seção câmera"></a>
        <p class="camera__produto">
@@ -152,7 +154,7 @@ http2.onload = function () {
        </h1>
        <a href="cameraPreta.html" class="camera__ancora"><button class="camera__btn">Ver produto</button></a>
    </div>
-   <div class="contener__camera--size">
+   <div class="dados__camera">
        <a href="cameraPrateada.html"><img src="${url3}" class="camera__imagem"
                alt="imagemde um produto da seção câmera"></a>
        <p class="camera__produto">
@@ -164,35 +166,33 @@ http2.onload = function () {
        <a href="cameraPrateada.html" class="camera__ancora"><button class="camera__btn">Ver produto</button></a>
    </div>
    `
-       contenerCameras.innerHTML = conteudoCamera;
-       return contenerCameras;
-   }
-   
-   var http3 = new XMLHttpRequest();
-   
-   http3.open("GET", "http://localhost:3000/cameras");
-   
-   http3.send();
-   
-   http3.onload = function () {
-       var dadosDeCameras = JSON.parse(http3.response);
-       dadosDeCameras.forEach(Element => {
-          
-           contenerCameras.appendChild(criarProdutosCameras( Element.url1, Element.nome1, Element.preco1, 
-               Element.url2, Element.nome2, Element.preco2,
-               Element.url3, Element.nome3, Element.preco3));
-       });
-   }
-   
+    contenerCameras.innerHTML = conteudoCamera;
+    return contenerCameras;
+}
+
+const fetchCameras = () => {
+    const url = " http://localhost:3000/cameras";
+
+    fetch(url)
+        .then(Response => Response.json())
+        .then(
+            Response => Response.forEach(Element => {
+                contenerCameras.appendChild(criarProdutosCameras(Element.url1, Element.nome1, Element.preco1,
+                    Element.url2, Element.nome2, Element.preco2,
+                    Element.url3, Element.nome3, Element.preco3));
+            })
+        )
+}
+fetchCameras();
 
 
 var contenerAstronomicas = document.querySelector('[data-tipo="astronomicas"]');
 
 var criarProdutosAstronomicas = function (url1, nome1, preco1, url2, nome2, preco2, url3, nome3, preco3) {
-  
+
     const conteudoAstronomicas = `
    
-    <div class="contener__astronomicas--size">
+    <div class="dados__astronomicas">
 					<a href="ceuEstreladoVerde.html"><img src="${url1} "
 							class="astronomicas__imagem" alt="imagem de um produto da seção fotos astronômicas"></a>
 					<p class="astronomicas__produto">
@@ -203,7 +203,7 @@ var criarProdutosAstronomicas = function (url1, nome1, preco1, url2, nome2, prec
 					</h1>
 					<a href="ceuEstreladoVerde.html" class="astronomicas__ancora"><button class="astronomicas__btn">Ver produto</button></a>
 				</div>
-				<div class="contener__astronomicas--size">
+				<div class="dados__astronomicas">
 					<a href="nebulosaVermelha.html"><img src="${url2}"
 							class="astronomicas__imagem" alt="imagemde um produto da seção fotos astronômicas"></a>
 					<p class="astronomicas__produto">
@@ -214,7 +214,7 @@ var criarProdutosAstronomicas = function (url1, nome1, preco1, url2, nome2, prec
 					</h1>
 					<a href="nebulosaVermelha.html" class="astronomicas__ancora"><button class="astronomicas__btn">Ver produto</button></a>
 				</div>
-				<div class="contener__astronomicas--size">
+				<div class="dados__astronomicas">
 					<a href="ceuNoturnoRosa.html"><img src="${url3}"
 							class="astronomicas__imagem" alt="imagemde um produto da seção fotos astronômicas"></a>
 					<p class="astronomicas__produto">
@@ -230,20 +230,17 @@ var criarProdutosAstronomicas = function (url1, nome1, preco1, url2, nome2, prec
     return contenerAstronomicas;
 }
 
-var http4 = new XMLHttpRequest();
+const fetchAstronomica = () => {
+    const url = "http://localhost:3000/astronomicas";
 
-http4.open("GET", "http://localhost:3000/astronomicas");
-
-http4.send();
-
-http4.onload = function () {
-    var dadosDeAstronomicas = JSON.parse(http4.response);
-    dadosDeAstronomicas.forEach(Element => {
-       
-        dadosDeAstronomicas.appendChild(criarProdutosAstronomicas( Element.url1, Element.nome1, Element.preco1, 
-            Element.url2, Element.nome2, Element.preco2,
-            Element.url3, Element.nome3, Element.preco3));
-    });
+    fetch(url)
+        .then(Response => Response.json())
+        .then(
+            Response => Response.forEach(Element => {
+                contenerAstronomicas.appendChild(criarProdutosAstronomicas(Element.url1, Element.nome1, Element.preco1,
+                    Element.url2, Element.nome2, Element.preco2,
+                    Element.url3, Element.nome3, Element.preco3));
+            })
+        )
 }
-
-
+fetchAstronomica();

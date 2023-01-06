@@ -182,11 +182,6 @@
     text-decoration: none;
 }
 
-.contener__refrator {
-    margin: 1em 0;
-    margin-bottom: 2em;
-}
-
 .refrator__titulo {
     width: 100%;
     display: flex;
@@ -214,12 +209,10 @@
     height: 500px;
 }
 
-.contener__refrator {
+.refrator__dados {
     height: 500px;
-    align-items: center;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    flex-direction: row;
 }
 
 .refrator__imagem {
