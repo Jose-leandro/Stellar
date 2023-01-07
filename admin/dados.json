@@ -65,10 +65,26 @@
     ],
     "refratordourado": [
       {
-        "link": "produtoRefratorMarrom.html",
-        "url": "assets/imagens/refrator-segundo.jpg",
+        "link": "produtoRefratorDourao.html",
+        "url": "assets/imagens/refrator-primeiro.jpg",
         "nome": "refrator dourado",
         "preco": "R$ 1100"
       }
+    ],
+    "refratormarrom": [
+        {
+            "link": "produtoRefratorMarrom.html",
+            "url": "assets/imagens/refrator-segundo.jpg",
+            "nome": "refrator marrom",
+            "preco": "R$ 1000"
+        }
+    ],
+    "refratopreto": [
+        {
+            "link": "produtoRefratorPreto.html",
+            "url": "assets/imagens/refrator-terceiro.jpg",
+            "nome": "refrator preto",
+            "preco": "R$ 900"
+        }
     ]
   }
