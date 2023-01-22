@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>E-commecer AluraGeek</title>
-	<link rel="icon" href="assets/imagens/icone-da-pagina3.svg" type="image/x-icon">
+	<link rel="icon" href="admin/assets/imagens/ecommerce.png" type="image/x-icon">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<link rel="stylesheet" type="text/css" href="admin/assets/css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="admin/assets/css/reset.css">
@@ -26,12 +26,12 @@
 <body class="corpo">
 	<header class="cabecalho">
 		<div class="contener__cabecalho">
-			<img src="admin/assets/imagens/logo_do_site.png" class="cabecalho__logo">
+			<img src="admin/assets/imagens/logo.png" class="cabecalho__logo">
 			<input class="cabecalho__input" type="text"  placeholder="Procurar">
 			<span class="material-symbols-outlined cabecalho__icone">
 				search
 			</span>
-			<a href="escolherEntarOuCadrasto.html" class="cabecalho__ancora"><button
+			<a href="admin/escolherEntarOuCadrasto.html" class="cabecalho__ancora"><button
 					class="cabecalho__btn">Entar</button></a>
 			<div class="contener__potinhos">
 				<span class="material-symbols-outlined pontinhos__icone">
@@ -42,7 +42,7 @@
 		<div class="contener__menu">
 			<div class="menu__adicionar adicionar">
 				<ul class="menu__lista">
-					<li class="menu__item"><a href="adicionarprodutos.html" class="menu__ancora">Adicionar Produtos</a>
+					<li class="menu__item"><a href="admin/adicionarprodutos.html" class="menu__ancora">Adicionar Produtos</a>
 					</li>
 				</ul>
 			</div>
@@ -52,7 +52,7 @@
 		<section>
 			<div class="contener__banner">
 				<img class="banner__imagem" src="admin/assets/imagens/banner.png" alt="imagem do banner promocional">
-				<a href="promocaoDeProdutos.html" class="banner__ancora"><button class="banner__btn">Ver
+				<a href="admin/promocaoDeProdutos.html" class="banner__ancora"><button class="banner__btn">Ver
 						produtos</button></a>
 			</div>
 		</section>
@@ -60,70 +60,167 @@
 			<div class="contener__categoria">
 				<div class="categoria__item">
 					<div class="item__imagens--height">
-						<a href="categoriaRefratores.html"><img class="item__imagem"
+						<a href="admin/categoriaRefratores.html"><img class="item__imagem"
 								src="admin/assets/imagens/refrator-categoria.jpg"
 								alt="imagem de um produto da categoria telescopio"></a>
 					</div>
-					<a href="categoriaRefratores.html" class="item__nome">Refratores</a>
+					<a href="admin/categoriaRefratores.html" class="item__nome">Refratores</a>
 				</div>
 				<div class="categoria__item">
 					<div class="item__imagens--height">
-						<a href="categoriaBinoculos.html"><img class="item__imagem" src="admin/assets/imagens/binoculos-categoria.jpg"
+						<a href="admin/categoriaBinoculos.html"><img class="item__imagem" src="admin/assets/imagens/binoculos-categoria.jpg"
 								alt="imagem de um produto da categoria binoculos"></a>
 					</div>
-					<a href="categoriaBinoculos.html" class="item__nome">Binóculos</a>
+					<a href="admin/categoriaBinoculos.html" class="item__nome">Binóculos</a>
 				</div>
 				<div class="categoria__item">
 					<div class="item__imagens--height">
-						<a href="categoriaCameras.html"><img src="admin/assets/imagens/camera.jpg" class="item__imagem"
+						<a href="admin/categoriaCameras.html"><img src="admin/assets/imagens/camera.jpg" class="item__imagem"
 								alt="imagem de um produto da categoria câmera"></a>
 					</div>
-					<a href="categoriaCameras.html" class="item__nome">Câmeras</a>
+					<a href="admin/categoriaCameras.html" class="item__nome">Câmeras</a>
 				</div>
 				<div class="categoria__item">
 					<div class="item__imagens--height">
-						<a href="categoriaFotosAstronomicas.html"><img src="admin/assets/imagens/imagem-astronomica.jpg"
+						<a href="admin/categoriaFotosAstronomicas.html"><img src="admin/assets/imagens/imagem-astronomica.jpg"
 								class="item__imagem" alt="imagem de um produto da categoria "></a>
 					</div>
-					<a href="categoriaFotosAstronomicas.html" class="item__nome">Fotos astronômicas</a>
+					<a href="admin/categoriaFotosAstronomicas.html" class="item__nome">Fotos astronômicas</a>
 				</div>
 			</div>
 		</section>
 		<section class="contener__refrator">
 			<div class="refrator__titulo">
 				<p class="titulo__nome">Refratores</p>
-				<a href="categoriaRefratores.html" class="titulo__ancora"><button class="titulo__btn">Ver tudo</button></a>
+				<a href="admin/categoriaRefratores.html" class="titulo__ancora"><button class="titulo__btn">Ver tudo</button></a>
 				<span class="material-symbols-outlined" id="titulo__seta">
 					arrow_right_alt
 				</span>
 			</div>
-			<div class="refrator__dados" data-tipo="refratores">
-				
+			<div class="refrator__dados">
+				<div class="dados__refrator">
+					<a href="admin/produtoRefratorDourao.html"><img src="admin/assets/imagens/refrator-primeiro.jpg"
+							class="refrator__imagem" alt="imagem de um refrator dourado"></a>
+					<p class="refrator__descricao">
+						Refrator dourado<br>
+					</p>
+					<h1 class="refrator__preco">
+						R$ 1100
+					</h1>
+					<a href="admin/produtoRefratorDourao.html" class="refrator__ancora"><button class="refrator__btn">Ver produto</button></a>
+				</div>
+				<div class="dados__refrator">
+				<a href="admin/produtoRefratorMarrom.html"><img src="admin/assets/imagens/refrator-segundo.jpg"
+						class="refrator__imagem"></a>
+				<p class="refrator__descricao">
+					Refrator marrom<br>
+				</p>
+				<h1 class="refrator__preco">
+					R$ 1000
+				</h1>
+				<a href="admin/produtoRefratorMarrom.html" class="refrator__ancora"><button class="refrator__btn">Ver produto</button></a>
+				</div>
+				<div class="dados__refrator">
+				<a href="admin/produtoRefratorPreto.html"><img src="admin/assets/imagens/refrator-terceiro.png"
+						class="refrator__imagem"></a>
+				<p class="produto-refrator">
+					Refrator preto<br>
+				</p>
+				<h1 class="refrator__preco">
+					R$ 900
+				</h1> 
+				<a href="admin/produtoRefratorPreto.html" class="refrator__ancora"><button class="refrator__btn">Ver produto</button></a>
+				</div>
 			</div>
 		</section>
 		<section class="contener__binoculos">
 			<div class="binoculos__titulo">
 				<p class="titulo__nome">Binóculos</p>
-				<a href="categoriaBinoculos.html" class="titulo__ancora"><button class="titulo__btn">Ver tudo</button></a>
+				<a href="admin/categoriaBinoculos.html" class="titulo__ancora"><button class="titulo__btn">Ver tudo</button></a>
 				<span class="material-symbols-outlined" id="titulo__seta">
 					arrow_right_alt
 				</span>
 			</div>
-			<div class="binoculos__dados" data-tipo="binoculos">
-
+			<div class="binoculos__dados">
+				<div class="dados__binoculos">
+					<a href="admin/binoculosPretoPeludo.html"><img src="admin/assets/imagens/binoculos-produto-1.jpg"
+							class="binoculos__imagem" alt="imagem que descrever um binóculo preto, um pouco velho e rugoso"></a>
+					<p class="binoculos__produto">
+						Binóculo preto
+					</p>
+					<h1 class="binoculos__preco">
+						R$ 100
+					</h1>
+					<a href="admin/binoculosPretoPeludo.html" class="binoculos__ancora"><button class="binoculos__btn">Ver produto</button></a>
+				</div>
+				<div class="dados__binoculos">
+					<a href="admin/binoculoPretoRevue.html"><img src="admin/assets/imagens/binoculo-produto-2.jpg"
+							class="binoculos__imagem" alt="imagem que descrever um binóculo um pouco verder e preto, grande, e um modelo mais antigo"></a>
+					<p class="binoculos__produto">
+						Binóculo preto da revue
+					</p>
+					<h1 class="binoculos__preco">
+						R$ 300
+					</h1>
+					<a href="admin/binoculoPretoRevue.html" class="binoculos__ancora"><button class="binoculos__btn">Ver produto</button></a>
+				</div>
+				<div class="dados__binoculos">
+					<a href="admin/binoculoPretoFpehel.html"><img src="admin/assets/imagens/binoculo-produto-3.jpg"
+							class="binoculos__imagem" alt="imagem de um binóculo de cor cinza e preto , sobre uma superfície de madeira, da marca fphel"></a>
+					<p class="binoculos__produto">
+						Binóculo preto da fpehel<br>
+					</p>
+					<h1 class="binoculos__preco">
+						R$ 400
+					</h1>
+					<a href="admin/binoculoPretoFpehel.html" class="binoculos__ancora"><button class="binoculos__btn">Ver produto</button></a>
+				</div>
 			</div>
 		</section>
 		<section class="contener__camera">
 			<div class="camera__titulo">
 				<p class="titulo__nome">Câmera</p>
-				<a href="categoriaCameras.html" class="titulo__ancora"><button class="titulo__btn">Ver tudo</button></a>
+				<a href="admin/categoriaCameras.html" class="titulo__ancora"><button class="titulo__btn">Ver tudo</button></a>
 
 				<span class="material-symbols-outlined" id="titulo__seta">
 					arrow_right_alt
 				</span>
 			</div>
-			<div class="camera__dados" data-tipo="cameras">
-				
+			<div class="camera__dados">
+				<div class="dados__camera">
+					<a href="admin/cameraPretaSony.html"><img src="admin/assets/imagens/camera-produto-1.jpg" class="camera__imagem"
+							alt="imagem de um produto da seção câmera"></a>
+					<p class="camera__produto">
+						Câmera preta da sony}<br>
+					</p>
+					<h1 class="camera__preco">
+						R$ 800
+					</h1>
+					<a href="admin/cameraPretaSony.html" class="camera__ancora"><button class="camera__btn">Ver produto</button></a>
+				</div>
+				<div class="dados__camera">
+					<a href="admin/cameraPreta.html">
+						<img src="admin/assets/imagens/camera-produto-2.png" class="camera__imagem"
+							alt="imagemde um produto da seção câmera"></a>
+					<p class="camera__produto">
+						Câmera preta<br>
+					</p>
+					<h1 class="camera__preco">
+						R$ 400
+					</h1>
+					<a href="admin/cameraPreta.html" class="camera__ancora"><button class="camera__btn">Ver produto</button></a>
+				</div>
+				<div class="dados__camera">
+					<a href="admin/cameraPrateada.html"><img src="admin/assets/imagens/camera-produto-3.jpg" class="camera__imagem"
+							alt="imagemde um produto da seção câmera"></a>
+					<p class="camera__produto">
+						Câmera prateada<br>
+					</p>
+					<h1 class="camera__preco">
+						R$ 200
+					</h1>
+					<a href="admin/cameraPrateada.html" class="camera__ancora"><button class="camera__btn">Ver produto</button></a>
+				</div>
 			</div>
 		</section>
 		<section class="contener__astronomicas">
@@ -134,8 +231,40 @@
 					arrow_right_alt
 				</span>
 			</div>
-			<div class="astronomicas__dados" data-tipo="astronomicas">
-				
+			<div class="astronomicas__dados">
+				<div class="dados__astronomicas">
+					<a href="admin/ceuEstreladoVerde.html"><img src="admin/assets/imagens/imagem-astronomica-segunda.jpg"
+							class="astronomicas__imagem" alt="imagem de um produto da seção fotos astronômicas"></a>
+					<p class="astronomicas__produto">
+						Céu estrelado verde<br>
+					</p>
+					<h1 class="astronomicas__preco">
+						R$ 200
+					</h1>
+					<a href="admin/ceuEstreladoVerde.html" class="astronomicas__ancora"><button class="astronomicas__btn">Ver produto</button></a>
+				</div>
+				<div class="dados__astronomicas">
+					<a href="admin/nebulosaVermelha.html"><img src="admin/assets/imagens/imagem-astronomica-terceira.jpg"
+							class="astronomicas__imagem" alt="imagemde um produto da seção fotos astronômicas"></a>
+					<p class="astronomicas__produto">
+						Nebulosa em vermelho, azul e branco
+					</p>
+					<h1 class="astronomicas__preco">
+						R$ 300
+					</h1>
+					<a href="admin/nebulosaVermelha.html" class="astronomicas__ancora"><button class="astronomicas__btn">Ver produto</button></a>
+				</div>
+				<div class="dados__astronomicas">
+					<a href="admin/ceuNoturnoRosa.html"><img src="admin/assets/imagens/imagem-astronomica-quarta.jpg"
+							class="astronomicas__imagem" alt="imagemde um produto da seção fotos astronômicas"></a>
+					<p class="astronomicas__produto">
+						Céu estrelado rosa
+					</p>
+					<h1 class="astronomicas__preco">
+						R$ 230
+					</h1>
+					<a href="admin/ceuNoturnoRosa.html" class="astronomicas__ancora"><button class="astronomicas__btn">Ver produto</button></a>
+				</div>
 			</div>
 		</section>
 		</section>
@@ -143,7 +272,7 @@
 	<footer class="rodape">
 		<div class="rodape__contener">
 			<div class="contener__logo">
-				<img src="admin/assets/imagens/logo_do_site.png" class="logo__imagem">
+				<img src="admin/assets/imagens/logo.png" class="logo__imagem">
 			</div>
 			<div class="contener__informacoes">
 				<ul>
@@ -189,7 +318,4 @@
 <script src="admin/assets/javascript/animacoes.js"></script>
 <script src="admin/assets/javascript/popupDeConcluidos.js"></script>
 <script src="admin/assets/javascript/validandoFaleConosco.js"></script>
-<script src="admin/assets/javascript/filtandoProdutos.js"></script>
-<script src="admin/assets/javascript/filtroDePesquisa.js"></script>
-<script src="admin/assets/javascript/teclaEnter.js"></script>
 <script src="admin/assets/javascript/adicionarProduto.js"></script>

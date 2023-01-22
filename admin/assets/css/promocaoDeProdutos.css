@@ -124,10 +124,35 @@
     justify-content: space-evenly;
 }
 
+.produtos__descricao--flex a {
+    color: #c0bbb8;
+    text-decoration: none;
+}
+
 .descricao__imagem {
+    text-decoration: none;
+    color: #ffff;
     border-radius: 20px;
     height: 179px;
     width: 320px;
+}
+
+.descricao__refrator {
+    text-decoration: none;
+    color: #ffff;
+    font-size: 20px;
+}
+
+.descricao__binoculos {
+    text-decoration: none;
+    color: #ffff;
+    font-size: 20px;
+}
+
+.descricao__cameras {
+    text-decoration: none;
+    color: #ffff; 
+    font-size: 20px;
 }
 
 .descricao__astronomica {

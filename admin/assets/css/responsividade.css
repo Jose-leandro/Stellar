@@ -594,14 +594,9 @@
 }
 
 @media screen and (min-width: 480px) {
-    .banner__btn:active {
-        height: 29px;
-        width: 99px;
-    }
 
-    .banner__btn:hover {
-        height: 31px;
-        width: 101px;
+    .cabecalho__logo {
+        width: 250px;
     }
 
     .item__imagem:active {
@@ -663,10 +658,20 @@
     .banner__btn {
         font-size: 15px;
         height: 30px;
-        left: 170px;
+        left: 42%;
         position: absolute;
         top: 233px;
         width: 100px;
+    }
+
+    .banner__btn:active {
+        height: 29px;
+        width: 99px;
+    }
+
+    .banner__btn:hover {
+        height: 31px;
+        width: 101px;
     }
 
     .contener__categoria {
@@ -817,6 +822,7 @@
         display: flex;
         height: 50px;
         justify-content: space-around;
+        width: 100%;
     }
 
     .astronomicas__dados {
@@ -848,26 +854,28 @@
     .contener__logo {
         align-items: center;
         display: flex;
+        justify-content: center;
         height: 100px;
         width: 100%;
     }
 
     .logo__imagem {
-        height: 50px;
-        width: 200px;
+        height: 70px;
+        width: 250px;
     }
 
     .contener__informacoes {
         display: flex;
-        height: 500px;
+        height: 380px;
         justify-content: space-evenly;
         width: 90%;
+        align-items: center;
     }
 
     .informacoes__item {
-        font-size: 14px;
+        font-size: 18px;
         height: 30px;
-        width: 150px;
+        width: 180px;
     }
 
     .imagens__autorais {
@@ -877,7 +885,7 @@
     .contener__formulario {
         display: flex;
         flex-direction: column;
-        height: 430px;
+        height: 480px;
         justify-content: space-evenly;
         margin-top: 1em;
         text-align: center;
@@ -890,6 +898,11 @@
         width: 80%;
     }
 
+    .lable__nome {
+        text-align: start;
+        margin-left: 48px;
+    }
+
     .formulario__nome {
         margin-left: 2em;
     }
@@ -899,7 +912,7 @@
     }
 
     .formulario__btn {
-        margin-top: 3em;
+        margin-top: 2em;
     }
 
     .contener__popup {
@@ -1221,6 +1234,8 @@
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
+        text-decoration: none;
+        color: #ffff;
     }
 }
 
@@ -1459,7 +1474,7 @@
         align-self: center;
         display: flex;
         flex-direction: column;
-        width: 550px;
+        width: 400px;
     }
 
     .logo__imagem {
@@ -1471,7 +1486,7 @@
         align-items: center;
         display: flex;
         height: 100%;
-        width: 600px;
+        width: 350px;
     }
 
     .informacoes__item {

@@ -16,8 +16,8 @@
 }
 
 .cabecalho__logo {
-    height: 65px;
-    width: 250px;
+    height: 70px;
+    width: 350px;
 }
 
 .cabecalho__input {
@@ -435,6 +435,11 @@
 
 .contener__logo {
     display: flex;
+}
+
+.logo__imagem {
+    height: 70px;
+    width: 350px;
 }
 
 .contener__informacoes {
