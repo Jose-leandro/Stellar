@@ -886,11 +886,21 @@
     .contener__formulario {
         display: flex;
         flex-direction: column;
-        height: 480px;
+        height: 500px;
         justify-content: space-evenly;
         margin-top: 1em;
         text-align: center;
         width: 90%;
+    }
+
+    .contener__informacoes {
+        height: 45%;
+        width: 200px;
+        margin: 0;
+    }
+
+    .informacoes__item {
+        margin-top: 1em;
     }
 
     .formulario__comunique {
@@ -1409,7 +1419,7 @@
         justify-content: space-between;
     }
 
-   .camera__dados {
+    .camera__dados {
         margin: 2em 0 3em 0;
         height: 90%;
         display: flex;
