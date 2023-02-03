@@ -1,6 +1,5 @@
 .corpo {
     background-color: #000000;
-    color: #857f7a;
     font-size: 18px;
 }
 
@@ -156,6 +155,7 @@
 }
 
 .descricao__astronomica {
+    color: #ffff;
     font-size: 20px;
 }
 
