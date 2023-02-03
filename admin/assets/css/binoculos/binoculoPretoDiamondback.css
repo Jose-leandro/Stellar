@@ -111,6 +111,7 @@
 .binoculos__contener {
     display: flex;
     height: 100%;
+    flex-direction: column;
     margin-bottom: 5rem;
     margin-top: 4rem;
     width: 100%;
