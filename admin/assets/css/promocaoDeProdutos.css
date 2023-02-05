@@ -221,6 +221,7 @@
 
 .informacoes__item {
     margin-top: 2em;
+    color: #857f7a;
 }
 
 .imagens__autorais {
@@ -238,6 +239,7 @@
 }
 
 .contener__foormulario {
+    align-items: center;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -246,6 +248,7 @@
 }
 
 .formulario__comunique {
+    color: #857f7a;
     font-size: 18px;
     text-align: center;
 }
@@ -275,7 +278,6 @@
     font-size: 18px;
     height: 40px;
     margin-left: 4em;
-    width: 60%;
 }
 
 .formulario__btn:hover {

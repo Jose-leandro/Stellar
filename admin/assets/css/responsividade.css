@@ -1702,7 +1702,7 @@
     }
 
     .rodape {
-        height: 550px;
+        height: 500px;
     }
 
     .rodape__contener {
@@ -1751,6 +1751,10 @@
 
     .label__mensagem {
         margin-right: 75px;
+    }
+
+    .formulario__btn {
+        width: 60%;
     }
 
     .contener__produtos--flex {
