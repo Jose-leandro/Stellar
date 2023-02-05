@@ -477,6 +477,12 @@
         height: 25px;
     }
 
+    .adicionar__formulario {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
     .contener__formulario {
         align-items: center;
         display: flex;
@@ -499,7 +505,27 @@
         margin-top: 1em;
     }
 
+    .lable {
+        margin-right: 50%;
+    }
+
     .formulario__nome {
+        margin-left: 0;
+        margin-right: 0;
+        width: 80%;
+    }
+
+    .formulario__preco {
+        margin-left: 0;
+        width: 80%;
+    }
+
+    .formulario__categoria {
+        margin-left: 0;
+        width: 80%;
+    }
+
+    .formulario__descricao {
         margin-left: 0;
         width: 80%;
     }
@@ -1013,6 +1039,12 @@
         width: 100%;
     }
 
+    .adicionar__formulario {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
     .contener__formulario {
         align-items: center;
         display: flex;
@@ -1051,7 +1083,27 @@
         width: 80%;
     }
 
+    .lable {
+        margin-right: 60%;
+    }
+
     .formulario__nome {
+        margin-left: 0;
+        margin-right: 0;
+        width: 80%;
+    }
+
+    .formulario__preco {
+        margin-left: 0;
+        width: 80%;
+    }
+
+    .formulario__categoria {
+        margin-left: 0;
+        width: 80%;
+    }
+
+    .formulario__descricao {
         margin-left: 0;
         width: 80%;
     }
@@ -1418,6 +1470,10 @@
         margin-top: 1em;
     }
 
+    .lable {
+        margin-right: 65%;
+    }
+
     .label__mensagem {
         margin-left: 0;
         margin-right: 324px;
@@ -1681,6 +1737,15 @@
     }
 
     .lable__nome {
+        margin-right: 0;
+        margin-left: 4em;
+    }
+
+    .lable {
+        margin-right: 65%;
+    }
+
+    .formulario__nome {
         margin-right: 0;
     }
 
