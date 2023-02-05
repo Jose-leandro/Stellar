@@ -684,7 +684,7 @@
         margin-left: 0;
         width: 80%;
     }
-    
+
     .formulario__nascimento {
         margin-left: 0;
         width: 80%;
@@ -1045,6 +1045,12 @@
         margin-top: 1em;
     }
 
+    .nome {
+        text-align: left;
+        margin-left: 15%;
+        width: 80%;
+    }
+
     .formulario__nome {
         margin-left: 0;
         width: 80%;
@@ -1055,8 +1061,14 @@
         margin-top: 1em;
     }
 
+    .mensagem {
+        text-align: left;
+        margin-left: 15%;
+        width: 80%;
+    }
+
     .formulario__mensagem {
-        margin-left: 2em;
+        margin-left: 0;
         width: 80%;
     }
 
