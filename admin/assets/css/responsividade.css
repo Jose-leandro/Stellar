@@ -119,6 +119,10 @@
         width: 60px;
     }
 
+    .contener__main {
+        height: 800px;
+    }
+
     .contener__menu {
         display: flex;
         justify-content: end;
@@ -491,7 +495,7 @@
     }
 
     .lable__nome {
-        margin-right: 100px;
+        margin-right: 0;
         margin-top: 1em;
     }
 
@@ -515,7 +519,11 @@
         height: 50px;
         margin-left: 0;
         margin-top: 1em;
-        width: 40%;
+        width: 50%;
+    }
+
+    .ancora-entar button {
+        width: 90%;
     }
 
     .contener__popup {
@@ -529,11 +537,11 @@
 
     .popup {
         height: 32%;
-        left: 20%;
+        left: 9%;
         position: fixed;
         text-align: center;
         top: 40%;
-        width: 65%;
+        width: 80%;
     }
 
     .popup__close {
@@ -664,27 +672,32 @@
         width: 270px;
     }
 
-    .formulario__email {
-        margin-left: 1em;
-    }
-
-    .formulario__senha {
-        margin-left: 1em;
-    }
-
     .main__formulario {
         align-items: center;
         display: flex;
+        height: 100%;
         flex-direction: column;
         width: 310px;
     }
 
     .formulario__localizacao {
-        margin-left: 1em;
+        margin-left: 0;
+        width: 80%;
+    }
+    
+    .formulario__nascimento {
+        margin-left: 0;
+        width: 80%;
     }
 
-    .formulario__nascimento {
-        margin-left: 1em;
+    .formulario__email {
+        margin-left: 0;
+        width: 80%;
+    }
+
+    .formulario__senha {
+        margin-left: 0;
+        width: 80%;
     }
 
     .contener__produtos--flex {
@@ -761,6 +774,10 @@
     .cabecalho__icone {
         left: 65%;
         position: absolute;
+    }
+
+    .contener__main {
+        height: 800px;
     }
 
     .contener__banner {
@@ -990,6 +1007,12 @@
         height: 25px;
     }
 
+    .main__formulario {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
     .contener__formulario {
         align-items: center;
         display: flex;
@@ -1018,13 +1041,13 @@
     }
 
     .lable__nome {
-        margin-right: 220px;
+        margin-right: 0;
         margin-top: 1em;
     }
 
     .formulario__nome {
-        margin-left: 2em;
-        width: 70%;
+        margin-left: 0;
+        width: 80%;
     }
 
     .label__mensagem {
@@ -1034,13 +1057,17 @@
 
     .formulario__mensagem {
         margin-left: 2em;
-        width: 70%;
+        width: 80%;
     }
 
     .formulario__btn {
         margin-left: 0;
         margin-top: 0;
         width: 30%;
+    }
+
+    .ancora-entar button {
+        width: 90%;
     }
 
     .contener__popup {
@@ -1079,19 +1106,23 @@
     }
 
     .formulario__localizacao {
-        margin-left: 1em;
+        margin-left: 0;
+        width: 80%;
     }
 
     .formulario__nascimento {
-        margin-left: 1em;
+        margin-left: 0;
+        width: 80%;
     }
 
     .formulario__email {
-        margin-left: 1em;
+        margin-left: 0;
+        width: 80%;
     }
 
     .formulario__senha {
-        margin-left: 1em;
+        margin-left: 0;
+        width: 80%;
     }
 
     .adicionar__input {
@@ -1371,7 +1402,7 @@
     }
 
     .lable__nome {
-        margin-right: 340px;
+        margin-right: 0;
         margin-top: 1em;
     }
 
@@ -1638,7 +1669,7 @@
     }
 
     .lable__nome {
-        margin-right: 90px;
+        margin-right: 0;
     }
 
     .label__mensagem {
