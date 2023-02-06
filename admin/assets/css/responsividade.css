@@ -88,13 +88,13 @@
     .contener__cabecalho {
         display: flex;
         height: 70px;
-        justify-content: space-around;
+        justify-content: space-evenly;
         width: 100%;
     }
 
     .cabecalho__logo {
         height: 30px;
-        width: 80px;
+        width: 90%;
     }
 
     .cabecalho__input {
@@ -794,7 +794,7 @@
     }
 
     .cabecalho__logo {
-        width: 150px;
+        width: 90%;
     }
 
     .cabecalho__icone {
@@ -1286,6 +1286,11 @@
 }
 
 @media screen and (min-width: 768px) {
+
+    .cabecalho__logo {
+        width: 300px;
+    }
+
     .banner__btn:active {
         height: 39px;
         width: 119px;
@@ -1516,6 +1521,10 @@
 
     .titulo__seta:hover {
         font-size: 37px;
+    }
+
+    .cabecalho__logo {
+        width: 300px;
     }
 
     .contener__banner {
