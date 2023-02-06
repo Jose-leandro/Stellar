@@ -112,7 +112,7 @@
     text-decoration: none;
 }
 
-.contener__main {
+.main {
     align-items: center;
     background: linear-gradient(-50deg, #000000 30%, #181941, #081412);
     display: flex;
