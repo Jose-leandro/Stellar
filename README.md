@@ -37,7 +37,7 @@ Ela descrever o primeiro contato que você terá com o projeto.
 
 Para hospedar o meu projeto utilizei uma das muitas funcionalidades do GitHub, o GitHub Pages é um serviço de hospedagem de site estático, ou seja sites seria projetos em que
 foram utilizados apenas CSS, HTML e JavaScript, na qual a hospedagem será apartir do repositorio do projeto, você poderá visualizar o projeto atrvés deste 
-[Link](https://joseleandro7i.github.io/e-commerce-astronomicoo/)
+[Link](https://jose-leandro.github.io/e-commerce-astronomicoo/)
 
 
 ## *Tecnologias utilizadas no projeto*
