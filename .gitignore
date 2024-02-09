@@ -6,3 +6,8 @@ node_modules/
 
 # Ignore temporary files
 *.tmp
+
+# Build output directories
+/bin,
+/out 
+/target
