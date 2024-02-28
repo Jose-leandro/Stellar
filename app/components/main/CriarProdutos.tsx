@@ -1,7 +1,5 @@
 import React from 'react'
 
-// Hora que comecei a limpar - 13:50 até 14:50
-
 interface InformacoesProduto {
   tipoCategoria: string
   tipoProduto: string

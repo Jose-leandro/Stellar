@@ -6,12 +6,14 @@
       "dom.iterable",
       "esnext"
     ],
+    "strictNullChecks": true,
     "allowJs": true,
     "skipLibCheck": true,
-    "strict": false,
+    "strict": true,
     "noEmit": true,
     "incremental": true,
     "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
     "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
@@ -24,11 +26,12 @@
     ]
   },
   "include": [
+    "tailwind.config.js", 
     "next-env.d.ts",
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "src/server/servidor.js", "src/dadosUsuarios.tsx"  ],
   "exclude": [
     "node_modules"
   ]
