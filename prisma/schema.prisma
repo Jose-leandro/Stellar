@@ -5,11 +5,18 @@ generator client {
 datasource db {
   provider = "postgresql"
 
-  url       = env("POSTGRES_PRISMA_URL")
-//   directUrl = env("POSTGRES_URL_NON_POOLING")
+  url = env("POSTGRES_PRISMA_URL")
+  //   directUrl = env("POSTGRES_URL_NON_POOLING")
 }
 
 model usuarios {
-  id            Int      @id @default(autoincrement())
-  senha         String   
-  }
+  id                    Int     @id @default(autoincrement())
+  nome                  String
+  senha                 String
+  usuarioEstaCadastrado Boolean
+}
+
+model criptografia {
+  id                 Int    @id @default(autoincrement())
+  chaveCriptografica String @default("k1h8w3q7i5l2c6h8e1z3r7p0t3m0s1t9x2i0a1c5j8e3b5x1m0y2p0")
+}

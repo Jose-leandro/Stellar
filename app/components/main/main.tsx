@@ -3,15 +3,16 @@ import { CategoriasPopulares } from './categoriasPopulares'
 import { BannerInicial } from './bannerInicial'
 import { CriarProdutos } from './CriarProdutos'
 
-export function Main (): React.JSX.Element {
+export function main (): React.JSX.Element {
+  
   return (
     <>
       <BannerInicial />
       <CategoriasPopulares />
-      <CriarProdutos tipoProduto={'refratores'} />
-      <CriarProdutos tipoProduto={'binoculos'} />
-      <CriarProdutos tipoProduto={'cameras'} />
-      <CriarProdutos tipoProduto={'fotosAstronomicas'} />
+      <CriarProdutos tipoCategoria={'Refratores'} tipoProduto={'refratores'} />
+      <CriarProdutos tipoCategoria={'Binoculos'} tipoProduto={'binoculos'} />
+      <CriarProdutos tipoCategoria={'Cameras'} tipoProduto={'cameras'} />
+      <CriarProdutos tipoCategoria={'Fotos Astrônomicas'} tipoProduto={'fotosAstronomicas'} />
     </>
   )
 }

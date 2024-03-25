@@ -33,7 +33,7 @@ function RootLayout ({ children }: RootLayoutProps): React.ReactElement {
     <html lang="pt-BR">
       <head>
         {/* Link para atribuir a imagem do logo - <a target="_blank" href="https://icons8.com/icon/bfrmpYwcFZrk/forma-starburst">Forma Starburst</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> */}
-        <link rel="icon" href="/img/icons8-forma-starburst-48.png" type="image/x-icon" />
+        <link rel="icon" type="image/x-icon" href="/img/icons8-forma-starburst-48.png" />
       </head>
       <body className={dosis.className}>{children}</body>
     </html>

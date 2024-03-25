@@ -1,19 +1,29 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
 
 interface InformacoesProduto {
-  tipoCategoria: string
-  tipoProduto: string
+  tipoCategoria: string;
+  tipoProduto: string;
 }
 
-export async function CriarProdutos (props: InformacoesProduto): Promise<JSX.Element> {
-  let data = []
-  try {
-    const response = await fetch(`http://localhost:3001/${props.tipoProduto}`)
-    const fetchedData = await response.json()
-    data = fetchedData
-  } catch (error) {
-    console.error('Erro ao buscar dados da API:', error)
-  }
+export function CriarProdutos(props: InformacoesProduto): JSX.Element {
+  const [data, setData] = useState<any[]>([]); // Change any[] to the actual type of your data
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch(`http://localhost:3001/${props.tipoProduto}`);
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        const fetchedData = await response.json();
+        setData(fetchedData);
+      } catch (error) {
+        console.error('Erro ao buscar dados da API:', error);
+      }
+    };
+
+    fetchData();
+  }, [props.tipoProduto]); // Refetch data when props.tipoProduto changes
 
   return (
     <div className='mt-3'>
@@ -33,5 +43,5 @@ export async function CriarProdutos (props: InformacoesProduto): Promise<JSX.Ele
         ))}
       </div>
     </div>
-  )
-};
+  );
+}
