@@ -6,11 +6,10 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "next dev",
+    "dev": "next dev && json-server --watch json-server/db.json --port 3001"
     "build": "next build",
     "start": "next start",
     "lint": "npx eslint /** --fix",
-    "json-server": "json-server --watch json-server/db.json --port 3001"
   },
   "author": "José leandro do nascimento",
   "license": "",
