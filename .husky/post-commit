@@ -1,0 +1,2 @@
+echo 'git push' > .husky/post-commit
+echo "git push completed!"
