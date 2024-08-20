@@ -1,7 +1,7 @@
-import React from "react";
-import Image from "next/image";
+import React from 'react'
+import Image from 'next/image'
 
-export default function footer() {
+export default function footer () {
   return (
     <div className="justify-evenly items-center">
       <div>
@@ -51,5 +51,5 @@ export default function footer() {
         <h3 className="text-lg">&copy; Desenvolvido por José Leandro</h3>
       </div>
     </div>
-  );
+  )
 }

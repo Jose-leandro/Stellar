@@ -1,16 +1,16 @@
-import Image from "next/image";
-import React from "react";
+import Image from 'next/image'
+import React from 'react'
 
-export async function CriarProdutos(
-  props: InformacoesProduto,
+export async function CriarProdutos (
+  props: InformacoesProduto
 ): Promise<JSX.Element> {
-  let data = [];
+  let data = []
   try {
-    const response = await fetch(`http://localhost:3001/${props.tipoProduto}`);
-    const fetchedData = await response.json();
-    data = fetchedData;
+    const response = await fetch(`http://localhost:3001/${props.tipoProduto}`)
+    const fetchedData = await response.json()
+    data = fetchedData
   } catch (error) {
-    console.error("Erro ao buscar dados da API:", error);
+    console.error('Erro ao buscar dados da API:', error)
   }
 
   return (
@@ -43,5 +43,5 @@ export async function CriarProdutos(
         </div>
       </div>
     </div>
-  );
+  )
 }

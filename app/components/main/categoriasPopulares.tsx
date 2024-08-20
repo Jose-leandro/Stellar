@@ -1,7 +1,7 @@
-import React from "react";
-import Image from "next/image";
+import React from 'react'
+import Image from 'next/image'
 
-export function CategoriasPopulares() {
+export function CategoriasPopulares () {
   return (
     <div className="my-5 mb-12">
       <h1 className="text-base ml-2 mb-5">Categorias Mais buscadas</h1>
@@ -51,5 +51,5 @@ export function CategoriasPopulares() {
         </div>
       </div>
     </div>
-  );
+  )
 }

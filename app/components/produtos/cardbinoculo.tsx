@@ -1,52 +1,52 @@
-import React from "react";
-import Link from "next/link";
-import Image from "next/image";
+import React from 'react'
+import Link from 'next/link'
+import Image from 'next/image'
 
 interface propsBinoculo {
   produtoAVenda: {
-    nome: string;
-    preco: string;
-    imgProdutoAVenda: string;
-  };
+    nome: string
+    preco: string
+    imgProdutoAVenda: string
+  }
 
   produtoSimilar1: {
-    nome: string;
-    preco: string;
-    imgProdutoAVenda: string;
-    rotaProduto: string;
-  };
+    nome: string
+    preco: string
+    imgProdutoAVenda: string
+    rotaProduto: string
+  }
 
   produtoSimilar2: {
-    nome: string;
-    preco: string;
-    imgProdutoAVenda: string;
-    rotaProduto: string;
-  };
+    nome: string
+    preco: string
+    imgProdutoAVenda: string
+    rotaProduto: string
+  }
 
   produtoSimilar3: {
-    nome: string;
-    preco: string;
-    imgProdutoAVenda: string;
-    rotaProduto: string;
-  };
+    nome: string
+    preco: string
+    imgProdutoAVenda: string
+    rotaProduto: string
+  }
 }
 
-export default function cardBinoculo({
+export default function cardBinoculo ({
   produtoAVenda,
   produtoSimilar1,
   produtoSimilar2,
-  produtoSimilar3,
+  produtoSimilar3
 }: propsBinoculo): React.JSX.Element {
   console.log(
-    "produtoAVenda:",
+    'produtoAVenda:',
     produtoAVenda,
-    "produtoSimilar1:",
+    'produtoSimilar1:',
     produtoSimilar1,
-    "produtoSimilar2:",
+    'produtoSimilar2:',
     produtoSimilar2,
-    "produtoSimilar3:",
-    produtoSimilar3,
-  );
+    'produtoSimilar3:',
+    produtoSimilar3
+  )
   return (
     <>
       <div className="flex justify-evenly items-center my-3">
@@ -129,5 +129,5 @@ export default function cardBinoculo({
         </div>
       </div>
     </>
-  );
+  )
 }

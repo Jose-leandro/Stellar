@@ -1,21 +1,21 @@
-import React from "react";
-import * as AlertDialog from "@radix-ui/react-alert-dialog";
-import { connect } from "react-redux";
-import { setQualEstadoUsuario } from "../../lib/redux/actions";
+import React from 'react'
+import * as AlertDialog from '@radix-ui/react-alert-dialog'
+import { connect } from 'react-redux'
+import { setQualEstadoUsuario } from '../../lib/redux/actions'
 
 const mapStateToProps = (state: any) => ({
   qualEstadoUsuario: state.qualEstadoUsuario,
-  setQualEstadoUsuario: setQualEstadoUsuario,
-});
+  setQualEstadoUsuario
+})
 const mapDispatchToProps = {
-  setQualEstadoUsuario,
-};
+  setQualEstadoUsuario
+}
 
 const AlertDialogDemo = ({ qualEstadoUsuario, setQualEstadoUsuario }) => {
-  function handleSairConta() {
-    console.log("Saindo da minha conta");
-    setQualEstadoUsuario(true);
-    console.log(qualEstadoUsuario);
+  function handleSairConta () {
+    console.log('Saindo da minha conta')
+    setQualEstadoUsuario(true)
+    console.log(qualEstadoUsuario)
   }
 
   return (
@@ -53,7 +53,7 @@ const AlertDialogDemo = ({ qualEstadoUsuario, setQualEstadoUsuario }) => {
         </AlertDialog.Content>
       </AlertDialog.Portal>
     </AlertDialog.Root>
-  );
-};
+  )
+}
 
-export default connect(mapStateToProps, mapDispatchToProps)(AlertDialogDemo);
+export default connect(mapStateToProps, mapDispatchToProps)(AlertDialogDemo)

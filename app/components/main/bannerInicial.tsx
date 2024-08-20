@@ -1,7 +1,7 @@
-import React from "react";
-import Image from "next/image";
+import React from 'react'
+import Image from 'next/image'
 
-export function BannerInicial() {
+export function BannerInicial () {
   return (
     <div className="my-8">
       <h1 className="ml-6">Promoções e ofertas</h1>
@@ -23,5 +23,5 @@ export function BannerInicial() {
         </div>
       </div>
     </div>
-  );
+  )
 }

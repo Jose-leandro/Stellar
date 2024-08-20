@@ -1,10 +1,10 @@
-import React from "react";
-import header from "../app/components/header";
-import { main } from "../app/components/main/main";
-import footer from "../app/components/footer";
-import Head from "next/head";
+import React from 'react'
+import header from '../app/components/header'
+import { main } from '../app/components/main/main'
+import footer from '../app/components/footer'
+import Head from 'next/head'
 
-export default function Home(): React.JSX.Element {
+export default function Home (): React.JSX.Element {
   return (
     <>
       <Head>
@@ -23,5 +23,5 @@ export default function Home(): React.JSX.Element {
         <footer />
       </footer>
     </>
-  );
+  )
 }

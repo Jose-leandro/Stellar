@@ -1,12 +1,12 @@
-import React from "react";
-import * as DropdownMenu from "@radix-ui/react-dropdown-menu";
-import AlertDialogDemo from "./alert-dialog";
+import React from 'react'
+import * as DropdownMenu from '@radix-ui/react-dropdown-menu'
+import AlertDialogDemo from './alert-dialog'
 
 interface propsDropDownMenu {
-  nomeUsuario: string;
+  nomeUsuario: string
 }
 
-function DropdownMenuDemo(props: propsDropDownMenu): React.JSX.Element {
+function DropdownMenuDemo (props: propsDropDownMenu): React.JSX.Element {
   return (
     <DropdownMenu.Root>
       <DropdownMenu.Trigger asChild>
@@ -36,7 +36,7 @@ function DropdownMenuDemo(props: propsDropDownMenu): React.JSX.Element {
         </DropdownMenu.Content>
       </DropdownMenu.Portal>
     </DropdownMenu.Root>
-  );
+  )
 }
 
-export default DropdownMenuDemo;
+export default DropdownMenuDemo

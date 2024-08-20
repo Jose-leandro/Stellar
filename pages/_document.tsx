@@ -1,5 +1,5 @@
-import React from "react";
-import { Html, Head, Main, NextScript } from "next/document";
+import React from 'react'
+import { Html, Head, Main, NextScript } from 'next/document'
 
 /**
  * Documento é um componente de documento personalizado para Next.js.
@@ -7,7 +7,7 @@ import { Html, Head, Main, NextScript } from "next/document";
  * @return {React.ReactElement} O elemento React que
  *  representa a estrutura do documento.
  */
-export default function Document() {
+export default function Document () {
   return (
     <Html lang="pt-BR">
       <Head>
@@ -22,5 +22,5 @@ export default function Document() {
         <NextScript />
       </body>
     </Html>
-  );
+  )
 }

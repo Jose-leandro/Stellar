@@ -1,80 +1,80 @@
-"use client";
-import React, { useEffect, useState } from "react";
-import Image from "next/image";
+'use client'
+import React, { useEffect, useState } from 'react'
+import Image from 'next/image'
 // import { useRouter } from 'next/navigation'
-import Link from "next/link";
-import DropdownMenuDemo from "./ui/dropdownmenu";
-import { connect } from "react-redux";
-import { setQualEstadoUsuario, setQualNomeUsuario } from "../lib/redux/actions";
-import { permaneciaLogin } from "../../src/tempoLogin";
+import Link from 'next/link'
+import DropdownMenuDemo from './ui/dropdownmenu'
+import { connect } from 'react-redux'
+import { setQualEstadoUsuario, setQualNomeUsuario } from '../lib/redux/actions'
+import { permaneciaLogin } from '../../src/tempoLogin'
 
 const mapStateToProps = (state: any) => ({
   qualEstadoUsuario: state.qualEstadoUsuario,
   setQualEstadoUsuario,
   setQualNomeUsuario,
-  qualNomeUsuario: state.qualNomeUsuario,
-});
+  qualNomeUsuario: state.qualNomeUsuario
+})
 
 const mapDispatchToProps = {
   setQualEstadoUsuario,
-  setQualNomeUsuario,
-};
-
-interface HeaderProps {
-  qualNomeUsuario: string;
-  setQualNomeUsuario: (value: string) => void;
-  qualEstadoUsuario: string;
-  setQualEstadoUsuario: (value: boolean) => void;
+  setQualNomeUsuario
 }
 
-function header({
+interface HeaderProps {
+  qualNomeUsuario: string
+  setQualNomeUsuario: (value: string) => void
+  qualEstadoUsuario: string
+  setQualEstadoUsuario: (value: boolean) => void
+}
+
+function header ({
   qualNomeUsuario,
   setQualNomeUsuario,
   qualEstadoUsuario,
-  setQualEstadoUsuario,
+  setQualEstadoUsuario
 }: HeaderProps): React.JSX.Element {
-  console.log(qualNomeUsuario);
-  console.log(qualEstadoUsuario);
+  console.log(qualNomeUsuario)
+  console.log(qualEstadoUsuario)
 
-  const [temAlgoABuscar, setTemAlgoABuscar] = useState<string>("");
-  console.log(temAlgoABuscar);
+  const [temAlgoABuscar, setTemAlgoABuscar] = useState<string>('')
+  console.log(temAlgoABuscar)
 
   useEffect(() => {
     const fetchPermaneciaLogin = async (): Promise<void> => {
-      const informacoesCradratrais = await permaneciaLogin();
+      const informacoesCradratrais = await permaneciaLogin()
 
-      if (informacoesCradratrais.estadoUsuario === "true") {
-        setQualEstadoUsuario(true);
-        console.log(qualEstadoUsuario);
+      if (informacoesCradratrais.estadoUsuario === 'true') {
+        setQualEstadoUsuario(true)
+        console.log(qualEstadoUsuario)
       }
 
-      setQualNomeUsuario(`${informacoesCradratrais.Nome}`);
-      console.log(qualNomeUsuario);
-    };
+      setQualNomeUsuario(`${informacoesCradratrais.Nome}`)
+      console.log(qualNomeUsuario)
+    }
 
-    fetchPermaneciaLogin();
-  });
+    fetchPermaneciaLogin()
+  })
 
   const buscaProdutos = (event: any): void => {
-    const valorInputBuscar: string = event.valule;
+    const valorInputBuscar: string = event.valule
 
-    setTemAlgoABuscar(valorInputBuscar);
-  };
+    setTemAlgoABuscar(valorInputBuscar)
+  }
 
-  let iniciasNomesUsuarios: string = " ";
+  let iniciasNomesUsuarios: string = ' '
 
-  if (qualNomeUsuario !== "" && typeof qualNomeUsuario === "string") {
-    const lettersArray = qualNomeUsuario.split(" ");
+  if (qualNomeUsuario !== '' && typeof qualNomeUsuario === 'string') {
+    const lettersArray = qualNomeUsuario.split(' ')
 
     if (lettersArray.length > 1) {
-      const segundaInicialNome = lettersArray[1][0];
-      iniciasNomesUsuarios = lettersArray[0] + segundaInicialNome;
+      const segundaInicialNome = lettersArray[1][0]
+      iniciasNomesUsuarios = lettersArray[0] + segundaInicialNome
     } else {
-      iniciasNomesUsuarios = qualNomeUsuario;
-      console.log("The string does not contain a space.");
+      iniciasNomesUsuarios = qualNomeUsuario
+      console.log('The string does not contain a space.')
     }
   } else {
-    console.error("qualNomeUsuario is null, undefined, or not a string");
+    console.error('qualNomeUsuario is null, undefined, or not a string')
   }
 
   return (
@@ -98,8 +98,8 @@ function header({
       <div>
         <ul className="flex justify-evenly">
           <li className="px-7 text-base cursor-pointer">
-            {" "}
-            <Link href="/home">Home</Link>{" "}
+            {' '}
+            <Link href="/home">Home</Link>{' '}
           </li>
           <li className="px-7 text-base">Configurações</li>
           <li className="px-7 text-base">Sobre</li>
@@ -107,11 +107,13 @@ function header({
         </ul>
       </div>
 
-      {qualEstadoUsuario ? (
+      {qualEstadoUsuario
+        ? (
         <>
           <DropdownMenuDemo nomeUsuario={iniciasNomesUsuarios} />
         </>
-      ) : (
+          )
+        : (
         <>
           <Link href="/login">
             <button className="rounded border-2 border-slate-700 px-4 py-1">
@@ -125,9 +127,9 @@ function header({
             </button>
           </Link>
         </>
-      )}
+          )}
     </div>
-  );
+  )
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(header);
+export default connect(mapStateToProps, mapDispatchToProps)(header)
