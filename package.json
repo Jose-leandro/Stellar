@@ -1,6 +1,6 @@
 {
-  "name": "e-commerce-estelar",
-  "version": "0.0.2",
+  "name": "stellar",
+  "version": "0.0.3",
   "description": "",
   "main": ".eslintrc.js",
   "type": "module",
