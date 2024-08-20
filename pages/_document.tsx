@@ -1,5 +1,5 @@
-import React from 'react';
-import { Html, Head, Main, NextScript } from 'next/document';
+import React from "react";
+import { Html, Head, Main, NextScript } from "next/document";
 
 /**
  * Documento é um componente de documento personalizado para Next.js.
@@ -11,7 +11,11 @@ export default function Document() {
   return (
     <Html lang="pt-BR">
       <Head>
-      <link rel="icon" type="image/x-icon" href="/img/icons8-forma-starburst-48.png" />
+        <link
+          rel="icon"
+          type="image/x-icon"
+          href="/img/icons8-forma-starburst-48.png"
+        />
       </Head>
       <body>
         <Main />

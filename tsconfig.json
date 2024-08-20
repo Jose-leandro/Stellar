@@ -1,11 +1,7 @@
 {
   "compilerOptions": {
     "target": "es2017",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "strictNullChecks": true,
     "allowJs": true,
     "skipLibCheck": true,
@@ -26,13 +22,13 @@
     ]
   },
   "include": [
-    "tailwind.config.js", 
+    "tailwind.config.js",
     "next-env.d.ts",
     ".next/types/**/*.ts",
     "**/*.ts",
-    "**/*.tsx"
-, "src/server/servidor.js", "src/dadosUsuarios.tsx"  ],
-  "exclude": [
-    "node_modules"
-  ]
+    "**/*.tsx",
+    "src/server/servidor.js",
+    "src/dadosUsuarios.tsx"
+  ],
+  "exclude": ["node_modules"]
 }

@@ -1,90 +1,90 @@
 {
-    "refratores": [
-        {
-            "nome": "Refrator branco",
-            "preco": "R$ 800",
-            "img_url": "/img/refrator-quarto.jpg"
-        },
-        {
-            "nome": "Refrator preto",
-            "preco": "R$ 500",
-            "img_url": "/img/refrator-terceiro.png"
-        },
-        {
-            "nome": "Refrator dourado",
-            "preco": "R$ 700",
-            "img_url": "/img/refrator-primeiro.jpg"
-        },
-        {
-            "nome": "Refrator marrom",
-            "preco": "R$ 550",
-            "img_url": "/img/refrator-segundo.jpg"
-        }
-    ],
-    "binoculos": [
-        {
-            "nome": "Binoculo Fpeheh",
-            "preco": "R$ 800",
-            "img_url": "/img/binoculo-produto-3.jpg"
-        },
-        {
-            "nome": "Binoculo Diamondba",
-            "preco": "R$ 300",
-            "img_url": "/img/binoculo-produto-4.jpg"
-        },
-        {
-            "nome": "Binoculo backBate",
-            "preco": "R$ 700",
-            "img_url": "/img/binoculo-produto-5.jpg"
-        },
-        {
-            "nome": "Binoculo blueGlass",
-            "preco": "R$ 550",
-            "img_url": "/img/binoculos-produto-1.jpg"
-        }
-    ],
-    "cameras": [
-        {
-            "nome": "Câmera CaSas",
-            "preco": "R$ 150",
-            "img_url": "/img/camera-produto-3.jpg"
-        },
-        {
-            "nome": "Câmera BigHel",
-            "preco": "R$ 900",
-            "img_url": "/img/camera-produto-4.jpg"
-        },
-        {
-            "nome": "Câmera FeCame",
-            "preco": "R$ 700",
-            "img_url": "/img/camera-produto-5.jpg"
-        },
-        {
-            "nome": "Câmera CSoBon",
-            "preco": "R$ 1050",
-            "img_url": "/img/camera-produto-1.jpg"
-        }
-    ],
-    "fotosAstronomicas": [
-        {
-            "nome": "Foto Céu estrelado esverdiado",
-            "preco": "R$ 200",
-            "img_url": "/img/imagem-astronomica-quinta.jpg"
-        },
-        {
-            "nome": "Foto Céu estrelado azulado",
-            "preco": "R$ 400",
-            "img_url": "/img/imagem-astronomica-segunda.jpg"
-        },
-        {
-            "nome": "Foto Nebulosa estrelar",
-            "preco": "R$ 500",
-            "img_url": "/img/imagem-astronomica-terceira.jpg"
-        },
-        {
-            "nome": "Foto Céu estrelado violeta",
-            "preco": "R$ 600",
-            "img_url": "/img/imagem-astronomica.jpg"
-        }
-    ]
+  "refratores": [
+    {
+      "nome": "Refrator branco",
+      "preco": "R$ 800",
+      "img_url": "/img/refrator-quarto.jpg"
+    },
+    {
+      "nome": "Refrator preto",
+      "preco": "R$ 500",
+      "img_url": "/img/refrator-terceiro.png"
+    },
+    {
+      "nome": "Refrator dourado",
+      "preco": "R$ 700",
+      "img_url": "/img/refrator-primeiro.jpg"
+    },
+    {
+      "nome": "Refrator marrom",
+      "preco": "R$ 550",
+      "img_url": "/img/refrator-segundo.jpg"
+    }
+  ],
+  "binoculos": [
+    {
+      "nome": "Binoculo Fpeheh",
+      "preco": "R$ 800",
+      "img_url": "/img/binoculo-produto-3.jpg"
+    },
+    {
+      "nome": "Binoculo Diamondba",
+      "preco": "R$ 300",
+      "img_url": "/img/binoculo-produto-4.jpg"
+    },
+    {
+      "nome": "Binoculo backBate",
+      "preco": "R$ 700",
+      "img_url": "/img/binoculo-produto-5.jpg"
+    },
+    {
+      "nome": "Binoculo blueGlass",
+      "preco": "R$ 550",
+      "img_url": "/img/binoculos-produto-1.jpg"
+    }
+  ],
+  "cameras": [
+    {
+      "nome": "Câmera CaSas",
+      "preco": "R$ 150",
+      "img_url": "/img/camera-produto-3.jpg"
+    },
+    {
+      "nome": "Câmera BigHel",
+      "preco": "R$ 900",
+      "img_url": "/img/camera-produto-4.jpg"
+    },
+    {
+      "nome": "Câmera FeCame",
+      "preco": "R$ 700",
+      "img_url": "/img/camera-produto-5.jpg"
+    },
+    {
+      "nome": "Câmera CSoBon",
+      "preco": "R$ 1050",
+      "img_url": "/img/camera-produto-1.jpg"
+    }
+  ],
+  "fotosAstronomicas": [
+    {
+      "nome": "Foto Céu estrelado esverdiado",
+      "preco": "R$ 200",
+      "img_url": "/img/imagem-astronomica-quinta.jpg"
+    },
+    {
+      "nome": "Foto Céu estrelado azulado",
+      "preco": "R$ 400",
+      "img_url": "/img/imagem-astronomica-segunda.jpg"
+    },
+    {
+      "nome": "Foto Nebulosa estrelar",
+      "preco": "R$ 500",
+      "img_url": "/img/imagem-astronomica-terceira.jpg"
+    },
+    {
+      "nome": "Foto Céu estrelado violeta",
+      "preco": "R$ 600",
+      "img_url": "/img/imagem-astronomica.jpg"
+    }
+  ]
 }

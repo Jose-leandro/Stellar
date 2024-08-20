@@ -1,11 +1,16 @@
-import React from 'react';
-import Image from 'next/image';
+import React from "react";
+import Image from "next/image";
 
 export default function footer() {
   return (
     <div className="justify-evenly items-center">
       <div>
-        <Image src="/img/icons8-forma-starburst-48.png" width={35} height={35} alt="logo do site" />
+        <Image
+          src="/img/icons8-forma-starburst-48.png"
+          width={35}
+          height={35}
+          alt="logo do site"
+        />
       </div>
 
       <div className="flex justify-evenly">

@@ -1,8 +1,8 @@
-import '../styles/reset.css'
-import '../styles/globals.css'
-import React, { type ReactNode } from 'react'
+import "../styles/reset.css";
+import "../styles/globals.css";
+import React, { type ReactNode } from "react";
 
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types";
 
 /**
  * RootLayout is a React component that sets up the layout of the page.
@@ -12,14 +12,14 @@ import PropTypes from 'prop-types'
  */
 
 interface RootLayoutProps {
-  children: ReactNode
+  children: ReactNode;
 }
-function RootLayout ({ children }: RootLayoutProps): React.ReactElement {
+function RootLayout({ children }: RootLayoutProps): React.ReactElement {
   return <div>{children}</div>;
 }
 
 RootLayout.propTypes = {
-  children: PropTypes.node.isRequired
-}
+  children: PropTypes.node.isRequired,
+};
 
-export default RootLayout
+export default RootLayout;
