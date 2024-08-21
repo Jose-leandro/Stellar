@@ -43,6 +43,15 @@ Stellar is more than just a project; it’s a journey of continuous learning and
 
 * ### Version: 0.0.1
 * ### Live Demo: Stellar on [GitHub Pages](https://jose-leandro.github.io/Stellar/)
+
+ ## 🌟 Key Features(In Development)
+ 
+- **Fast Account Setup:** Start selling in minutes with an easy, streamlined sign-up process.
+- **Global Reach:**  Connect with a worldwide audience and expand your market effortlessly.
+- **User-Friendly & Secure::**  Enjoy a responsive, intuitive platform with robust security to protect your data.
+- **Multi-Language Support:**  Reach a global audience with support for multiple languages and currencies.
+- **Social Media Integration:** Seamlessly connect your store with social media platforms to increase visibility.
+- **Mobile-Optimized:** Mobile-Optimized: Experience a seamless and consistent interface across all devices.
  
 ## 🛠️ Technologies Used
 This project is a symphony of modern technologies:
