@@ -20,5 +20,5 @@
 # echo "Packages installed!"
 
 # echo "Running Snyk tests..."
-# snyk test
+# snyk:test
 # echo "Snyk tests completed!"
