@@ -3,7 +3,7 @@ import { CategoriasPopulares } from './categoriasPopulares'
 import { BannerInicial } from './bannerInicial'
 import { CriarProdutos } from './CriarProdutos'
 
-export function main (): React.JSX.Element {
+export function Main (): React.JSX.Element {
   return (
     <>
       <BannerInicial />

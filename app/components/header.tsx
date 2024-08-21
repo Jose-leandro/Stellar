@@ -27,7 +27,7 @@ interface HeaderProps {
   setQualEstadoUsuario: (value: boolean) => void
 }
 
-function header ({
+function Header ({
   qualNomeUsuario,
   setQualNomeUsuario,
   qualEstadoUsuario,
@@ -132,4 +132,4 @@ function header ({
   )
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(header)
+export default connect(mapStateToProps, mapDispatchToProps)(Header)

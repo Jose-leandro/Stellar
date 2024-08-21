@@ -3,7 +3,6 @@
   "version": "0.0.3",
   "description": "",
   "main": ".eslintrc.js",
-  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "next dev && json-server --watch json-server/db.json --port 3001",

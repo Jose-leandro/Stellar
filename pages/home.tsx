@@ -1,7 +1,7 @@
 import React from 'react'
-import header from '../app/components/header'
-import { main } from '../app/components/main/main'
-import footer from '../app/components/footer'
+import Header from '../app/components/header'
+import { Main } from '../app/components/main/main'
+import Footer from '../app/components/footer'
 import Head from 'next/head'
 
 export default function Home (): React.JSX.Element {
@@ -9,19 +9,11 @@ export default function Home (): React.JSX.Element {
     <>
       <Head>
         <title>Welcome to Stellar</title>
-        <meta name="Stellar" content="" />
+        <meta name="description" content="Welcome to Stellar, a dynamic marketplace." />
       </Head>
-      <header>
-        <header />
-      </header>
-
-      <main>
-        <main />
-      </main>
-
-      <footer>
-        <footer />
-      </footer>
+      <Header />
+      <Main />
+      <Footer />
     </>
   )
 }

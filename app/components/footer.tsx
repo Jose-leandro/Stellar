@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 
-export default function footer () {
+export default function Footer () {
   return (
     <div className="justify-evenly items-center">
       <div>
