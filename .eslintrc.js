@@ -5,7 +5,8 @@ module.exports = {
     },
     "extends": [
         "plugin:react/recommended",
-        "standard-with-typescript"
+        "standard-with-typescript",
+        "prettier"
     ],
     "overrides": [
     ],
@@ -14,7 +15,8 @@ module.exports = {
         "sourceType": "module"
     },
     "plugins": [
-        "react"
+        "react",
+        "prettier",
     ],
     settings: {
         react: {
@@ -22,5 +24,6 @@ module.exports = {
         }
     },
     "rules": {
+        'prettier/prettier': 'error',
     }
 }
