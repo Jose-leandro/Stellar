@@ -11,7 +11,12 @@ const mapDispatchToProps = {
   setQualEstadoUsuario
 }
 
-const AlertDialogDemo = ({ qualEstadoUsuario, setQualEstadoUsuario }) => {
+interface AlertDialogDemoProps {
+  qualEstadoUsuario: boolean;
+  setQualEstadoUsuario: (value: boolean) => void;
+}
+
+const AlertDialogDemo: React.FC<AlertDialogDemoProps> = ({ qualEstadoUsuario, setQualEstadoUsuario }) => {
   function handleSairConta () {
     console.log('Saindo da minha conta')
     setQualEstadoUsuario(true)
