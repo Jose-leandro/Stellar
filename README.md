@@ -14,7 +14,7 @@
 - [How It Works](#how-it-works)
    - [For Sellers](#for-Sellers)
    - [For Buyers ](#for-buyers)
-- Inspiration[Inspiration](#inspiration)
+- [Inspiration](#inspiration)
 - [Getting Started](#getting-started)
 - [Contributions](#contributions)
 - [Roadmap](#roadmap)
@@ -23,6 +23,7 @@
 - [Author](#author)
 
 🎯 Project Overview
+
 🛍️ User Experience
 Stellar is a global marketplace designed to cater to both ambitious entrepreneurs and individuals looking to declutter by selling second-hand items. Users can create an account quickly and connect with a worldwide audience, making the process of buying and selling effortless and user-friendly.
 
