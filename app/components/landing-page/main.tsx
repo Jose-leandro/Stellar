@@ -1,23 +1,90 @@
-import React from 'react'
-import Separator from '../ui/separator'
+import React from 'react';
+import Separator from '../ui/separator';
 
-export default function Main(): React.JSX.Element {
+// Component for Section Titles
+const SectionTitle = ({ children, itIsPowerStellar }) => {
+    console.log(children); // Log children before returning JSX
+  
     return (
-        <div className='flex justify-around w-full'>
-            <section className='mt-5 mb-2 w-2/5 flex justify-center flex-col'>
-                <h1 className='text-6xl font-medium ml-2 mt-2 w-auto'>Discover Stellar: Connecting You to a World of Opportunities</h1>
-                <p className=' ml-3 mt-2 w-auto'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. amet consectetur, adipisicing elit.</p>
-            </section>
+      <h1 className={`${itIsPowerStellar ? 'text-5xl' : 'text-6xl'} font-medium ml-2 mt-2`}>
+        {children}
+      </h1>
+    );
+  };
+  
 
-            <section className='mt-5 mb-2 w-2/5 flex justify-center flex-col'>
-                <h1 className='text-4xl font-medium w-auto ml-2 mt-2'>Discover Good Stellar</h1>
-                <Separator />
+// Component for Paragraphs
+const SectionParagraph = ({ children }) => (
+  <p className="ml-3 mt-2">{children}</p>
+);
 
-                <div className='flex justify-between'>
-                    <p className='w-1/2 1 ml-2 mt-2'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. amet consectetur, adipisicing elit.</p>
-                    <p className='w-1/2 1 ml-2 mt-2'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. amet consectetur, adipisicing elit.</p>
-                </div>
-            </section>
+// Benefits List Component
+const BenefitsList = () => (
+  <ul className="mt-4 ml-4">
+    {[
+      "Fast and Efficient Transactions",
+      "Easy to Find What You Want",
+      "Sell Anything You Like",
+      "Guaranteed by Stellar",
+      "Safe and Secure for Everyone",
+    ].map((benefit, index) => (
+      <li key={index} className="mb-2 text-lg">
+        {benefit}
+      </li>
+    ))}
+  </ul>
+);
+
+// Main Component
+export default function Main(): React.JSX.Element {
+  return (
+    <>
+      <section className="flex justify-around w-full p-4">
+        <div className="w-2/5 flex flex-col">
+          <SectionTitle itIsPowerStellar={false}>Discover Stellar: Connecting You to a World of Opportunities</SectionTitle>
+          <SectionParagraph >
+            Stellar is your gateway to a global marketplace, designed for everyone—from ambitious entrepreneurs to individuals looking to declutter and sell second-hand items.
+          </SectionParagraph>
         </div>
-    )
+
+        <div className="w-2/5 flex flex-col">
+          <SectionTitle itIsPowerStellar={true}>Experience the Power of Stellar</SectionTitle>
+          <Separator />
+          <div className="flex justify-between mt-4">
+            <SectionParagraph>
+              Effortlessly list your items and reach billions of potential buyers worldwide.
+            </SectionParagraph>
+            <SectionParagraph>
+              With our robust security features, you can sell with confidence.
+            </SectionParagraph>
+          </div>
+
+          <button className="text-4xl bg-slate-200 text-black rounded-sm">Get Start to Sell Or Buy</button>
+        </div>
+      </section>
+
+      <section className="p-4">
+        <h1 className="text-4xl font-semibold mb-4">Benefits of Stellar</h1>
+        <Separator />
+        <BenefitsList />
+      </section>
+
+      <section className="p-4">
+        <h1 className="text-4xl font-semibold mb-4">Frequently Asked Questions</h1>
+        <Separator />
+        <div className="ml-4">
+          {[
+            "What is Stellar?",
+            "How can I start selling?",
+            "Is it safe to sell on Stellar?",
+            "Tell me more about the Stellar Guarantee",
+          ].map((question, index) => (
+            <h2 key={index} className="mt-4 text-xl">
+              {question}
+            </h2>
+          ))}
+        </div>
+      </section>
+    </>
+  );
 }
