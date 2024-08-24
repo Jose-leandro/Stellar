@@ -1,39 +1,11 @@
-#!/bin/bash
+# Ensure the pre-push script is executable
+chmod +x .husky/pre-push
 
-# Define the allowed branch for post-commit actions
-ALLOWED_BRANCH="develop"
-
-# Define the expected remote URL
-EXPECTED_REMOTE_URL="https://github.com/Jose-leandro/Stellar.git"
-
-# Get the current branch name
-CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
-
-# Retrieve the remote URL of the current repository
-REMOTE_URL=$(git config --get remote.origin.url)
-
-# Function to print a message and exit with a status code
-function abort_with_message() {
-  echo "$1"
-  exit "$2"
-}
-
-# Check if the current branch is the allowed branch
-if [[ "$CURRENT_BRANCH" == "$ALLOWED_BRANCH" ]]; then
-  echo "On the '$ALLOWED_BRANCH' branch. Proceeding with post-commit actions."
-
-  # Check if the current remote URL matches the expected URL
-  if [[ "$REMOTE_URL" == "$EXPECTED_REMOTE_URL" ]]; then
-    echo "Remote URL matches. Proceeding with safe actions."
-    
-    # Example safe action: Push changes to the 'develop' branch
-    git push "$EXPECTED_REMOTE_URL" develop
-  else
-    # Remote URL does not match the expected URL
-    abort_with_message "Warning: Remote URL does not match the expected repository. Aborting post-commit actions." 1
-  fi
-  
+# Call the pre-push hook
+echo "Calling pre-push hook..."
+if .husky/pre-push; then
+  echo "Pre-push hook executed successfully."
 else
-  # Current branch is not the allowed branch
-  abort_with_message "Warning: You are on branch '$CURRENT_BRANCH'. Post-commit actions are disabled." 0
+  echo "Pre-push hook failed."
+  exit 1
 fi
