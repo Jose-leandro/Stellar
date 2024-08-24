@@ -1,16 +1,33 @@
 ![Stellar - José Leandro](https://github.com/user-attachments/assets/4af167c1-f310-48ce-b69c-fb81d8f5722a)
 
 # Welcome to Stellar 🌟
+ ![GitHub release (latest by date)](https://img.shields.io/github/v/release/jose-leandro/Stellar)
+![GitHub issues](https://img.shields.io/github/issues/jose-leandro/Stellar)
+![GitHub](https://img.shields.io/github/license/jose-leandro/Stellar)
 
-## Project Overview
+## 📚 Table of Contents
+- [Project Overview](#project-overview)
+- [Key Focus Areas](#key-focus-areas)
+- [Current Status](#current-status)
+- [Key Features](#key-features)
+- [Technologies Used](#technologies-used)
+- [How It Works](#how-it-works)
+   - [For Sellers](#for-Sellers)
+   - [For Buyers ](#for-buyers)
+- Inspiration[Inspiration](#inspiration)
+- [Getting Started](#getting-started)
+- [Contributions](#contributions)
+- [Roadmap](#roadmap)
+- [License](#license)
+- [Acknowledgments](#acknowledgments)
+- [Author](#author)
 
-### User Experience:
+🎯 Project Overview
+🛍️ User Experience
+Stellar is a global marketplace designed to cater to both ambitious entrepreneurs and individuals looking to declutter by selling second-hand items. Users can create an account quickly and connect with a worldwide audience, making the process of buying and selling effortless and user-friendly.
 
-Stellar is your gateway to a global marketplace, designed for everyone—from ambitious entrepreneurs launching new products to individuals looking to declutter and sell second-hand items. Create an account in minutes and connect with billions of potential buyers worldwide. Stellar is more than just a platform; it’s a seamless, user-friendly experience that makes buying and selling effortless.
-
-### Developer Insights:
-
-Stellar is my personal project, a canvas where I’ve honed my front-end development skills. It’s a deep dive into the latest web development practices, focusing on creating a dynamic, accessible, and secure online marketplace. This project reflects my journey of growth, exploring advanced technologies and pushing the boundaries of what I can achieve as a developer.
+💻 Developer Insights
+Stellar serves as a personal project where I've honed my front-end development skills using modern web development practices. The project showcases my ability to create dynamic, accessible, and secure online platforms, reflecting my continuous learning and innovation as a developer.
 
 ### 🔧 Key Focus Areas
 ♿ Accessibility: Designed for everyone, ensuring usability across all abilities.
@@ -39,6 +56,7 @@ Stellar is my personal project, a canvas where I’ve honed my front-end develop
 
 Stellar is more than just a project; it’s a journey of continuous learning and innovation.
 
+
 ## 🚀 Current Status
 
 * ### Version: 0.0.1
@@ -57,6 +75,24 @@ Stellar is more than just a project; it’s a journey of continuous learning and
 This project is a symphony of modern technologies:
 
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white)  ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)  ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)  ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) 
+
+## ⚙️ How It Works
+
+### For Sellers
+Sign Up: Create an account with just a few clicks.
+Create Your Page: Customize your seller page to showcase your products.
+List Products: Add your items for sale quickly and easily.
+Reach Customers: Start selling to a global audience.
+Secure Payment: Transactions are processed securely and efficiently.
+
+### For Buyers
+Sign Up: Create an account in minutes.
+Explore & Discover: Browse products across various categories.
+Find & Purchase: Select the items you want and complete your purchase.
+Secure Payment: Transactions are processed securely, ensuring your data is protected.
+
+## 🌱 Inspiration
+Stellar was inspired by the need for a simple yet powerful marketplace where users can connect with buyers globally without the usual obstacles. The goal was to empower everyone to turn their ideas into successful ventures. Developing Stellar was also a personal challenge to understand how to build a marketplace from the ground up, exploring what it takes to create such a platform and seeing it used by people worldwide.
 
 ## 🚀 Getting Started
 
@@ -81,6 +117,20 @@ Contributions are always welcome! If you’re interested in improving this proje
 5. Review & Merge: Your contribution will be reviewed, and if everything looks good, it will be merged.
 
 Thank you for helping to make Stellar even more amazing!
+
+  ## 🛣️ Roadmap
+- **Version 0.0.2:**
+  - [ ] Create a landing page.
+  - [ ] Add multi-language support.
+  - [ ] Improve the homepage.
+  - [ ]  Enhance security feature.
+
+## 📄 License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+OpenAI & ChatGPT: For assisting in exploring new features, fixing issues, and improving the project.
+React & Next.js: For providing the foundation of Stellar.
 
 ## 👨‍💻 Author
 Developed by José Leandro.
