@@ -31,32 +31,27 @@ Stellar is a global marketplace designed to cater to both ambitious entrepreneur
 Stellar serves as a personal project where I've honed my front-end development skills using modern web development practices. The project showcases my ability to create dynamic, accessible, and secure online platforms, reflecting my continuous learning and innovation as a developer.
 
 ### 🔧 Key Focus Areas
-♿ Accessibility: Designed for everyone, ensuring usability across all abilities.
+♿ Accessibility: Ensuring usability across all abilities for a diverse user base.
 
-🔒 Web Security: Robust measures to protect user data and transactions.
+🔒 Security: Implementing robust measures to safeguard user data and transactions.
 
-💻 Modern Technologies: Built with Webpack, Node.js, TypeScript, React.js, and more.
+💻 Modern Technologies: Utilizing Webpack, Node.js, TypeScript, React.js, Next.js, and Vue.js.
 
-🎨 Design & UX: A visually appealing interface with a focus on responsive design.
+🎨 Design: Creating visually appealing interfaces with a strong emphasis on responsive design.
 
-🧼 Clean Code: Emphasizing best practices in performance optimization and documentation.
+🛠️ Workflow: Efficiently managed with Git, Git Hook with Kusky, GitHub, ESLint, and Git Flow for seamless collaboration.
 
-🛠️ Workflow: Managed with Git, GitHub, GitLab, ESLint, and Git Flow for efficient collaboration.
+🚀 Micro Front-End: Exploring the architecture and implementation of micro front-end applications.
 
-🚀 Advanced Concepts: Exploring micro-front ends, asynchronous programming, and more.
+📦 Styled Components: Streamlining development with styled-components for maintainable styling.
 
-☁️ Cloud Integration: Leveraging AWS for scalable, reliable cloud services.
+🔗 State Management: Leveraging Redux for effective state management across applications.
 
-📦 UI Frameworks: Using Bootstrap and styled-components for streamlined development.
+🐞 Debugging: Ensuring code quality and stability through comprehensive debugging practices.
 
-🔗 API Development: Efficient data exchange with REST APIs.
-
-🐞 Debugging & Testing: Ensuring code quality with thorough testing practices.
-
-🏛️ Architecture: Following clean architecture principles for a scalable structure.
+🏛️ Clean Architecture: Following clean architecture principles to maintain a scalable and organized code structure.
 
 Stellar is more than just a project; it’s a journey of continuous learning and innovation.
-
 
 ## 🚀 Current Status
 
