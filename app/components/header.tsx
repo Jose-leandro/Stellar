@@ -40,7 +40,7 @@ function Header ({
 
   const [temAlgoABuscar, setTemAlgoABuscar] = useState<string>('')
   
-  const menuImg = useRef<HTMLDivElement>(null);
+  const menuImg = useRef(null);
   const [visibilityMenuImg, setVisibilityMenuImg] = useState<boolean>(false)
 
   useEffect(() => {
@@ -111,8 +111,8 @@ function Header ({
         />
       </div>
 
-      <button className="w-auto fixed top-10 right-6 bg-outer-space-gray p-2 rounded-md flex lg:hidden">
-        <FaBars className="lg:hidden" ref={menuImg} onClick={toggleVisibility} />
+      <button className="w-auto fixed top-10 right-6 bg-outer-space-gray p-2 rounded-md flex lg:hidden" ref={menuImg}>
+        <FaBars className="lg:hidden"  onClick={toggleVisibility} />
       </button>         
              
       <div className={`
