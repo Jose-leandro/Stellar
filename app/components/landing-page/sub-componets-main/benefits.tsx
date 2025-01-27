@@ -1,7 +1,7 @@
 import React from "react";
 import Separator from "../../ui/separator";
 
-export default function Benefits(): React.JSX.Element[] {
+export default function Benefits(): React.JSX.Element {
 
     const benefits = {
         benefits1: {
@@ -52,7 +52,7 @@ export default function Benefits(): React.JSX.Element[] {
             <div className="mt-8 ml-4 flex flex-wrap justify-start">
 
             {
-                Object.values(benefits).map(({ title, pathImg, backgrondColor, widthOfBenefits }, index) => (
+                Object.values(benefits).map(({ title, pathImg, widthOfBenefits }, index) => (
                     <div key={index} className={`h-auto ${widthOfBenefits} mt-1 mr-4 mb-3`}>
                         <Separator orientation="horizontal" margin="ml-4 mr-4" />
 
