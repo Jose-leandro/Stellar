@@ -1,8 +1,4 @@
 #!/bin/sh
-
-
-echo "Husky pre-push script running..."
-
 # Get the current branch name
 BRANCH_NAME=$(git symbolic-ref --short HEAD)
 
