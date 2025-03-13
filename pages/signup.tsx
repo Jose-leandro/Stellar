@@ -18,6 +18,7 @@ import {
 } from '../app/lib/redux/actions'
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
+import DOMPurify from 'dompurify';
 
 const mapStateToProps = (state) => ({
   qualEstadoUsuario: state.qualEstadoUsuario,
@@ -40,7 +41,7 @@ const headerProps = {
   singupOulogin: 'Sing Up'
 }
 
-function Singup ({
+function Singup({
   qualEstadoUsuario,
   setQualNomeUsuario,
   estaValidadoCampos,
@@ -75,8 +76,7 @@ function Singup ({
 
   useEffect(() => {
     if (process.browser) {
-      
-
+      const validator = new JustValidate('#formSingup')
       validator.onSuccess((event) => {
         console.log('certo')
         setEstaValidadoCampos(true)
@@ -157,6 +157,25 @@ function Singup ({
     }
   }
 
+  const sanitizingInputs = (
+    event: React.ChangeEvent<HTMLInputElement>,
+    typeOfState: string
+  ) => {
+    const setters: Record<string, React.Dispatch<React.SetStateAction<string>>> = {
+      setQualNome,
+      setQualCidade,
+      setQualIdade,
+      setQualSenha,
+    };
+
+    // Get the correct state setter function
+    const setterFunction = setters[typeOfState];
+
+    if (setterFunction) {
+      setterFunction(DOMPurify.sanitize(event.target.value)); // ✅ Prevents XSS before storing
+    }
+  };
+
   return (
     <>
       <Header {...headerProps} />
@@ -184,10 +203,10 @@ function Singup ({
               id="form__name"
               onChange={(event) => {
                 const informacoes: string = event.target.value
-                setQualNome(informacoes)
+                sanitizingInputs(informacoes, 'setQualNome')
               }}
               className="bg-transparent border-slate-700 border pl-2 mt-2 h-10 rounded"
-            ></input>
+            />
           </div>
           <div className="flex flex-col w-full mb-5">
             <label>Cidade</label>
@@ -196,10 +215,10 @@ function Singup ({
               id="form__cidade"
               onChange={(event) => {
                 const informacoes: string = event.target.value
-                setQualCidade(informacoes)
+                sanitizingInputs(informacoes, 'setQualCidade')
               }}
               className="bg-transparent border-slate-700 border pl-2 mt-2 h-10 rounded"
-            ></input>
+            />
           </div>
           <div className="flex flex-col w-full mb-5">
             <label>Idade</label>
@@ -208,10 +227,10 @@ function Singup ({
               id="form__idade"
               onChange={(event) => {
                 const informacoes: string = event.target.value
-                setQualIdade(informacoes)
+                sanitizingInputs(informacoes, 'setQualIdade')
               }}
               className="bg-transparent border-slate-700 border pl-2 mt-2 h-10 rounded"
-            ></input>
+            />
           </div>
           <div className="flex flex-col w-full mb-5">
             <div className="flex items-center justify-between">
@@ -242,10 +261,10 @@ function Singup ({
               ref={myRefSenha}
               onChange={(event) => {
                 const informacoes: string = event.target.value
-                setQualSenha(informacoes)
+                sanitizingInputs(informacoes, 'setQualSenha')
               }}
               className="bg-transparent border-slate-700 border pl-2 mt-2 h-10 rounded"
-            ></input>
+            />
           </div>
 
           <button
