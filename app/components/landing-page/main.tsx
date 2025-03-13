@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import Separator from '../ui/separator';
 import Benefits from './sub-componets-main/benefits';
 import Prices from './prices';
+import Link from 'next/link'
 
 // Component for Section Titles
 const SectionTitle = ({ children, itIsPowerStellar }) => {
@@ -111,8 +112,10 @@ export default function Main(): React.JSX.Element {
                             </div>
                         </div>
 
-                        <button className="text-2xl mt-8 bg-slate-200 text-black rounded-sm py-2
+                        <Link href="/signup">
+                            <button className="text-2xl mt-8 bg-slate-200 text-black rounded-sm py-2
                                            lg:text-4xl">Get Start to Sell Or Buy</button>
+                        </Link>
                     </div>
                 </div>
             </section>
