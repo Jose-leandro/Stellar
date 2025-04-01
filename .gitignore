@@ -17,3 +17,6 @@ node_modules/
 
 #variaveis de ambientes
 .env
+
+# some notes
+anotacion.text
