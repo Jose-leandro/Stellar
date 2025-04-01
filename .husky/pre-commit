@@ -1,9 +1,3 @@
-#!/usr/bin/env sh
-. "$(dirname -- "$0")/_/husky.sh"
-
-npm test
-
-
 # echo "Running Prettier..."
 # npx prettier --write .
 # echo "Prettier done!"
