@@ -47,7 +47,7 @@ export default function Checkout() {
 
       <main>
         <section className='flex flex-col items-center justify-center w-full'>
-            <h1 className="font-bold text-2xl w-1/6 mb-3" >Checkout</h1>
+            <h1 className="font-bold text-2xl w-1/6 mb-3" > /</h1>
             <div>
                 <h2 className='text-xl mb-3'>
                     Your Cart
