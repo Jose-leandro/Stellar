@@ -48,67 +48,62 @@ export default function Checkout() {
       <main>
         <section className='flex flex-col items-center justify-center w-full'>
             <h1 className="font-bold text-2xl w-1/6 mb-3" > /</h1>
-            <div>
-                <h2 className='text-xl mb-3'>
-                    Your Cart
-                </h2>
+            <div className='flex'>
+                <section className='w-1/2'>
+               
+                    <h2 className='mb-3 text-3xl mb-3'>
+                        Your Summary
+                    </h2>
+    
+                    {products.map((product, index) => (
+                        <div key={index} className='flex justify-around mb-6 mt-2 bg-gray-600 w-1/2 rounded-md py-4 px-5'>
+                            <Image src={product.imageUrl} alt={product.name} height={100} width={100} />
+    
+                            <div className='flex-col justify-around'>
+                            <h3 className='text-xl mb-1'>{product.name}</h3>
+                            <span className='mt-1'>R$ {product.price.toFixed(2)}</span>
+    
+                            <div className='flex justify-around items-center mt-4'>
+    
+                                <span>{product.quantity}</span>
+    
+                            </div>
+                            </div>
 
-                {products.map((product, index) => (
-                    <div key={index} className='flex justify-around mb-6 mt-2'>
-                        <Image src={product.imageUrl} alt={product.name} height={100} width={100} />
-
-                        <div className='flex-col justify-around'>
-                        <h3 className='text-xl'>{product.name}</h3>
-                        <span className='mt-1'>R$ {product.price.toFixed(2)}</span>
-
-                        <div className='flex justify-around items-center mt-4'>
-                            <button className='bg-slate-500 w-6 h-6 rounded-sm' onClick={() => decreaseQuantity(product.id)}>
-                            -
-                            </button>
-
-                            <span>{product.quantity}</span>
-
-                            <button className='w-6 bg-slate-700 h-6' onClick={() => increaseQuantity(product.id)}>
-                            +
-                            </button>
                         </div>
+                    ))}
+    
+                    <div>
+                        <h4>
+                            Order Summary
+                        </h4>
+    
+                        <div>
+                            <h5>Subtotal</h5>
+    
+                            <span> {subtotalValule} </span>
                         </div>
-
-                        <button className='ml-3 text-1xl'>
-                            X
-                        </button>
-                    </div>
-                ))}
-
-                <div>
-                    <h4>
-                        Order Summary
-                    </h4>
-
-                    <div>
-                        <h5>Subtotal</h5>
-
-                        <span> {subtotalValule} </span>
-                    </div>
-
-                    <div>
-                        <h4>Shipping</h4>
-
-                        <span> {ShippingValue} </span>
+    
+                        <div>
+                            <h4>Shipping</h4>
+    
+                            <span> {ShippingValue} </span>
+                        </div>
+    
+                        <div>
+                            <h4>Tax</h4>
+    
+                            <span> {taxValule} </span>
+                        </div>
+    
+                        <div>
+                            <h4>Total</h4>
+    
+                            <span> {totalValule} </span>
+                        </div>
                     </div>
 
-                    <div>
-                        <h4>Tax</h4>
-
-                        <span> {taxValule} </span>
-                    </div>
-
-                    <div>
-                        <h4>Total</h4>
-
-                        <span> {totalValule} </span>
-                    </div>
-                </div>
+                </section>
 
                 <form>
                     <section>
